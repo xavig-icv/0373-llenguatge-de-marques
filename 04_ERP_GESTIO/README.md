@@ -13,13 +13,13 @@ En aquest tema s'instal·la i es configura un sistema de gestió empresarial (ER
 
 | Tema                                               | Hores | Descripció                                                                     |
 | -------------------------------------------------- | ----- | ------------------------------------------------------------------------------ |
-| **1. Introducció als sistemes ERP**                | 1     | Sistema de Gestió Empresarial: característiques, mòduls i ERPs actuals.        |
-| **2. Instal·lació i accés a Odoo**                 | 1     | Instal·lació i configuració d'Odoo a un entorn local (màquina virtual).        |
-| **3. Navegació i configuració bàsica d’Odoo**      | -     | Personalització de l'entorn, configuració de l'empresa i rols d'usuari.        |
-| **4. Ús de mòduls de gestió empresarial**          | -     | Desplegament de mòduls: vendes, inventari, compres, facturació, etc.           |
-| **5. Consultes i extracció d’informació**          | -     | Generació d’informes, filtres, exportació de dades i gestió de la informació.  |
-| **6. Seguretat i permisos d’accés**                | -     | Rols, permisos i bones pràctiques per protegir la informació empresarial.      |
-| **7. Projecte: Odoo en un entorn empresarial**     | 6     | Deseplgament i gestió de mòduls d'Odoo en un escenari pràctic empresarial.     |
+| **01. Introducció als sistemes ERP**                | 1     | Sistema de Gestió Empresarial: característiques, mòduls i ERPs actuals.        |
+| **02. Instal·lació i accés a Odoo**                 | 1     | Instal·lació i configuració d'Odoo a un entorn local (màquina virtual).        |
+| **03. Navegació i configuració bàsica d’Odoo**      | -     | Personalització de l'entorn, configuració de l'empresa i rols d'usuari.        |
+| **04. Ús de mòduls de gestió empresarial**          | -     | Desplegament de mòduls: vendes, inventari, compres, facturació, etc.           |
+| **05. Consultes i extracció d’informació**          | -     | Generació d’informes, filtres, exportació de dades i gestió de la informació.  |
+| **06. Seguretat i permisos d’accés**                | -     | Rols, permisos i bones pràctiques per protegir la informació empresarial.      |
+| **07. Projecte: Odoo en un entorn empresarial**     | 6     | Deseplgament i gestió de mòduls d'Odoo en un escenari pràctic empresarial.     |
 
 > 📝 **Nota:** Els temes sense hores assignades es treballen dins del projecte.
 

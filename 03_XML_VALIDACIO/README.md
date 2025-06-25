@@ -13,13 +13,13 @@ En aquest tema s'introdueixen dos dels formats més utiltizats per a l'intercanv
 
 | Tema                                                   | Hores | Descripció                                                                      |
 | ------------------------------------------------------ | ----- | ------------------------------------------------------------------------------- |
-| **1. Introducció a XML i JSON**                        | 1     | Comparativa entre XML i JSON, casos d’ús i estructura bàsica (diferències).     |
-| **2. Sintaxi i creació de documents XML**              | 3     | Components, estructura, elements i etiquetes, atributs i entitats.              |
-| **3. Validació de documents XML amb XSD**              | 2     | XML Schema: estructura, elements simples, complexos, atributs i restriccions.   |
-| **4. Modelatge i estructuració de dades amb JSON**     | 2     | Com estructurar dades en JSON de manera clara i reutilitzable.                  |
-| **5. Validació de documents JSON amb JSON Schema**     | 2     | JSON Schema: Definició, Tipus de dades, propietats i valors requerits.          |
-| **6. Conversió i transformació de documents**          | 2     | Introducció a XSLT, XPath i conversió bàsica entre XML i JSON.                  |
-| **7. Avaluació: Validació de documents XML i JSON**    | 2     | Prova escrita en paper + Examen pràctic amb ordinador.                          |
+| **01. Introducció a XML i JSON**                        | 1     | Comparativa entre XML i JSON, casos d’ús i estructura bàsica (diferències).     |
+| **02. Sintaxi i creació de documents XML**              | 3     | Components, estructura, elements i etiquetes, atributs i entitats.              |
+| **03. Validació de documents XML amb XSD**              | 2     | XML Schema: estructura, elements simples, complexos, atributs i restriccions.   |
+| **04. Modelatge i estructuració de dades amb JSON**     | 2     | Com estructurar dades en JSON de manera clara i reutilitzable.                  |
+| **05. Validació de documents JSON amb JSON Schema**     | 2     | JSON Schema: Definició, Tipus de dades, propietats i valors requerits.          |
+| **06. Conversió i transformació de documents**          | 2     | Introducció a XSLT, XPath i conversió bàsica entre XML i JSON.                  |
+| **07. Avaluació: Validació de documents XML i JSON**    | 2     | Prova escrita en paper + Examen pràctic amb ordinador.                          |
 
 ---
 

@@ -45,6 +45,7 @@
 - [IconFinder](https://www.iconfinder.com/)
 - [Heroicons (SVG)](https://heroicons.com/)
 - [Feather Icons](https://feathericons.com/)
+- [Emojis](https://github.com/ikatyang/emoji-cheat-sheet)
 
 ## 🔤 Tipografies per a projectes web
 - [Google Fonts](https://fonts.google.com/)
