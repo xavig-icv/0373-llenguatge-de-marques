@@ -1,4 +1,6 @@
-# 🌐 L'origen del Web
+# 📦 Bloc 01. Introducció i estructura HTML bàsica
+
+## 🌐 L'origen del Web
 
 L’any 1989, el científic **Tim Berners-Lee**, treballador del CERN, va proposar un sistema per compartir informació a través d’Internet utilitzant el concepte d’**hipertext**. Aquest sistema combinava tecnologies de xarxa amb un nou llenguatge per estructurar documents: l’**HTML**. A més, es basava en protocols com l’**HTTP**, que permetien la comunicació entre dispositius, i en eines com la **URL**, que servia per localitzar recursos dins la xarxa.
 
