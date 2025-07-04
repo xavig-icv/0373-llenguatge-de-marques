@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exemple Formulari Complet HTML</title>
+    <meta name="description" content="Exemple Formulari Alta Videojoc a Steam" />
+    <link rel="icon" href="./img/favicon.ico" />
+  </head>
+  <body>
+    <form action="./processa_alta_videojoc.php" method="POST">
+      <fieldset>
+        <legend>Formulari Steam - Nou Videojoc</legend>
+
+        <label for="titol">Títol del videojoc:</label>
+        <input type="text" id="titol" name="titol" placeholder="Ex: Hollow Knight" maxlength="50" required />
+        <br /><br />
+
+        <label for="descripcio">Descripció:</label><br />
+        <textarea id="descripcio" name="descripcio" rows="4" cols="50" placeholder="Escriu una petita sinopsi..." required>
+        </textarea>
+        <br /><br />
+
+        <label for="plataforma">Plataforma:</label>
+        <select id="plataforma" name="plataforma" required>
+          <option value="">-- Selecciona una opció --</option>
+          <option value="pc">PC</option>
+          <option value="switch">Nintendo Switch</option>
+          <option value="ps5">PlayStation 5</option>
+          <option value="xbox">Xbox</option>
+        </select>
+        <br /><br />
+
+        <label for="genere">Gènere:</label>
+        <input list="generes" id="genere" name="genere" placeholder="Acció, RPG, Plataformes..." required />
+        <datalist id="generes">
+          <option value="Acció"></option>
+          <option value="RPG"></option>
+          <option value="Plataformes"></option>
+          <option value="Simulació"></option>
+          <option value="Puzzle"></option>
+        </datalist>
+        <br /><br />
+
+        <label for="preu">Preu (€):</label>
+        <input type="number" id="preu" name="preu" step="0.01" min="0" max="100" required />
+        <br /><br />
+
+        <label for="data-llancament">Data de llançament:</label>
+        <input type="date" id="dataLlancament" name="dataLlancament" required />
+        <br /><br />
+
+        <label for="valoracio">Còpies Gratuïtes (0-100):</label>
+        <input type="range" id="valoracio" name="valoracio" min="0" max="100" step="1" />
+        <br /><br />
+
+        <label for="color-portada">Color principal de la portada:</label>
+        <input type="color" id="colorPortada" name="colorPortada" />
+        <br /><br />
+
+        <label>Idiomes disponibles:</label>
+        <input type="checkbox" id="catala" name="catala" value="catala" />
+        <label for="catala">Català</label>
+        <input type="checkbox" id="castella" name="castella" value="castella" />
+        <label for="castella">Castellà</label>
+        <input type="checkbox" id="angles" name="angles" value="angles" />
+        <label for="angles">Anglès</label>
+        <br /><br />
+
+        <label>Mode de joc:</label>
+        <input type="radio" id="singlePlayer" name="mode" value="1" required />
+        <label for="singlePlayer">Un jugador</label>
+        <input type="radio" id="multiPlayer" name="mode" value="2" />
+        <label for="multiPlayer">Multijugador</label>
+        <br /><br />
+
+        <label for="email">Correu de contacte del desenvolupador:</label>
+        <input type="email" id="email" name="email" placeholder="correu@domini.cat" />
+        <br /><br />
+
+        <label for="web">Web oficial del joc:</label>
+        <input type="url" id="web" name="web" placeholder="https://domini.cat" />
+        <br /><br />
+
+        <label for="imatge">Pujar imatge del joc:</label>
+        <input type="file" id="imatge" name="imatge" accept="image/*" />
+
+        <input type="hidden" name="id_desenvolupador" value="2991" />
+      </fieldset>
+
+      <br />
+      <button type="submit">Enviar formulari</button>
+      <button type="reset">Reiniciar</button>
+    </form>
+  </body>
+</html>

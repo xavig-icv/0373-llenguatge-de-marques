@@ -47,6 +47,8 @@ Tot document HTML ha de seguir una estructura mínima perquè el navegador pugui
 </html>
 ```
 
+![Estructura Bàsica HTML](./img/estructura_basica.png)
+
 Explicació de les etiquetes HTML principals:
 
 ```html 
@@ -85,6 +87,8 @@ Explicació de les etiquetes HTML principals:
 </body>
 </html>
 ```
+
+![Plantilla Inicial HTML](./img/plantilla_inicial.png)
 
 Explicació de les etiquetes HTML recomanades per la pantilla inicial d'un projecte:
 

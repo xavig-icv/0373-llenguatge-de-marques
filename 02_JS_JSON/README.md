@@ -1,15 +1,15 @@
-# 📦 Tema 02 – Programació amb JavaScript i tractament de dades amb JSON
+# Tema 02 – Programació amb JavaScript i tractament de dades amb JSON
 
-## 🌟 Objectiu del tema
+## Objectiu del tema
 
 En aquest tema s'introdeuix als fonaments de la programació amb **JavaScript**. L'alumnat aprendrà a manipular del DOM, la interacció del client amb elements del DOM i el tractament de dades amb **JSON**. L’objectiu és comprendre com fer que una pàgina web sigui interactiva i com gestionar informació estructurada amb formats moderns.
 
-⏰ **Durada total**: 22 hores  
-🎓 **Resultats d’aprenentatge**: RA3 i RA6
+**Durada total**: 22 hores  
+**Resultats d’aprenentatge**: RA3 i RA6
 
 ---
 
-## 📚 Temes i distribució d’hores
+## Temes i distribució d’hores
 
 | Tema                                                | Hores | Descripció                                                                       |
 | --------------------------------------------------- | ----- | -------------------------------------------------------------------------------- |
@@ -24,7 +24,7 @@ En aquest tema s'introdeuix als fonaments de la programació amb **JavaScript**.
 
 ---
 
-## 📁 Estructura de la carpeta
+## Estructura de la carpeta
 
 Dins la carpeta `02_JS_JSON/` trobaràs:
 

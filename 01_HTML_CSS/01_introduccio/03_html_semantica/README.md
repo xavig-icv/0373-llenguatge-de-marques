@@ -22,7 +22,22 @@ Una **etiqueta semàntica** és aquella que, per si mateixa, **descriu el signif
 
 ---
 
-## 🧩 Etiquetes principals d’estructura
+### 📦 Quan s'utilitzen les etiquetes genèriques `<div>` i `<span>`?
+
+Encara que no aportin significat semàntic, les etiquetes **genèriques** com `<div>` i `<span>` són **molt útils i necessàries**.
+
+| Etiqueta  | Tipus            | Descripció                                                                                         |
+|-----------|------------------|----------------------------------------------------------------------------------------------------|
+| `<div>`   | Bloc (Block)     | Contenidor que permet agrupar diversos elements per aplicar estils CSS o una funcionalitat amb JS. |
+| `<span>`  | En línia (Inline)| Contenidor que permet agrupar text o elements en línia per donar-los estil o funcionalitat.        |
+
+> 💡 S'han d'utilitzar quan **cap altra etiqueta semàntica** sigui adequada per al contingut o el contxet.
+
+> ✅ A la pràctica, es combinen sovint **etiquetes semàntiques** amb **`<div>` i `<span>`** per tenir un codi estructurat i fàcil de mantenir.
+
+---
+
+## 🧩 Etiquetes principals d’estructura semàntica
 
 | Etiqueta    | Descripció                                                                               |
 | ----------- | ---------------------------------------------------------------------------------------- |
@@ -36,7 +51,7 @@ Una **etiqueta semàntica** és aquella que, per si mateixa, **descriu el signif
 
 ---
 
-### 🔎 Apunts d'utilitat
+### 🔎 Com a recordatori
 
 - Pots tenir **diverses seccions o articles**, però només **un `<main>`** per pàgina.
 - Els elements `<section>` i `<article>` **poden contenir altres etiquetes semàntiques**, com `<header>`, `<footer>` o `<nav>`.
@@ -44,7 +59,7 @@ Una **etiqueta semàntica** és aquella que, per si mateixa, **descriu el signif
 
 ## 🧪 Exemple estructura semàntica HTML5
 
-![Estructura HTML5](./estructura-semantica-html5.jpg)
+![Estructura HTML5](./img/estructura-semantica-html5.jpg)
 
 ```html
 <!DOCTYPE html>
@@ -75,8 +90,8 @@ Una **etiqueta semàntica** és aquella que, per si mateixa, **descriu el signif
           <p>Una aventura èpica al món dels llenguatges de programació.</p>
         </article>
         <article>
-          <h3>HTML Racer</h3>
-          <p>Competeix per la millor semàntica mentre esquives etiquetes semàntiques.</p>
+          <h3>HTML Race</h3>
+          <p>Competeix per la millor semàntica mentre esquives etiquetes div i span.</p>
         </article>
       </section>
       <aside>
@@ -93,3 +108,5 @@ Una **etiqueta semàntica** és aquella que, per si mateixa, **descriu el signif
   </body>
 </html>
 ```
+
+![Esturctura Semàntica Render](./img/estructura_semantica_render.png)

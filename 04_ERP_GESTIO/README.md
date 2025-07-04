@@ -1,15 +1,15 @@
-# 🧩 Tema 04 – Sistemes ERP amb Odoo
+# Tema 04 – Sistemes ERP amb Odoo
 
-## 🌟 Objectiu del tema
+## Objectiu del tema
 
 En aquest tema s'instal·la i es configura un sistema de gestió empresarial (ERP). L'alumnat aprendrà a gestionar dades empresarials de manera centralitzada, a desplegar mòduls de gestió com els de vendes, compres o inventari i realitzarà operacions bàsiques de consulta, modificació, exportació i importació de dades.
 
-⏰ **Durada total**: 8 hores  
-🎓 **Resultat d’aprenentatge**: RA7
+**Durada total**: 8 hores  
+**Resultat d’aprenentatge**: RA7
 
 ---
 
-## 📚 Temes i distribució d’hores
+## Temes i distribució d’hores
 
 | Tema                                               | Hores | Descripció                                                                     |
 | -------------------------------------------------- | ----- | ------------------------------------------------------------------------------ |
@@ -25,7 +25,7 @@ En aquest tema s'instal·la i es configura un sistema de gestió empresarial (ER
 
 ---
 
-## 📁 Estructura de la carpeta
+## Estructura de la carpeta
 
 Dins aquesta carpeta (`04_ERP_GESTIO/`) trobaràs:
 

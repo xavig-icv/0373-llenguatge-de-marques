@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Etiquetes Múltimedia</title>
+    <meta name="description" content="Etiquetes d'imatges, àudio, vídeo i elements incrustats." />
+    <link rel="icon" href="./img/favicon.ico" />
+  </head>
+  <body>
+    <!-- Imatge (img)-->
+    <img src="./img/original-mario-bros-2d.png" alt="Super Mario Bros 2D" width="600" />
+    <!-- Figure (imatge i figcaption) -->
+    <figure>
+      <img src="./img/original-zelda-breath-of-the-wild.png" alt="Videojoc Zelda Breath of The Wild" width="400" />
+      <figcaption>Portada del Videojoc Zelda Breath of The Wild</figcaption>
+    </figure>
+    <!--  Àudio -->
+    <audio controls>
+      <source src="./audio/mario-level-complete.mp3" type="audio/mpeg" />
+      <source src="./audio/mario-level-complete.ogg" type="audio/ogg" />
+    </audio>
+    <!-- Vídeo -->
+    <video controls poster="./img/poster-minecraft-video.png" width="600" height="350">
+      Minecraft Videojoc
+      <source src="./video/minecraft-trailer.mp4" type="video/mp4" />
+      <source src="./video/minecraft-trailer.ogv" type="video/ogg" />
+    </video>
+    <!-- Iframe (contingut incrustat) -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/VQRLujxTm3c?si=i_ubHZKF_H3rftOT"
+      title="YouTube Video Trailer Oficial GTA 6"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>
