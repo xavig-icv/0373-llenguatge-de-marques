@@ -1,4 +1,4 @@
-# 📘 Mòdul 0373 – Llenguatge de Marques i Sistemes de Gestió d’Informació
+# Mòdul 0373 – Llenguatge de Marques i Sistemes de Gestió d’Informació
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -10,7 +10,7 @@
 ![Odoo](https://img.shields.io/badge/Odoo-7A9E9F?style=for-the-badge&logo=odoo&logoColor=white)
 
 
-## 🗂️ Estructura del repositori
+## Estructura del repositori
 
 | BLOC/CARPETA        | Contingut del Bloc                                                    | Hores | RA          |
 | ------------------- | --------------------------------------------------------------------- | ----- | ----------- |
@@ -21,7 +21,7 @@
 | `04_ERP_GESTIO/`    | Sistemes ERP amb Odoo: Instal·lació, configuració i gestió de dades.  | 8     | RA7         |
 
 
-## 📚 Continguts del Mòdul
+## Continguts del Mòdul
 
 `Tema 1` Reconeixement de les característiques de llenguatges de marques.
 
@@ -37,7 +37,7 @@
 
 `Tema 7` Sistemes de gestió empresarial.
 
-## 🧑‍🏫 Resultats d'Aprenentatge
+## Resultats d'Aprenentatge
 
 `RA1`	Reconeix les característiques de llenguatges de marques analitzant i interpretant fragments de codi.
 

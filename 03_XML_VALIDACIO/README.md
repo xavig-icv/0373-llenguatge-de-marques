@@ -1,15 +1,15 @@
-# 📦 Tema 03 –  XML i JSON: Representació i validació de dades
+# Tema 03 –  XML i JSON: Representació i validació de dades
 
-## 🌟 Objectiu del tema
+## Objectiu del tema
 
 En aquest tema s'introdueixen dos dels formats més utiltizats per a l'intercanvi de dades: **XML** i **JSON**. L’alumnat aprendrà a estructurar informació jeràrquica mitjançant XML i JSON, i a validar-ne la sintaxi i estructura utilitzant **XSD (XML Schema)** i **JSON Schema**. Es realitzaran activitats pràctiques de validació, transformació i conversió de documents entre formats.
 
-⏰ **Durada total**: 14 hores  
-🎓 **Resultats d’aprenentatge**: RA4 i RA5
+**Durada total**: 14 hores  
+**Resultats d’aprenentatge**: RA4 i RA5
 
 ---
 
-## 📚 Temes i distribució d’hores
+## Temes i distribució d’hores
 
 | Tema                                                   | Hores | Descripció                                                                      |
 | ------------------------------------------------------ | ----- | ------------------------------------------------------------------------------- |
@@ -23,7 +23,7 @@ En aquest tema s'introdueixen dos dels formats més utiltizats per a l'intercanv
 
 ---
 
-## 📁 Estructura de la carpeta
+## Estructura de la carpeta
 
 Dins aquesta carpeta (`03_XML_VALIDACIO/`) trobaràs:
 
