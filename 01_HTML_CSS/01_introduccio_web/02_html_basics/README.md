@@ -1,6 +1,6 @@
-# 📘 El llenguatge HTML i estructura HTML5
+# El llenguatge HTML i estructura HTML5
 
-## 🏷️ Què és un llenguatge de marques?
+## Què és un llenguatge de marques?
 
 Un **llenguatge de marques** (markup language) és un sistema basat en **etiquetes** que s'utilitza per **estructurar, organitzar i descriure** el contingut d'un document. Les etiquetes s'escriuen seguint un conjunt de normes i no defineixen la forma en què es veu el contingut (l'aspecte visual), sinó **la seva estructura i significat**.
 
@@ -19,17 +19,13 @@ Exemples de llenguatges de marques:
   <etiqueta> Contingut de text. </etiqueta>
   ```
 
----
-
-## 🌐 Què és HTML?
+## Què és HTML?
 
 L’**HTML (HyperText Markup Language)** és el llenguatge principal que s'utilitza per crear documents de pàgines web. Permet per **definir l'estructura, les seccions i els elements** que han d'apareixer a una pàgina, com poden ser els **títols, els paràgrafs, els enllaços, les imatges, les taules, els formularis**, etc.
 
 > HTML descriu el contingut, **no el disseny visual**.
 
----
-
-## 🧩 Estructura bàsica d’un document HTML5
+## Estructura bàsica d’un document HTML5
 
 Tot document HTML ha de seguir una estructura mínima perquè el navegador pugui interpretar-lo correctament:
 
@@ -70,7 +66,7 @@ Explicació de les etiquetes HTML principals:
 <body> Diposa del contingut visible de la pàgina: textos, imatges, enllaços, vídeos, taules, etc.
 ```
 
-## 📱 Plantilla HTML5 per iniciar projectes web
+## Plantilla HTML5 per iniciar projectes web
 
 ```html
 <!DOCTYPE html>

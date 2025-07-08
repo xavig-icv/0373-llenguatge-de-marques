@@ -253,7 +253,7 @@ L'etiqueta `<input>` permet acollir **diferents tipus de dades** gràcies a l’
 
 ![Input tipus Submit](./img/input_type_submit.png)
 
-## 📝 Area de Text `<textarea>`
+## Area de Text `<textarea>`
 
 ```html
 <textarea id="comentari" name="comentari" rows="3" cols="40" placeholder="Escriu el teu comentari..."></textarea>

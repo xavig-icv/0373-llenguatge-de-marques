@@ -1,0 +1,58 @@
+/* Selectors bàsics CSS */
+
+/* Selector Universal: Aplica estils a tots els elements HTML */
+* {
+  margin: 0;        /* Elimina marges per defecte */
+  padding: 0;       /* Elimina separacions internes per defecte */
+}
+
+/* Selector Etiqueta: Aplica estils a l'element HTML indicat <div>, <li> i <a> */
+div {
+    border: solid 2px #999;
+    background-color: #eee;
+    padding: 5px;           /* Espai intern entre el text i la vora */
+    margin: 5px;            /* Espai extern entre els enllaços */
+
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  background: #666;
+  border: solid 2px #555;
+  text-decoration: none;  /* Elimina el subratllat dels enllaços */
+  color: white;           /* Defineix el color del text */
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Selector Múltiple: Aplica el mateix estil als elements indicats */
+h1, h2, p {
+    margin: 5px;
+}
+
+h3, h4 {
+  color: darkgreen;
+}
+
+/* Selector ID (#) – Aplica estils a una única etiqueta amb el "id" especificat */
+/* Només pot haver un ID amb per pàgina, no es pot repetir el nom. */
+#menu {
+    background-color: #999;
+    border: solid 2px #666;
+    padding: 10px;
+    margin: 5px;
+}
+
+#contenidorUnic {
+  background: goldenrod;
+}
+
+/* Selector Classe (.) - Aplica estils a totes les etiquetes amb el mateix "class"  */
+/* Les etiquetes CLASS es poden repetir a diferents elements de la pàgina. */
+.contenidor {
+  background: dodgerblue;
+  color: white;
+}

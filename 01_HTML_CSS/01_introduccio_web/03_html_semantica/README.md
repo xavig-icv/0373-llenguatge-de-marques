@@ -1,6 +1,6 @@
-# 🏯 HTML5: Estructura semàntica
+# HTML5: Estructura semàntica
 
-## 🌐 Què és HTML5?
+## Què és HTML5?
 
 **HTML5** és la cinquena versió del llenguatge HTML publicada l'any 2014. Aquesta versió incorpora millores significatives respecte a versions anteriors:
 
@@ -14,15 +14,11 @@ Amb HTML5 es van introduir **etiquetes semàntiques** que defineixen la funció 
 - La **indexació** per part dels cercadors o rastrejadors web.
 - L’**accessibilitat** pels usuaris que utilitzen lectors de la pantalla.
 
----
-
-## 🔑 Què són les etiquetes semàntiques?
+## Què són les etiquetes semàntiques?
 
 Una **etiqueta semàntica** és aquella que, per si mateixa, **descriu el significat la informació** que conté. A diferència d’una etiqueta genèrica com `<div>` o `<span>` , les etiquetes semàntiques com `<header>`, `<main>` o `<footer>` defineixen una funció clara de la secció de la pàgina web.
 
----
-
-### 📦 Quan s'utilitzen les etiquetes genèriques `<div>` i `<span>`?
+### Quan s'utilitzen les etiquetes genèriques `<div>` i `<span>`?
 
 Encara que no aportin significat semàntic, les etiquetes **genèriques** com `<div>` i `<span>` són **molt útils i necessàries**.
 
@@ -31,13 +27,11 @@ Encara que no aportin significat semàntic, les etiquetes **genèriques** com `<
 | `<div>`   | Bloc (Block)     | Contenidor que permet agrupar diversos elements per aplicar estils CSS o una funcionalitat amb JS. |
 | `<span>`  | En línia (Inline)| Contenidor que permet agrupar text o elements en línia per donar-los estil o funcionalitat.        |
 
-> 💡 S'han d'utilitzar quan **cap altra etiqueta semàntica** sigui adequada per al contingut o el contxet.
+> S'han d'utilitzar quan **cap altra etiqueta semàntica** sigui adequada per al contingut o el contxet.
 
-> ✅ A la pràctica, es combinen sovint **etiquetes semàntiques** amb **`<div>` i `<span>`** per tenir un codi estructurat i fàcil de mantenir.
+> A la pràctica, es combinen sovint **etiquetes semàntiques** amb **`<div>` i `<span>`** per tenir un codi estructurat i fàcil de mantenir.
 
----
-
-## 🧩 Etiquetes principals d’estructura semàntica
+## Etiquetes principals d’estructura semàntica
 
 | Etiqueta    | Descripció                                                                               |
 | ----------- | ---------------------------------------------------------------------------------------- |
@@ -49,15 +43,13 @@ Encara que no aportin significat semàntic, les etiquetes **genèriques** com `<
 | `<aside>`   | Contingut complementari o secundari: acostumen a ser anuncis, enllaços relacionats, etc. |
 | `<footer>`  | Peu de pàgina o d’una secció amb dades de contacte, copyright, enllaços interns, xarxes socials etc.|
 
----
-
-### 🔎 Com a recordatori
+### Com a recordatori
 
 - Pots tenir **diverses seccions o articles**, però només **un `<main>`** per pàgina.
 - Els elements `<section>` i `<article>` **poden contenir altres etiquetes semàntiques**, com `<header>`, `<footer>` o `<nav>`.
 - Les etiquetes semàntiques **ajuden a l’accessibilitat i al posicionament SEO** ja que donen sentit al contingut i això ho valoren els motors de cerca.
 
-## 🧪 Exemple estructura semàntica HTML5
+## Exemple estructura semàntica HTML5
 
 ![Estructura HTML5](./img/estructura-semantica-html5.jpg)
 

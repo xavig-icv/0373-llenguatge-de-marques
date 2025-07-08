@@ -1,6 +1,6 @@
-# 💻 Instal·lació de Visual Studio Code a Debian/Ubuntu
+# Instal·lació de Visual Studio Code a Debian/Ubuntu
 
-## 🔽 Descàrrega manual del paquet `.deb`
+## Descàrrega manual del paquet `.deb`
 
 1. Ves a la pàgina oficial: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 2. Descarrega el paquet `.deb` (versió per Debian/Ubuntu).

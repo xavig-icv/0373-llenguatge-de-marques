@@ -2,8 +2,6 @@
 
 En aquest bloc treballarem les etiquetes HTML més comunes per representar **contingut multimèdia** (imatges, àudio i vídeo) i **formularis web** per recollir informació dels usuaris. Aquestes funcionalitats són essencials per crear pàgines web interactives i atractives.
 
----
-
 ## Etiquetes Multimèdia
 
 | Etiqueta       | Funció                                                                                |

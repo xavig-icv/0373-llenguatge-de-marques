@@ -2,8 +2,6 @@
 
 En aquest bloc treballarem les etiquetes HTML més comunes per representar **llistes**, **enllaços** i **taules**. Complementen a les etiquetes bàsiques per mostrar informació estructurada dins d’una pàgina web.
 
----
-
 ## Etiquetes de llistes
 
 Les llistes permeten agrupar informació de forma ordenada o desordenada.

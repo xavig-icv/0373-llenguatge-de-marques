@@ -2,8 +2,6 @@
 
 En aquest bloc treballarem les etiquetes HTML més comunes per representar **text**, **llistes**, **enllaços** i **taules**. Són les eines bàsiques per mostrar informació estructurada dins d’una pàgina web.
 
----
-
 ## Etiquetes de text
 
 Les etiquetes de text ens permeten definir el contingut textual dins del document HTML, donant-li una jerarquia i una estructura clara.
@@ -19,8 +17,6 @@ Les etiquetes de text ens permeten definir el contingut textual dins del documen
 | `<blockquote>`| S'utilitza per citar una font externa.                                     |
 | `<br>`        | Substituida amb CSS: Salt de línia.                                        |
 | `<hr>`        | Substituida amb CSS: Línia horitzontal que separa seccions.                |
-
----
 
 ## Títols `<h1> – <h6>`
 ```html

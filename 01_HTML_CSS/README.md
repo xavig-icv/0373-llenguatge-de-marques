@@ -18,11 +18,11 @@ En aquest tema s'introdueixen els fonaments del desenvolupament web amb HTML5 i 
 | **03. Elements de text: Elements avançats**           | 1     | Llistes, enllaços (links) i taules.                                                |
 | **04. Elements multimèdia**                           | 1     | Imatges, vídeos, àudio i elements incrustats.                                      |
 | **05. Formularis**                                    | 1     | Formularis web. Funcionament i etiquetes més rellevants.                           |
-| **06. Introducció a CSS i sintaxi**                   | 1     | Vinculació HTML-CSS, selectors bàsics i avançats, propietats bàsiques.             |
-| **07. Estils bàsics: colors, fonts, textos i marges** | 2     | Color, font-family, font-size, text-align, margin, padding, border.                |
+| **06. Introducció a CSS**                             | 1     | Sintaxi, vinculació HTML-CSS, selectors bàsics i avançats.                         |
+| **07. Propietats bàsiques**                           | 2     | Color, font-family, font-size, text-align, margin, padding, border, etc            |
 | **08. Model de caixa i disposició d'elements**        | 2     | Model de caixa, display, posicionament relatiu, absolut i estàtic.                 |
 | **09. Pseudoclasses i Pseudoelements**                | 1     | Aplicar estils a elements amb un valor o estat concret (hover, focus, active, etc.)|
-| **10. Transicions i animacions**                      | 2     | Efectes visuals: Transicions i animacions 2D i 3D.                                 |
+| **10. Transicions i animacions**                      | 2     | Efectes de moviment: Transicions i animacions 2D i 3D.                             |
 | **11. Web Responsive amb media queries**              | 2     | Media queries per adaptar layout a mòbils, tablets i ordinadors (web responsive).  |
 | **12. Projecte integral: Creació d’una pàgina web**   | 4     | Integració de tots els continguts del Tema 01: HTML i CSS.                         |
 | **13. Avaluació: Creació d’una landing page**         | 2     | Prova escrita en paper + Examen pràctic amb ordinador.                             |

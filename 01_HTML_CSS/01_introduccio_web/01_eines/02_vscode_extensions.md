@@ -1,4 +1,4 @@
-# 🧩 Extensions per Visual Studio Code
+# Extensions per Visual Studio Code
 
 | Extensió                         | Desenvolupador       | Funció principal                                       | Estatus        |
 |----------------------------------|----------------------|--------------------------------------------------------|----------------|
@@ -14,7 +14,7 @@
 | **CSS Peek**                     | Pranay Prakash       | Permet veure el CSS relacionat amb l’HTML.             | ✅ Recomanat  |
 | **Error Lens**                   | Alexander            | Ressalta errors i advertències dins del codi.          | ✅ Recomanat  |
 
-## 💻 JavaScript i snippets
+## JavaScript i snippets
 
 | Extensió                                | Desenvolupador         | Funció principal                               | Estatus       |
 |-----------------------------------------|------------------------|------------------------------------------------|-------------- |
@@ -23,13 +23,13 @@
 | **JSON Viewer**                         | hema                   | Mostra fitxers json en format d’arbre.         | ⚠️ Opcional  |
 | **JavaScript (ES6) code snippets**      | charalampos            | Snippets per JS ES6.                           | ⚠️ Opcional  |
 
-## 📚 Control de versions
+## Control de versions
 
 | Extensió       | Desenvolupador  | Funció principal                             | Estatus     |
 |----------------|------------------|----------------------------------------------|-------------|
 | **GitLens**    | GitKraken        | Superpoder per a Git a VS Code.              | ✅ Recomanat |
 
-## 🧾 Treball amb XML i XSLT
+## Treball amb XML i XSLT
 
 | Extensió             | Desenvolupador | Funció principal                                 | Estatus     |
 |----------------------|----------------|--------------------------------------------------|-------------|
@@ -38,7 +38,7 @@
 | **Xml Complete**     | Josh Johnson   | Autocompletat per XML amb XSD.                   | ✅ Recomanat |
 | **XSL Transform**    | WasherPie      | Transformació de documents amb XSLT.             | ⚠️ Opcional  |
 
-## 🧩 Altres
+## Altres
 
 | Extensió             | Desenvolupador | Funció principal                                 | Estatus     |
 |----------------------|----------------|--------------------------------------------------|-------------|
@@ -47,10 +47,10 @@
 
 ---
 
-## 🔽 Com instal·lar una extensió
+## Com instal·lar una extensió
 
 1. Obre VS Code.
-2. Ves a la pestanya **Extensions** (icona de blocs 🧩 o `Ctrl+Shift+X`).
+2. Ves a la pestanya **Extensions** (icona de blocs o `Ctrl+Shift+X`).
 3. Cerca el nom de l’extensió.
 4. Sel·leccionar i prèmer el botó **Install**.
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Selectors Avançats CSS</title>
+    <meta name="description" content="Exemples d'ús dels diferents selectors avançats de CSS." />
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Selectors Avançats CSS</h1>
+      <section>
+        <p>Selecciona elements per aplicar-hi estils segons:</p>
+        <ul>
+          <li>La seva posició al document HTML.</li>
+          <li>La relació que disposa amb altres elements.</li>
+          <li>Els atributs que hi estan declarats.</li>
+        </ul>
+      </section>
+    </header>
+    <main>
+      <h2>Exemples - Selectors Avançats CSS</h2>
+      <section>
+        <h2>Selector Descendent</h2>
+        <p>Selecciona TOTES les etiquetes internes (a qualsevol nivell).</p>
+        <p>Totes les <strong>SECTIONS</strong> dintre del MAIN (borders negres i fons gris).</p>      
+      </section>
+      <section id="fillDirecte">
+        <h2>Selector Fill (&gt;)</h2>
+        <p>Selecciona únicament les etiquetes filles directes.</p>
+        <p>Aquest paràgraf és FILL DIRECTE. (Primer Nivell)</p>
+        <div>
+            <h3>El DIV és fill directe.</h3>
+            <p>Aquest paràgraf NO es un fill directe. (Segon Nivell)</p>
+        </div>
+      </section>
+      <section id="germaImmediat">
+        <h2>Selector Germà Immediat (+)</h2>
+        <p>Selecciona la primera etiqueta germana (que està al mateix nivell).</p>
+        <p>Només els elements que estan un a continuació de l'altre (adjacents).</p>
+      </section>
+      <section id="germaGeneral">
+        <h2>Selector Germà General (~)</h2>
+        <p>Selecciona les etiquetes germanes (que estan al mateix nivell)</p>
+        <p>Només els elements que estan a continuació de l'etiqueta especificada.</p>
+        <span>Aquest SPAN és germà general de H2 -- Fons de Color Negre</span>
+      </section>
+      <section id="atributs">
+          <h2>Selector Atribut ([atribut])</h2>
+          <p>Selecciona les etiquetes que tenen un atribut concret.</p>
+          <a href="#">Atribut href</a>
+          <a href="#" class="jugador">Atribut class</a>
+          <a href="https://github.com/xavig-icv/">href amb Valor</a>
+          <a href="#" class="jugadorEspecial">class amb Valor</a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Xavi Garcia - Selectors CSS Avançats</p>
+    </footer>
+  </body>
+</html>

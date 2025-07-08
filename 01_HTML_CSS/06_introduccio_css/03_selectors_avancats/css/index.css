@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Selectors Avançats */
+
+/* Selector DESCENDENT */
+header section {
+  border: solid 1px #999;
+  background-color: bisque;
+  margin: 5px;
+  padding: 20px;
+}
+
+main section {
+  border: solid 1px #333;
+  background-color: #eee;
+  padding: 10px;
+  margin: 5px;
+}
+
+section h2 {
+  color: darkgreen;
+}
+
+
+/* Selector FILL Directe (>) - Selecciona les etiquetes filles directes. */
+#fillDirecte > p {
+    color: navy;
+    padding: 3px;
+}
+
+#fillDirecte > div {
+  border: solid 3px #fff;
+  background-color: floralwhite;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+/* Selector GERMÀ Immediat (+) - Selecciona la primera etiqueta germana. */
+h2 + p {
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.4;
+}
+
+/* Selector GERMÀ General (~) - Selecciona les etiquetes germanes posteriors. */
+#germaGeneral h2 ~ span {
+    color: white;
+    background-color: #333;
+    padding: 3px;
+    line-height: 1.6;
+}
+
+/* Selector ATRIBUT [nom_atribut] - Seleccions les etiquetes amb atributs els especificats. */
+a {
+  text-decoration: none;
+  padding: 4px;
+  line-height: 1.8;
+}
+#atributs a[href] {
+    border: solid 2px darkgoldenrod;
+}
+
+#atributs a[class] {
+    border: solid 2px darkblue;
+}
+
+#atributs a[href="https://github.com/xavig-icv/"] {
+    background: goldenrod;
+    color: white;
+}
+
+#atributs a[class="jugadorEspecial"] {
+    background: dodgerblue;
+    color: #fff;
+}
