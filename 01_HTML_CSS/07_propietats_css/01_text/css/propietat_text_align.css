@@ -1,0 +1,19 @@
+/* Alineació del text a l'esquerra (valor per defecte) */
+.align-left {
+  text-align: left;
+}
+
+/* Alineació del text al centre */
+.align-center {
+  text-align: center;
+}
+
+/* Alineació del text a la dreta */
+.align-right {
+  text-align: right;
+}
+
+/* Justificat: Ajusta el text de cada línia als marges del contenidor (no s'aconsella en web) */
+.align-justify {
+  text-align: justify;
+}

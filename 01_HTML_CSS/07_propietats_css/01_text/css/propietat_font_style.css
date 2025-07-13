@@ -1,0 +1,14 @@
+/* Estil normal (sense inclinació) */
+.style-normal {
+  font-style: normal;
+}
+
+/* Estil italic (cursiva) */
+.style-italic {
+  font-style: italic;
+}
+
+/* Estil oblique (més inclinació que la cursiva) */
+.style-oblique {
+  font-style: oblique;
+}
