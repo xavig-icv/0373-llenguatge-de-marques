@@ -1,0 +1,51 @@
+div {
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Element amb el mateix marge tots els costats (superior, dreta, inferior i esquerra). */
+.margin-all {
+  margin: 1rem;
+  background-color: lightblue;
+  border: solid 2px steelblue;
+}
+
+/* Element amb marge especificat a cada costat (top, right, bottom, left) - Agulles del rellotge */
+.margin-shorthand {
+  margin: 8px 16px 32px 48px;
+  background-color: lightgreen;
+  border: solid 2px seagreen;
+}
+
+/* Element amb el marge establert només a l'eix vertical (superior i inferior). */
+.margin-top-bottom {
+  margin: 30px 0;
+  background-color: lightcoral;
+  border: solid 2px crimson;
+}
+
+/* Element amb el marge establert només a l'eix horitzontal (esquerra i dreta). */
+.margin-left-right {
+  margin: 0 30px;
+  background-color: lightgray;
+  border: solid 2px gray;
+}
+
+/* Element amb un marge horitzontal automàtic (permet centrar elements dins del contenidor). */
+.margin-auto {
+  width: 60%;
+  margin: 0 auto;
+  background-color: lightsalmon;
+  border: solid 2px chocolate;
+}
+
+/* Element amb un marge percentual a esquerra i dreta (disseny amb web responsive). */
+.margin-percent {
+  margin-top: 1rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: lightyellow;
+  border: solid 2px darkgoldenrod;
+}

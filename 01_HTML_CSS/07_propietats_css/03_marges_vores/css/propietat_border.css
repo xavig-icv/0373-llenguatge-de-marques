@@ -1,0 +1,50 @@
+div {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* Element amb la vora continua (solid) als 4 costats. */
+.border-solid {
+  border: solid 3px darkblue;
+  background-color: lightblue;
+}
+
+/* Element amb la vora amb línies discontinues (dashed). */
+.border-dashed {
+  border: dashed 3px darkgreen;
+  background-color: lightgreen;
+}
+
+/* Element amb la vora discontinua, feta de punts (dotted). */
+.border-dotted {
+  border: dotted 3px darkred;
+  background-color: lightcoral;
+}
+
+/* Element amb la vora doble continua (double). */
+/* Les vores arrodonides permeten destacar un element dintre del disseny (border-radius). */
+.border-double {
+  border: double 5px goldenrod;
+  border-radius: 1rem 0 1rem 0;
+  background-color: lightyellow;
+}
+
+/* Element amb una vora superior i inferior (per donar èmfasi a títols, etc.) */
+/* Una vora només inferior és fa servir en menús, títols, etc. */
+.border-top-bottom{
+  border-radius: 1rem;
+  border-top: solid 12px darksalmon;
+  border-bottom: solid 12px darksalmon;
+  background-color: khaki;
+}
+
+/* Element amb una vora amb valors diferents (intent d'efecte de botó 3D). */
+.border-properties {
+  border-radius: 4px;
+  border-width: 6px 12px 6px 12px;
+  border-style: solid;
+  border-color: gray gainsboro;
+  background-color: lightgray;
+}
