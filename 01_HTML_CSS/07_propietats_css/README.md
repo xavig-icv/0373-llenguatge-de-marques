@@ -1,8 +1,8 @@
-# Bloc 07. Propietats bàsiques CSS
+# Bloc 07. Propietats CSS
 
 Un cop interioritzada la sintaxi i els diferents selectors bàsics i avançats, és moment d'entendre **què podem modificar dels elements HTML**.
 
-Les propietats bàsiques de CSS permeten modificar l’aspecte visual (l'estil) dels elements HTML: **els colors, la mida, el fons, els marges, les vores, el tipus de visualització**, etc. Conèixer les propietats bàsiques i aplicar-les correctament és essencial per poder dissenyar pàgines web atractives però també funcionals.
+Les propietats de CSS permeten modificar l’aspecte visual (l'estil) dels elements HTML: **els colors, la mida, el fons, els marges, les vores, el tipus de visualització**, etc. Conèixer les propietats bàsiques i aplicar-les correctament és essencial per poder dissenyar pàgines web atractives però també funcionals.
 
 ## Les propietats més utilitzades
 

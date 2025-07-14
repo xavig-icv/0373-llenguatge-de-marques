@@ -1,0 +1,37 @@
+div {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Alçada mínima i màxima fixa (px). Elements que no poden ser més petits o més grans per què siguin llegibles. */
+.minmax-height-px {
+  min-height: 100px;
+  max-height: 300px;
+  background-color: lightblue;
+  border: solid 2px steelblue;
+}
+
+/* Alçada mínima i màxima variable (%). Es calcula respecte al contenidor pare. Layouts amb elements d'alçada variable. */
+.minmax-height-percent-pare {
+  height: 200px; /* El contenidor pare ha de tenir una alçada (height) perquè el percentatge (%) en el fill funcioni. */
+  background-color: #eee;
+  padding: 1rem;
+}
+
+.minmax-height-percent {
+  min-height: 60%;
+  max-height: 80%;
+  background-color: lightgreen;
+  border: solid 2px seagreen;
+}
+
+/* Alçada mínima i màxima variable (vh). Es calcula respecte a l'alçada de la pantalla (navegador). Landing pages. */
+.minmax-height-vh {
+  min-height: 30vh;
+  max-height: 70vh;
+  background-color: lightcoral;
+  border: solid 2px crimson;
+}

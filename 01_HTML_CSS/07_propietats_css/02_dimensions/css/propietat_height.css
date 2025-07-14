@@ -1,0 +1,35 @@
+div {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Element amb una alçada fixa (unitat absoluta) */
+.height-px {
+  height: 80px;
+  background-color: lightblue;
+  border: solid 2px steelblue;
+}
+
+/* Element amb una alçada del 90% del contenidor pare */
+.height-percent {
+  height: 90%;
+  background-color: lightgreen;
+  border: solid 2px seagreen;
+}
+
+/* Element amb una alçada del 50% de la pantalla (navegador) */
+.height-vh {
+  height: 50vh;
+  background-color: lightcoral;
+  border: solid 2px crimson;
+}
+
+/* Elements block i inline-block, l’alçada s’adapta al contingut automàticament */
+.height-auto-block {
+  height: auto;
+  background-color: lightgray;
+  border: solid 2px gray;
+}

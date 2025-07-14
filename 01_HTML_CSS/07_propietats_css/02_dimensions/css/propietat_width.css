@@ -1,0 +1,43 @@
+div {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Element amb amplada fixa (unitat absoluta) */
+.width-px {
+  width: 350px;
+  background-color: lightblue;
+  border: solid 2px steelblue;
+}
+
+/* Element amb una amplada del 50% del contenidor pare */
+.width-percent {
+  width: 50%;
+  background-color: lightgreen;
+  border: solid 2px seagreen;
+}
+
+/* Element amb una amplda del 50% de l'amplada de la pantalla (navegador) */
+.width-vw {
+  width: 50vw;
+  background-color: lightcoral;
+  border: solid 2px crimson;
+}
+
+/* Element block (div), l’amplada és el 100% del contenidor pare */
+.width-auto-block {
+  width: auto;
+  background-color: lightsalmon;
+  border: solid 2px chocolate
+}
+
+/* Element inline-block (div transformat), l’amplada s’adapta al seu contingut */
+.width-auto-inline-block {
+  display: inline-block;
+  width: auto;
+  background-color: lightgray;
+  border: solid 2px gray;
+}

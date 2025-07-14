@@ -1,0 +1,31 @@
+div {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Amplada mínima i màxima fixa (px). Elements que no poden ser més petits o més grans per què siguin llegibles. */
+.minmax-width-px {
+  background-color: lightblue;
+  border: solid 2px steelblue;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+/* Amplada mínima i màxima variable (%). Es calcula respecte al contenidor pare. */
+.minmax-width-percent {
+  background-color: lightgreen;
+  border: solid 2px seagreen;
+  min-width: 40%;
+  max-width: 80%;
+}
+
+/* Amplada mínima i màxima variable (vw). Es calcula respecte a l'amplada de la pantalla (navegador). */
+.minmax-width-vw {
+  background-color: lightcoral;
+  border: solid 2px crimson;
+  min-width: 40vw;
+  max-width: 50vw;
+}
