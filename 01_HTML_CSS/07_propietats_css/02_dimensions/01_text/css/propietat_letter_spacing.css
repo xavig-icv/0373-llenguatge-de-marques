@@ -1,0 +1,19 @@
+/* Espai per defecte entre caràcters (0px ó normal) */
+.spacing-normal {
+  letter-spacing: normal;
+}
+
+/* Caràcters més junts (Espais reduïts, botons, etc.) */
+.spacing--1 {
+  letter-spacing: -1px;
+}
+
+/* Caràcters amb separació (Per donar èmfasi o destacar una part del text) */
+.spacing-1 {
+  letter-spacing: 1px;
+}
+
+/* Caràcters molt separats (Per títols, portades, animacions, etc.) */
+.spacing-3 {
+  letter-spacing: 3px;
+}

@@ -8,6 +8,7 @@
 | `transition`      | Permet animar canvis de propietats de forma suau.                              |
 | `transform`       | Aplica rotacions, escales, translacions o inclinacions.                        |
 | `clip-path`       | Retalla l’element amb formes (cercle, polígon, etc.), molt visual.             |
+| `background-blend-mode`  | Combina l’element amb el fons com si fossin capes de Photoshop.                |
 | `mix-blend-mode`  | Combina l’element amb el fons com si fossin capes de Photoshop.                |
 | `aspect-ratio`    | Manté proporcions automàtiques per imatges, vídeos o divs.                     |
 | `object-fit`      | Controla com encaixa una imatge dins del contenidor (`cover`, `contain`, etc). |

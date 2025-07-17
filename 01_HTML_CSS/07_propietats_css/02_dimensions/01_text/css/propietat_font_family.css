@@ -1,0 +1,29 @@
+/* Fonts genèriques del sistema: Compatibles amb tots els navegadors */
+.font-system {
+  font-family: system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: serif; /* Lletra amb serifa (com Times New Roman) */
+}
+
+.font-sans {
+  font-family: sans-serif; /* Lletra sense serifa (com Arial o Helvetica) */
+}
+
+.font-monospace {
+  font-family: monospace; /* Tots els caràcters mesuren el mateix (com Courier New) */
+}
+
+/* Fonts concretes i una font genèrica en cas de que la primera no estigui disponible. */
+.font-georgia {
+  font-family: Georgia, serif;
+}
+
+.font-arial {
+  font-family: Arial, sans-serif;
+}
+
+.font-cursive {
+  font-family: "Comic Sans MS", cursive;
+}

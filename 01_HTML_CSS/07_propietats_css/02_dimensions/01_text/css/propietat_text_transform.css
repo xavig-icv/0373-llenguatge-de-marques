@@ -1,0 +1,19 @@
+/* Tot el text en majúscules */
+.transform-uppercase {
+  text-transform: uppercase;
+}
+
+/* Tot el text en minúscules */
+.transform-lowercase {
+  text-transform: lowercase;
+}
+
+/* La primera lletra de cada paraula en majúscula */
+.transform-capitalize {
+  text-transform: capitalize;
+}
+
+/* Sense transformació (valor per defecte) */
+.transform-none {
+  text-transform: none;
+}

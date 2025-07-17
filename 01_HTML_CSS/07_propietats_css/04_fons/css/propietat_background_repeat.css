@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  float: left;
+  width: 30%;
+  min-height: 200px;
+  padding: 1rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  background-color: #eee;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bg-repeat {
+  background-image: url('./../img/patro_background_repeat.png');
+  background-repeat: repeat;
+}
+
+.bg-repeat-x {
+  background-image: url('./../img/patro_background_repeat.png');
+  background-repeat: repeat-x;
+}
+
+.bg-repeat-y {
+  background-image: url('./../img/patro_background_repeat.png');
+  background-repeat: repeat-y;
+}
+
+.bg-no-repeat {
+  background-image: url('./../img/patro_background_repeat.png');
+  background-repeat: no-repeat;
+}
+
+.bg-repeat-space {
+  background-image: url('./../img/patro_background_repeat.png');
+  background-repeat: space;
+}
+
+.bg-repeat-round {
+  background-image: url('./../img/patro_background_repeat.png');
+  background-repeat: round;
+}

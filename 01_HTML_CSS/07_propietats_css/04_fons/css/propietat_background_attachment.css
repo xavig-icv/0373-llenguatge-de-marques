@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 250px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: #eee;
+  color: white;
+  text-shadow: 0 0 3px #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Element amb una imatge de fons que es mou amb el contingut (scroll). */
+.bg-scroll {
+  background-image: url('./../img/imatge_background_attachment.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+/* Element amb una imatge de fons que queda fixada a la finestra quan es fa scroll (fixed). */
+.bg-fixed {
+  background-image: url('./../img/imatge_background_attachment.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Element amb una imatge de fons que es mou amb l'element que el conté si aquest disposa d'una barra de scroll (local). */
+.bg-local {
+  background-image: url('./../img/imatge_background_attachment.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  overflow: auto;
+  max-height: 250px;
+  padding: 1rem;
+}
+
+.container-buit {
+  background: none;
+  height: 900px;
+}

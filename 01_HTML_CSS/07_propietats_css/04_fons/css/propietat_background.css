@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+
+}
+
+p {
+  background-color: rgba(255,255,255,0.3);
+  padding: 1rem;
+  margin-top: 0.2rem;
+  border-radius: 12px;
+}
+
+div {
+  min-height: 500px;
+  padding: 1rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  background-color: #eee;
+  color: black;
+  text-shadow: 0 0 3px #fff;
+  font-weight: bold;
+}
+
+/* Element amb el mètode abreujat background amb totes les propietats disposades en una sola línia */
+.background {
+  background: url('./../img/fons_background.jpg') bottom left/cover no-repeat fixed;
+}

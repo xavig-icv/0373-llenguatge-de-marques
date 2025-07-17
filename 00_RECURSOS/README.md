@@ -39,6 +39,7 @@
 - [Unsplash](https://unsplash.com/)
 - [Pexels](https://www.pexels.com/)
 - [Pixabay](https://pixabay.com/)
+- [Textures](https://www.transparenttextures.com/)
 
 ## Icones vectorials i webfonts
 - [Font Awesome](https://fontawesome.com/)

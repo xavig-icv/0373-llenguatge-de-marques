@@ -1,0 +1,46 @@
+div {
+  margin-top: 0.5rem;
+  padding: 3rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  width: 50%;
+}
+
+/* Fons amb una imatge petita (icona, patró o textura) que es va repetint i ompla tot l'espai. */
+.bg-pattern {
+  background-image: url('./../img/textura_background_image.png');
+  background-repeat: repeat;
+  background-color: #444;
+  border: 2px solid #333;
+  color: white;
+  text-shadow: 0 0 2px #000;
+}
+
+/* Fons amb una imatge que cobreix tot el contenidor i està centrada (banner o capçalera). */
+.bg-banner {
+  background-image: url('./../img/imatge_background_image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 0 0 5px #000;
+  border: 2px solid #555;
+}
+
+/* Fons amb gradient (degradat). Poden tenir un estil linial o circular (linear o radial). */
+.bg-gradient {
+  background-image: linear-gradient(90deg, #2A7B9B, #57C785 50%, #EDDD53 100%);
+  color: white;
+  border: 2px solid #999;
+  text-shadow: 0 0 2px #000;
+}
+
+/* Fons amb imatge i gradient (simulat) superposats per millorar el contrast i que el text sigui més llegible. */
+.bg-gradient-overlay {
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./../img/imatge_gradient_background_image.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  border: 2px solid #555;
+}

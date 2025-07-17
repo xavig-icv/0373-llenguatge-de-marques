@@ -1,0 +1,29 @@
+/* Nom del color: Poc precís però amb més de 100 colors disponibles */
+.color-nom {
+  color: darkred;
+}
+
+/* Hexadecimal: Cada 2 valors representa el color red, green o blue. El #000000 (negre) i el #ffffff (blanc) */
+.color-hex {
+  color: #2ecc71; /* verd suau */
+}
+
+/* Format RGB: Red, Green i Blue amb valors entre (0,0,0) negre i (255,255,255) blanc. */
+.color-rgb {
+  color: rgb(52, 152, 219); /* blau clar */
+}
+
+/* Format RGBA: Red, Green, Blue i Alpha. El mateix que RGB però amb un valor de transparència entre 0 i 1.*/
+.color-rgba {
+  color: rgba(155, 89, 182, 0.3); /* lila amb transparència */
+}
+
+/* Format HSL: Hue, Saturation i Lightness. H (entre 0 i 360), S (entre 0 i 100%), L (entre 0 i 100%)*/
+.color-hsl {
+  color: hsl(39, 100%, 50%); /* taronja intens */
+}
+
+/* Format HSLA: El mateix que HSL però amb un valor de transparència entre 0 i 1.*/
+.color-hsla {
+  color: hsla(0, 100%, 40%, 0.4); /* vermell translúcid */
+}

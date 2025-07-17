@@ -1,0 +1,68 @@
+div {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* Fons amb el color per defecte (blanc) */
+.bg-default {
+  /* background-color: white; */
+  border: 2px solid lightgray;
+}
+
+/* Fons amb un color blau suau - Contenidor informatiu genèric. */
+.bg-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 2px solid #bee5eb;
+}
+
+/* Fons amb un color verd suau - Contenidor d'acció realitzada amb èxit. */
+.bg-success {
+  background-color: rgb(212, 237, 218);
+  color: rgb(21, 87, 36);
+  border: 2px solid rgb(173, 221, 182);
+}
+
+/* Fons amb un color groc suau - Contenidor d'advertencia. */
+.bg-warning {
+  background-color: hsl(43, 100%, 85%);
+  color: hsl(43, 100%, 20%);
+  border: 2px solid hsl(43, 100%, 70%);
+}
+
+/* Fons amb un color vermell suau - Contenidor d'error */
+.bg-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 2px solid #f5c6cb;
+}
+
+/* Fons amb un blau intens i lletra blanca - Contenidor primari per botons d'acció principal, capçaleres, etc. */
+.bg-primary {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #0056b3;
+}
+
+/* Fons amb un color gris intens i lletra blanca - Contenidor secundari de complement al primari (també per realitzar accions).*/
+.bg-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: 2px solid #545b62;
+}
+
+/* Fons amb un color blanquinós molt suau - Contenidor per múltiples usos amb un bon contrast per centrar-se en el contingut. */
+.bg-light {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 2px solid #dee2e6;
+}
+
+/* Fons amb un color fosc - Contenidor per seccions concretes, peus de pàgina o complements a destacar. */
+.bg-dark {
+  background-color: #343a40;
+  color: white;
+  border: 2px solid #1d2124;
+}

@@ -1,0 +1,28 @@
+/* L'ombra és simple i visible (molt marcada per veure l'exemple d'ombra dels caràcters). */
+.shadow-visible {
+  text-shadow: 2px 2px 1px #aaa;
+}
+
+/* L'ombra està força difuminada i és pretèn marcar amb un color fosc */
+.shadow-strong {
+  text-shadow: 0px 0px 5px black;
+}
+
+/* L'ombra és difuminada i de color vermell */
+.shadow-colored {
+  text-shadow: 1px 1px 4px darkred;
+}
+
+/* L'ombra negra sobre text blanc (efecte visual). */
+.shadow-white {
+  color: white;
+   text-shadow: 0px 0px 4px black;
+}
+
+/* Diverses ombres en un mateix text (efecte visual). */
+.shadow-multiple {
+  text-shadow:
+    0px 1px 0px #aaa,
+    0px 2px 0px #bbb,
+    0px 3px 0px #ccc;
+}
