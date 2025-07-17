@@ -19,7 +19,7 @@ En aquest tema s'introdueixen els fonaments del desenvolupament web amb HTML5 i 
 | **04. Elements multimèdia**                           | 1     | Imatges, vídeos, àudio i elements incrustats.                                      |
 | **05. Formularis**                                    | 1     | Formularis web. Funcionament i etiquetes més rellevants.                           |
 | **06. Introducció a CSS**                             | 2     | Sintaxi, vinculació HTML-CSS, selectors bàsics i avançats.                         |
-| **07. Propietats bàsiques i Model de Caixa**          | 2     | Color, font-family, font-size, text-align, margin, padding, border, etc.           |
+| **07. Propietats CSS i Model de Caixa**               | 2     | Color, font-family, font-size, text-align, margin, padding, border, etc.           |
 | **08. Disposició d'elements**                         | 1     | Display, posicionament relatiu, absolut i estàtic.                 |
 | **09. Pseudoclasses i Pseudoelements**                | 1     | Aplicar estils a elements amb un valor o estat concret (hover, focus, active, etc.)|
 | **10. Transicions i animacions**                      | 2     | Efectes de moviment: Transicions i animacions 2D i 3D.                             |

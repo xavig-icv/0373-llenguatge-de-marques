@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #000000;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+table thead th {
+  text-align: center;
+  font-size: 22px;
+  padding: 5px;
+  background: #eeeeee;
+}
+
+table td {
+  text-align: center;
+  background: #eeeeee;
+  color: #000000;
+}
+
+table th,
+td {
+  border: solid 1px #dddddd;
+  text-align: left;
+  border-radius: 3px;
+  padding: 0.5%;
+}
+
+/* Punts */
+table td:nth-of-type(n) {
+  background: #333333;
+  color: #ffffff;
+}
+
+/* Partits Jugats */
+table td:nth-of-type(2),
+table td:nth-of-type(7),
+table td:nth-of-type(12) {
+  background: #666666;
+  color: #ffffff;
+}
+
+/* Partits Perduts */
+table td:nth-of-type(5n) {
+  background: #d43f3a;
+  color: #ffffff;
+}
+
+/* Partits Guanyats */
+table td:nth-of-type(3),
+table td:nth-of-type(8),
+table td:nth-of-type(13) {
+  background: #4cae4c;
+  color: #ffffff;
+}
+
+/* Partits Empatats */
+table td:nth-of-type(4),
+table td:nth-of-type(9),
+table td:nth-of-type(14) {
+  background: #eea236;
+  color: #ffffff;
+}
+
+table tbody tr:nth-of-type(2n) {
+  background: #eeeeee;
+  color: #000000;
+}
+
+table tbody tr:hover,
+table tbody td:hover {
+  background: steelblue;
+  color: #ffffff;
+  box-shadow: 1px 1px 3px #000000;
+}

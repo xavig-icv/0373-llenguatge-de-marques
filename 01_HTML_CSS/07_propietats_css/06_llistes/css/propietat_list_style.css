@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+ul,ol {  
+  min-width: 600px;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 9px;
+  background-color: #eee;
+  color: black;
+  text-shadow: 0 0 3px #fff;
+  font-weight: bold;
+}
+
+/* Llista no ordenada amb el marcador per defecte (disc). */
+.ul-default {
+  list-style-type: disc;
+  background-color: #eef;
+  border: 2px solid steelblue;
+}
+
+/* Llista amb el marcador del cercle buit. */
+.ul-circle {
+  list-style-type: circle;
+  background-color: #efe;
+  border: 2px solid seagreen;
+}
+
+/* Llista amb números al marcador (números amb el zero al davant). */
+.ol-decimal-zero {
+  list-style-position: inside;
+  list-style-type: decimal-leading-zero;
+  background-color: #fee;
+  border: 2px solid crimson;
+}
+
+/* Llista amb elmarcador dins del contenidor. */
+.ul-inside {
+  list-style-position: inside;
+  list-style-type: square;
+  background-color: #fff3cd;
+  border: 2px solid goldenrod;
+}
+
+/* Llista amb una imatge de mida fixa fent de marcador. */
+.ul-image {
+  list-style-position: inside;
+  list-style-image: url('./../img/pokeball_list_image.png');
+  background-color: #f8f9fa;
+  border: 2px solid gray;
+}
+
+/* Llista amb el mètode abreujat */
+.ul-shorthand {
+  list-style: square inside;
+  background-color: #e2e3e5;
+  border: 2px solid #6c757d;
+}

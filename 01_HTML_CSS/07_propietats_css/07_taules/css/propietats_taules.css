@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+
+}
+
+p {
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+
+table {
+    width: 50%;
+    border: 2px solid #666;
+}
+
+/* Taula amb l'amplada basada en el contingut de cada casella (auto per defecte). */
+.table-layout-auto {
+  table-layout: auto;
+}
+
+/* Taula amb les columnes d’amplada fixa (el mateix espai per cada casella). */
+.table-layout-fixed {
+  table-layout: fixed;
+}
+
+/* Taula amb les vores de les caselles fusionades (no hi ha espai entre cel·les). */
+.table-collapse {
+  border-collapse: collapse;
+}
+
+/* Taules amb les vores separades i espai entre caselles (més separació visual). */
+.table-separate {
+  border-collapse: separate;
+  border-spacing: 0.5rem;
+}
+
+/* Taules amb caselles buides visibles (espai entre cel·les). */
+.table-empty-show {
+  border-collapse: separate;
+  empty-cells: show;
+  border-spacing: 0.25rem;
+}
+
+/* Taules amb les caselles sense contingut amagades (no es mostren les vores). */
+.table-empty-hide {
+  border-collapse: separate;
+  empty-cells: hide;
+  border-spacing: 0.25rem;
+}
+
+td {
+  border: 1px solid darkgray;
+  text-align: center;
+}

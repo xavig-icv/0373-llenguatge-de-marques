@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Propietats de CSS a les Taules</title>
+    <meta name="description" content="Propietats CSS a les taules amb diferents exemples." />
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/propietats_css_taules.css" />
+  </head>
+  <body>          
+    <h2>Exemple Disseny de Taules: Propietats genèriques de CSS</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>PRIMERA DIVISÓ</th>
+          <th colspan="5">TOTAL</th>
+          <th colspan="5">CASA</th>
+          <th colspan="5">FORA</th>
+        </tr>
+        <tr>
+          <th>LLIGA DE FUTBOL FEMENÍ</th>
+          <th><abbr title="Punts">Pts.</abbr></th>
+          <th><abbr title="Partits jugats">PJ</abbr></th>
+          <th><abbr title="Partits guanyats">PG</abbr></th>
+          <th><abbr title="Partits empatats">PE</abbr></th>
+          <th><abbr title="Partits perduts">PP</abbr></th>
+          <th><abbr title="Punts">Pts.</abbr></th>
+          <th><abbr title="Partits jugats">PJ</abbr></th>
+          <th><abbr title="Partits guanyats">PG</abbr></th>
+          <th><abbr title="Partits empatats">PE</abbr></th>
+          <th><abbr title="Partits perduts">PP</abbr></th>
+          <th><abbr title="Punts">Pts.</abbr></th>
+          <th><abbr title="Partits jugats">PJ</abbr></th>
+          <th><abbr title="Partits guanyats">PG</abbr></th>
+          <th><abbr title="Partits empatats">PE</abbr></th>
+          <th><abbr title="Partits perduts">PP</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            <span>1</span>
+            <span>Atlètic de Madrid Femení</span>
+          </th>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>3</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>2</span>
+            <span>Atlètic Club Femení</span>
+          </th>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>3</span>
+            <span>Llevant UD Femení</span>
+          </th>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>3</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>4</span>
+            <span>FC Barcelona Femení</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>5</span>
+            <span>Eibar Femení</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>6</span>
+            <span>UD Granadilla Femení</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>7</span>
+            <span>Madrid CFF</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>8</span>
+            <span>Rayo Vallecano Femení</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>9</span>
+            <span>Real Betis Fèmines</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>10</span>
+            <span>Reial Madrid Femení</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>11</span>
+            <span>Reial Societat Femení</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>12</span>
+            <span>Santa Teresa Femení</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>13</span>
+            <span>Sevilla Femení</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>14</span>
+            <span>Sporting de Huelva Femení</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>15</span>
+            <span>València CF Femení</span>
+          </th>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>16</span>
+            <span>Esportiu Abanca</span>
+          </th>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>17</span>
+            <span>EDF Logronyo</span>
+          </th>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>
+            <span>18</span>
+            <span>RCD Espanyol Femení</span>
+          </th>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

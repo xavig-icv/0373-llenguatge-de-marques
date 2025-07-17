@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Propietats de les Taules</title>
+    <meta name="description" content="Propietats de les taules amb diferents exemples." />
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/propietats_taules.css" />
+  </head>
+  <body>          
+    <h2>Propietats de les taules</h2>
+    <p>Amplada segons el contingut (table-layout auto)</p>
+    <table class="table-layout-auto">
+    <tr>
+      <td>Nom</td>
+      <td>Descripció extensa que ocupa espai</td>
+    </tr>
+    <tr>
+      <td>Mini P.E.K.K.A</td>
+      <td>Unitat ràpida, amb poca vda i molt de dany per segon</td>
+    </tr>
+    </table>
+    <p>Amplada de totes columnes igual (table-layout fixed)</p>
+    <table class="table-layout-fixed">
+    <tr>
+      <td>Nom</td>
+      <td>Descripció extensa que ocupa espai</td>
+    </tr>
+    <tr>
+      <td>Mini P.E.K.K.A</td>
+      <td>Unitat ràpida amb molt de dany per segon</td>
+    </tr>
+    </table>
+    <p>Junta totes les vores de les caselles (border-collapse: collapse)</p>
+    <table class="table-collapse">
+      <tr><td>1</td><td>2</td></tr>
+      <tr><td>3</td><td>4</td></tr>
+    </table>
+    <p>Separa les caselles i indica la quantitat d'espai (border-collapse: separate amb border-spacing)</p>
+    <table class="table-separate">
+      <tr><td>1</td><td>2</td></tr>
+      <tr><td>3</td><td>4</td></tr>
+    </table>
+    <p>Mostra l'espai i les vores de les caselles buïdes (empty-cells: show)</p>
+    <table class="table-empty-show">
+      <tr><td>1</td><td></td></tr>
+      <tr><td>3</td><td>4</td></tr>
+    </table>
+    <p>Amaga les caselles buïdes i si és una fila també l'espai (empty-cells: hide)</p>
+    <table class="table-empty-hide">
+      <tr><td>1</td><td></td></tr>
+      <tr><td>3</td><td>4</td></tr>
+    </table>
+  </body>
+</html>
