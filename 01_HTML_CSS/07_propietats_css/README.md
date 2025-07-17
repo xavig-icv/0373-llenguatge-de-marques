@@ -13,7 +13,7 @@ Les propietats de CSS permeten modificar l’aspecte visual (l'estil) dels eleme
 | **03. Marges i Vores**     | Permet modificar l’espai entre elements `margin` i l’espai interior d'un element `padding`. |
 |                            | Afegeix vores als elements HTML i permet modificar el gruix, el color, el format, etc.      |
 | **04. Backgrounds (Fons)** | Permet definir el fons d'elements HTML (posar un color, una imatge, un gradient, etc.)      |
-| **05. Display**            | Indica el tipus de visualització dels elements HTML (inline, block, inline-blok, etc.)      |
+| **05. Display**            | Indica el tipus de visualització dels elements HTML (inline, block, inline-block, etc.)     |
 | **06. Llistes**            | Dona format visual a llistes ordenades i no ordenades (símbols, numeració, posició).        |
 | **07. Taules**             | Permet aplicar estils a taules HTML (colors, vores, marges de cel·les, files i capçaleres). |
 | **08. Etils moderns**      | Extra: Propietats avançades per crear interfícies modernes, atractives i professionals.     |

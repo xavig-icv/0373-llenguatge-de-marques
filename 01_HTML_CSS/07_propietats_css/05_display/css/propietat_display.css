@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+div, span {
+  padding: 0.75rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  background-color: #eee;
+  color: black;
+  text-shadow: 0 0 3px #fff;
+  font-weight: bold;
+}
+
+/* Element que ocupa tota l'amplada disponible i s'inicia en una nova línia. (block) */
+.display-block {
+  display: block;
+  border: 2px solid steelblue;
+  background-color: lightblue;
+}
+
+/* Element ocupa l'amplada del seu contingut i que es disposa al costat d'un altre element si té espai. (inline) */
+.display-inline {
+  display: inline;
+  border: 2px solid seagreen;
+  background-color: lightgreen;
+}
+
+/* Element de tipus inline però que permet modificar l'amplada i l'alçada com un element de bloc. (inline-block) */
+.display-inline-block {
+  display: inline-block;
+  border: 2px solid crimson;
+  background-color: lightcoral;
+  width: 200px;
+}
+
+/* Element que no es mostra a la pàgina web i que no ocupa espai al layout. (none) */
+.display-none {
+  display: none;
+}

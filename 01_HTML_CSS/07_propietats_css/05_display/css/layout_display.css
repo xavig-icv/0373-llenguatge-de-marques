@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, monospace;
+  background-color: #f0f0f0;
+}
+
+header, footer {
+  min-height: 10vh;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  min-height: 80vh;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+.nav-link {
+  display: inline;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: steelblue;
+  color: #eee;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+.empresa-img {
+  margin-top: 1rem;
+  display: block;
+  margin-left: 25%;
+  width: 50%;
+  border-radius: 1rem;
+  border: 1px solid #333;
+}
+
+.productes {
+  text-align: center;
+  padding: 1rem;
+}
+
+.producte {
+  background-color: #555;
+  border: 1px solid #333;
+  color: white;
+  width: 20%;
+  min-height: 30vh;
+  margin: 0.5rem;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.producte img {
+  margin-top: 0.5rem;
+  width: 75%;
+  border-radius: 50%;
+
+}
+
+footer p {
+  margin: 0.25rem;
+}
+
+/* Modificadors de la visualització visibles al HTML per facilitar la comprensió. */
+.display-block {
+  display: block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
