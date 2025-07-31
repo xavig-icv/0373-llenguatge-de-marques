@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  display: inline-block;
+  width: 250px;
+  min-height: 150px;
+  margin: 1rem;
+  padding-top: 4rem;
+  background: steelblue;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  clip-path: none;
+}
+
+/* Cercle centrat amb un 35% de radi del que mesura un costat de la caixa. Imatges de perfils, botons, icones, etc. */
+.card.cercle {
+  clip-path: circle(35%);
+}
+
+/* El·lipse amb un radi RX 50% i RY 20% centrada en X al 50% i Y al 50%. Seccions decoratives concretes. */
+.card.elipse {
+  clip-path: ellipse(50% 20% at 50% 50%);
+}
+
+/* Triangle invertit creat a partir de la funció "polygon" */
+/* 1er punt: x=0 i y=0 (cantonada superior esquerra) */
+/* 2n punt: x=100% i y=0 (cantonada superior dreta) */
+/* 3er punt x=50% i y=100% (centrat en x i part inferior en y) i torna a l'inici */
+.card.triangle {
+  clip-path: polygon(0 0, 100% 0%, 50% 100%);
+}
+
+/* Retall diagonal superior. Element decoratiu com a separador, targeta de producte, secció decorativa, etc. */
+.card.diagonal-cut {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+}
+
+/* Contenidor decoratiu. Element decoratiu com a notificació, contenidor de xat, comentari, etc. */
+.card.comment {  
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 55% 90%, 50% 100%, 45% 90%, 0 90%);
+  border-radius: 1rem;
+}
+
+/* Efecte onada (wave). Element separador visual o targetes de productes. */
+.card.wave {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+/* Retall diagonal inferior. Element decoratiu com a separador, targeta de producte, secció decorativa, etc. */
+.card.diagonal-inferior {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Retall estil adhesiu (post-it). Element decoratiu en algunes seccions, productes, descomptes, destacats, etc. */
+.card.corner-cut {
+  clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%);
+}
+
+/* Retall per les 4 cantonades. Exemple de l'ús de polygon per generar nous estils als elements HTML. */
+.card.new-design {
+  clip-path: polygon(15% 0%, 85% 0%, 100% 25%, 100% 75%, 85% 100%, 15% 100%, 0% 75%, 0% 25%);
+}
+

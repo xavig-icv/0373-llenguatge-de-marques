@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+span {
+  display: inline-block;
+}
+
+.container p, .container span {
+  padding: 5px;
+  border: 1px solid lightgray;
+  margin:  5px;
+}
+
+/* Element paràgraf que és el primer fill de .container (first-child) */
+.container p:first-child {
+  background-color: lightblue;
+  border-color: steelblue;
+}
+
+/* Element paràgraf que és el segon fill de .container (nth-child) */
+.container p:nth-child(2) {
+  background-color: lightcoral;
+  border-color: crimson;
+}
+
+/* Element span que és el segon fill de .container del tipus span (first-of-type) */
+.container span:nth-of-type(2) {
+  background-color: lightgoldenrodyellow;
+  border-color: goldenrod;
+}
+
+/* Element paràgraf que NO és el 7è fill de .container (not) */
+.container p:not(p:nth-child(7)) {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+/* Element paràgraf que és l'últim fill de .container (last-child) */
+.container p:last-child {
+  background-color: lightgreen;
+  border-color: seagreen;
+}
+
+.container-nth p {
+  font-weight: bold;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  margin:  5px;
+  border-radius: 0.5rem;
+}
+
+/* Element paràgraf que és fill parell (even) de .container-nth (nth-child(2n)) */
+.container-nth p:nth-child(2n) {
+  background-color: lightblue;
+  border-color: steelblue;
+}
+
+/* Element paràgraf que és fill senar (odd) de .container-nth (nth-child(2n+1)) */
+.container-nth p:nth-child(2n+1) {
+  background-color: lightcoral;
+  border-color: crimson;
+}

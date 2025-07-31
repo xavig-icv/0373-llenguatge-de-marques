@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid steelblue;
+  padding: 0.5rem;
+  background-color: lightblue;
+  border-radius: 6px;
+}
+
+/* Element que rep un acció de l'usuari. El ratolí passa per sobre. (hover) */
+a:hover {
+  background-color: lightgreen;
+  color: black;
+  border-color: seagreen;
+  padding: 1.5rem;
+}
+
+/* Element que rep un acció de l'usuari. És fa clic amb el ratolí i es manté el clic. (active) */
+a:active {
+  background-color: lightcoral;
+  color: crimson;
+  border-color: crimson;
+}
+
+/* Element que ha rebut una acció de l'usuari. Ha fet clic prèviament. (visited) */
+a:visited {
+  background-color: lightgray;
+  color: #444;
+  border-color: gray;
+}

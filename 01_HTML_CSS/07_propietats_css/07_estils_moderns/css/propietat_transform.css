@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+  width: 30%;
+  min-height: 20vh;
+  margin: 8rem 0.5rem 0 0.5rem;
+  padding: 2rem;
+  background: steelblue;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1rem;
+  border: solid 1px #666;
+  box-shadow: 4px 4px 0 2px #aaa;
+}
+
+/* Element amb una transformació de rotació de 45 graus. */
+section div:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+
+/* Element amb una transformació de rotació de 90 graus. */
+section div:nth-of-type(2) {
+  transform: rotate(90deg);
+}
+
+/* Element amb una transformació de rotació de 315 graus. */
+section div:nth-of-type(3) {
+  transform: rotate(315deg);
+}
+
+/* Element amb una transformació de traslació de 210% en X i 20px en Y) */
+section div:nth-of-type(4) {
+  transform: translate(210%, 20px);
+}
+
+/* Element amb una transformació de traslació de 0px en X i 50px en Y) */
+section div:nth-of-type(5) {
+  transform: translate(0, 50px);
+}
+
+/* Element amb una transformació de traslació de -210% en X i 20px en Y) */
+section div:nth-of-type(6) {
+  transform: translate(-210%, 20px);
+}
+
+/* Element amb una transformació d'escalat de x1.1 en X i de x1.1 en Y. */
+section div:nth-of-type(7) {
+  transform: scale(1.1)
+}
+
+/* Element amb una transformació d'escalat de x0.7 en X i de x0.7 en Y. */
+section div:nth-of-type(8) {
+  transform: scale(0.7)
+}
+
+/* Element amb una transformació de cisallament de -30 graus en X i de 0 graus en Y. */
+section div:nth-of-type(9) {
+  transform: skew(-30deg)
+}

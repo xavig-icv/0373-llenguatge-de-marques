@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  float: left;
+  width: 30%;
+  margin: 0.75rem;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+/* Element amb una ombra suau */
+.soft-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+
+/* Element amb una ombra estil neó */
+.neon-glow {
+  box-shadow: 0 0 15px 3px steelblue;
+  background-color: lightblue;
+  border-radius: 9px;
+}
+
+/* Element amb una gran ombra que simula l'elevació */
+.raised-depth {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Element amb una ombra interior que simula un efecte d'enfonsat */
+.inset-shadow {
+  box-shadow: inset 0 0 12px #ccc;
+  border: 1px solid #ddd;
+}
+
+/* Element amb un estil retro amb ombra pronunciada i unes vores marcades */
+.retro-shadow {
+  box-shadow: 6px 6px 0 0 rgba(0, 0, 102);
+  border: 2px solid rgb(0, 0, 102);
+}
+
+/* Element amb vores suaus i una ombra suau difuminada */
+.outlined-glow {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 8px rgba(0, 0, 102, 0.2);
+  border-radius: 3px;
+}

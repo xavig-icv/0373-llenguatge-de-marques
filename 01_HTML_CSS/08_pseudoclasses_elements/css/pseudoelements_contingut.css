@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Estils genèrics dels elements (exemple amb productes d'una botiga online). */
+.product {
+  float: left;
+  width: 30%;
+  border: 2px solid #666;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.product .description {
+  margin: 0.7rem 0;
+}
+
+.product img {
+  width: 100%;
+}
+
+/* Pseudoelement que afegeix contingut abans del títol del producte. (::before) */
+.oferta::before {
+  content: "OFERTA!";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: lightcoral;
+  color: white;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* Pseudoelement que afegeix contingut després de la descripció del producte. (::after) */
+.product::after {
+  content: "Enviament gratuït 24/48!";
+  padding: 0.3rem;
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Pseudoelement que modifica l'estil del text seleccionat per l'usuari. (::selection) */
+.product p::selection {
+  background-color: yellow;
+  color: red;
+}

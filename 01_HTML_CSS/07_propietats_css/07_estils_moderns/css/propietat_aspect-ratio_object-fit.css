@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+  width: 30%;
+  margin: 0.5rem;
+  box-shadow: 0 1px 3px #222;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.box p {
+  margin: 0.5rem;
+}
+
+/* Element amb una relació d'aspecte 1:1 (imatge quadrada) */
+.img-box {
+  aspect-ratio: 1 / 1;
+}
+
+/* Element amb una relació d'aspecte 16:9 (imatge rectangular) */
+.rectangular {
+  aspect-ratio: 16 / 9;
+}
+
+/* Imatge que ocupa el 100% de l'element i per defecte object-fit: fill */
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.cover img {
+  object-fit: cover;
+}
+
+.contain img {
+  object-fit: contain;
+}
+

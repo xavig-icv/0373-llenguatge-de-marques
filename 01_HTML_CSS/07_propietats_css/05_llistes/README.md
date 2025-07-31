@@ -1,4 +1,4 @@
-# Bloc 06. Propietats de les Llistes
+# Bloc 05. Propietats de les Llistes
 
 Les llistes són estructures semàntiques que permeten organitzar la informació per mostrar informació mitjançant números, punts o altres símbols. Amb propietats de CSS es pot controlar l’estil d'aquests símbols, la seva posició i la distància respecte del contingut.
 

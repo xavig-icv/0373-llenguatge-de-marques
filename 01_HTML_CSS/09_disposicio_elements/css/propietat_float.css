@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Estil genèrics de les caixes. Tots els elements floten a l'esquerra (float) */
+.box {
+  float: left;
+  width: 30%;
+  padding: 1.5rem;
+  margin: 1rem 1rem 0 0;
+  font-weight: bold;
+  border-radius: 9px;
+}
+
+/* Element flotant 1 amb diferents estils */
+.box-1 {
+  background-color: lightblue;
+  border: 2px solid steelblue;
+}
+
+/* Element flotant 2 amb diferents estils */
+.box-2 {
+  background-color: lightgreen;
+  border: 2px solid seagreen;
+}
+
+/* Element flotant 3. Tot i disposar d'espai salta de línia. (clear) */
+.box-3 {
+  float: left;
+  clear: both;
+  background-color: #ffe082;
+  border: 2px solid #ffca28;
+}

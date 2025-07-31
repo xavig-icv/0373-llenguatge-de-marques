@@ -15,10 +15,10 @@
 | BLOC/CARPETA        | Contingut del Bloc                                                    | Hores | RA          |
 | ------------------- | --------------------------------------------------------------------- | ----- | ----------- |
 | `00_RECURSOS/`      | Recursos generals: documentació, reptes, fonts, referències, etc.     | —     | —           |
-| `01_HTML_CSS/`      | Desenvolupament web amb HTML5 i CSS3: estructura, maquetació i estils.| 22    | RA1, RA2    |
+| `01_HTML_CSS/`      | Desenvolupament web amb HTML5 i CSS3: estructura, maquetació i estils.| 23    | RA1, RA2    |
 | `02_JS_JSON/`       | Programació amb JavaScript, manipulació del DOM i de dades amb JSON.  | 22    | RA3, RA6    |
 | `03_XML_VALIDACIO/` | Representació i validació de dades amb XML (XSD) i JSON (JSON Schema).| 14    | RA4, RA5    |
-| `04_ERP_GESTIO/`    | Sistemes ERP amb Odoo: Instal·lació, configuració i gestió de dades.  | 8     | RA7         |
+| `04_ERP_GESTIO/`    | Sistemes ERP amb Odoo: Instal·lació, configuració i gestió de dades.  | 7     | RA7         |
 
 
 ## Continguts del Mòdul

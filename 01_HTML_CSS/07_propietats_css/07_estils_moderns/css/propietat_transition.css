@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Transició per totes les propietats de 0.6 segons amb un format "ease" */
+.box {
+  transition: all 0.6s ease;
+  cursor: pointer;
+  display: inline-block;
+  width: 30%;
+  min-height: 20vh;
+  margin: 2rem 0.5rem 0 0;
+  padding: 2rem;
+  background-color: steelblue;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1rem;
+  border: solid 1px #666;
+  box-shadow: 4px 4px 0 2px #aaa;
+}
+
+/* Transició de rotació */
+.rotate:hover {
+  transform: rotate(35deg);
+}
+
+/* Transició de traslació */
+.translate:hover {
+  transform: translate(0, -5vh);
+}
+
+/* Transició d'escalat */
+.scale:hover {
+  transform: scale(1.2);
+}
+
+/* Transició de cisallament */
+.skew:hover {
+  transform: skewX(-20deg);
+}
+
+/* Transició d'amplada */
+.width {
+  width: 20%;
+}
+.width:hover {
+  width: 30%;
+}
+
+/* Transició amb clip-path (poligon amb el mateix número de costats) */
+.clip {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+  border-radius: 0px;
+}
+.clip:hover {
+  clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 30% 100%);
+}
+
+/* Transició amb filter grayscale i blur de la imatge de fons */
+.blur {
+  background: url('./../img/imatge_opacity_filter_backdrop-filter.jpg') center/cover;
+  filter: grayscale(80%) blur(1px);
+}
+.blur:hover {
+  filter: grayscale(0%) blur(0);
+}
+
+/* Transició de color de fons i de l'ombra */
+.color:hover {
+  background-color: slateblue;
+  box-shadow: 0 3px 2px #000;
+}
+
+/* Transició de l'arrodoniment de les cantonades */
+.border:hover {
+  border-radius: 50%;
+}

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2, h3, div {
+  margin: 1rem;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+/* Element sempre visible i fixat a la mateixa posició tot i fer scroll (fixed) */
+/* Element amb z-index: 1 es posicionarà al davant de la resta d'elements (z-index: 0 per defecte)*/
+.fixed-box {
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  z-index: 1;
+  padding: 8px;
+  background-color: lightblue;
+  border: solid 2px steelblue;
+}
+
+/* Element que es mou al fer scroll però queda fixat quan arriba a la seva posició (sticky) */
+/* Element amb z-index: 2 es posicionarà al davant de la resta d'elements (z-index: 0 i 1) */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 1rem;
+  background-color: lightgreen;
+  border: solid 2px seagreen;
+}
+
+.sticky-comprovacio {
+  height: 1200px;
+}
+
+/* Element que es desplaça respecte la seva posició original però no afecta als altres elements. (relative) */
+.relative-box {
+  position: relative;
+  top: 0.5rem;
+  left: 3rem;
+  width: 50%;
+  padding: 10px;
+  background-color: lightcoral;
+  border: solid 2px crimson;
+}
+
+/* Element que s'inicialitza amb la propietat de position relative per incoure dins seu un element amb position absolute. */
+.container {
+  position: relative;
+  width: 50%;
+  min-height: 300px;
+  padding: 1rem;
+  background-color: #f3e5f5;
+  border: 2px solid #9c27b0;
+}
+
+/* Element que es posiciona absolutament dins del contenidor anterior que disposa de position relative. (absolute) */
+.absolute-box {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  background-color: #ce93d8;
+  text-align: center;
+}

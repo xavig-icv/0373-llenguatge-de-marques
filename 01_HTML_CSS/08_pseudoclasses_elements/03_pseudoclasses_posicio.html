@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pseudoclasses Posició (first-child, last-child, nth-child, nth-of-type)</title>
+    <meta name="description" content="Pseudoclasses de posició primer fill, últim fill, número de fill i número de tipus amb diferents exemples." />
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/pseudoclasses_posicio.css" />
+  </head>
+  <body>          
+    <h2>Pseudoclasses de posició (first-child, last-child, nth-child, nth-of-type)</h2>
+    <div class="container">
+      <p>Primer paràgraf (1er fill - <strong>p:first-child</strong>)</p>
+      <p>Segon paràgraf (2n fill i 2n del tipus paràgraf - <strong>p:nth-child(2)</strong>)</p>
+      <p>Tercer paràgraf (3er fill, paragràf normal amb estils per defecte).</p>
+      <span>SPAN 1 (4t fill)</span>
+      <span>SPAN 2 (5è fill i 2n del tipus span - <strong>span:nth-of-type(2)</strong>)</span>
+      <span>SPAN 3 (6è fill)</span>
+      <p>Quart paràgraf (7è fill, exclòs per ser el 7è fill amb <strong>p:not</strong>)</p>
+      <p>Cinquè paràgraf (Últim fill - <strong>p:last-child</strong>)</p>
+    </div>
+    <h2>Pseudoclasses de posició (nth-child(2n) i nth-child(2n+1))</h2>
+    <div class="container-nth">
+      <p>Paràgraf 1</p>
+      <p>Paràgraf 2</p>
+      <p>Paràgraf 3</p>
+      <p>Paràgraf 4</p>
+      <p>Paràgraf 5</p>
+      <p>Paràgraf 6</p>
+      <p>Paràgraf 7</p>
+      <p>Paràgraf 8</p>
+      <p>Paràgraf 9</p>
+      <p>Paràgraf 10</p>
+    </div>
+  </body>
+</html>

@@ -19,7 +19,7 @@ En aquest tema s'instal·la i es configura un sistema de gestió empresarial (ER
 | **04. Ús de mòduls de gestió empresarial**          | -     | Desplegament de mòduls: vendes, inventari, compres, facturació, etc.           |
 | **05. Consultes i extracció d’informació**          | -     | Generació d’informes, filtres, exportació de dades i gestió de la informació.  |
 | **06. Seguretat i permisos d’accés**                | -     | Rols, permisos i bones pràctiques per protegir la informació empresarial.      |
-| **07. Projecte: Odoo en un entorn empresarial**     | 6     | Deseplgament i gestió de mòduls d'Odoo en un escenari pràctic empresarial.     |
+| **07. Projecte: Odoo en un entorn empresarial**     | 5     | Deseplgament i gestió de mòduls d'Odoo en un escenari pràctic empresarial.     |
 
 > 📝 **Nota:** Els temes sense hores assignades es treballen dins del projecte.
 

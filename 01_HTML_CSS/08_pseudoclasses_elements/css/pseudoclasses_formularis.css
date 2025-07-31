@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Estils genèrics pels input (sobretot l'efecte d'outline)*/
+input {
+  outline: none;
+  padding: 0.5rem;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Element input requerit amb uns estils que destaquin per indicar que es obligatori. (required) */
+input:required {
+  border: solid 2px lightcoral;
+}
+
+/* Element input mentre està seleccionat, es fa focus en ell. (focus) */
+input:focus {
+  border: solid 2px steelblue;
+  background-color: lightblue;
+}
+
+/* Element input que ha estat seleccionat, fent referència a un checkbox (checked) */
+ input:checked {
+  width: 25px;
+  height: 25px;
+}
+
+/* Element input que està desactivat i no es pot interactuar amb ell. (disabled) */
+input:disabled {
+  background-color: lightgray;
+  border: 1px solid gray;
+  color: gray;
+}

@@ -1,4 +1,4 @@
-# Bloc 07. Propietats de les Taules
+# Bloc 06. Propietats de les Taules
 
 Les taules HTML són estructures pensades per mostrar informació en files i columnes (dades, horaris, resultats, classificacions, etc.). Tot i que les taules s'estan substituïnt per contenidors genèrics que permeten adaptarse a diferents pantalles, avui dia encara són essencials en molts entorns reals d'aplicacions d'ordinador on es presenten informes, panell d'administració (dashboards) i documents digitals com nòmines, factures, etc.
 

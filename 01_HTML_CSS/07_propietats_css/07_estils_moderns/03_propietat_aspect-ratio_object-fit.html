@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Propietats Aspect-Ratio i Object-Fit</title>
+    <meta name="description" content="Propietats de relació d'aspecte i proporcions d'imatges amb diferents exemples." />
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/propietat_aspect-ratio_object-fit.css" />
+  </head>
+  <body>
+    <h2>Propietats: Relació d'aspecte i proporcions (aspect-ratio i object-fit)</h2>
+    <div class="box">
+      <p>aspect-ratio: 1/1 + fill</p>
+      <div class="img-box">
+        <img src="./img/imatge_aspect_ratio_1-1.png" alt="Relació d'aspecte 1/1 amb fill">
+      </div>
+    </div>
+    <div class="box cover">
+      <p>object-fit: cover</p>
+      <div class="img-box">
+        <img src="./img/imatge_aspect_ratio_1-1.png" alt="Relació d'aspecte 1/1 amb cover">
+      </div>
+    </div>
+    <div class="box contain">
+      <p>object-fit: contain</p>
+      <div class="img-box">
+        <img src="./img/imatge_aspect_ratio_1-1.png" alt="Relació d'aspecte 1/1 amb contain">
+      </div>
+    </div>
+    <div class="box">
+      <p>aspect-ratio: 16/9</p>
+      <div class="img-box rectangular">
+        <img src="./img/imatge_aspect_ratio_16-9.jpg" alt="Relació d'aspecte 16/9">
+      </div>
+    </div>
+    <div class="box cover">
+      <p>16/9 + cover</p>
+      <div class="img-box rectangular">
+        <img src="./img/imatge_aspect_ratio_16-9.jpg" alt="Relació d'aspecte 16/9 amb cover">
+      </div>
+    </div>
+    <div class="box contain">
+      <p>16/9 + contain</p>
+      <div class="img-box rectangular">
+        <img src="./img/imatge_aspect_ratio_16-9.jpg" alt="Relació d'aspecte 16/9 amb contain">
+      </div>
+    </div>
+  </body>
+</html>
