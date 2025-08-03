@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Propietat Flex-Grow, Flex-Shrink, Flex-Basis i Flex</title>
+    <meta name="description" content="Propietats dels elements flexibles amb diferents exemples." />
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/propietat_flex-grow_flex-shrink_flex_basis.css" />
+  </head>
+  <body>          
+    <h2>Propietats dels elements flexibles (flex-grow, flex-shrink, flex-basis i flex)</h2>
+    <h3>flex-grow (l'element 2 l'únic amb "grow" definit creix si disposa d'espai extra per ocupar)</h3>
+    <div class="flex flex-grow-example">
+      <div class="flex-item">1</div>
+      <div class="flex-item grow">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <h3>flex-shrink (l'element 2 no es redueix tot i que no hi ha espai disponible "desbordament")</h3>
+    <div class="flex flex-shrink-example">
+      <div class="flex-item">1</div>
+      <div class="flex-item noshrink">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <h3>flex-basis (l'element 2 comença amb un 50% d'amplada abans de repartir l'espai disponible)</h3>
+    <div class="flex flex-basis-example">
+      <div class="flex-item">1</div>
+      <div class="flex-item basis">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <h2>Propietat abreujada: flex (grow, shrink i basis en una sola línia)</h2>
+    <h3>flex: 1 (equivalent a 1 1 0%) - Cada element ocupa tot l’espai disponible (repartiment equitatiu)</h3>
+    <div class="flex flex-1">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <h3>flex: 0 1 auto - Elements amb la seva mida definida, no poden crèixer però si reduir-se</h3>
+    <div class="flex flex-0-1-auto">
+      <div class="flex-item">1</div>
+      <div class="flex-item">Text molt més llarg que pot reduir-se</div>
+      <div class="flex-item">3</div>
+    </div>
+    <h3>flex: 0 0 auto - Elements amb la seva mida definida que no poden crèixer ni reduir-se</h3>
+    <div class="flex flex-0-0-auto">
+      <div class="flex-item">1</div>
+      <div class="flex-item">Text molt més llarg de mida fixa</div>
+      <div class="flex-item">3</div>
+    </div>
+    <h3>flex: 1 0 30% - Elements ocupen l'espai disponible però no poden reduir-se per sota de flex-basis</h3>
+    <div class="flex flex-1-0-0">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+    <h3>flex: 2 (equivalent a 2 1 0%) - Elements amb grow 1 i el segon element amb grow 2</h3>
+    <div class="flex flex-2">
+      <div class="flex-item">1</div>
+      <div class="flex-item doble">2</div>
+      <div class="flex-item">3</div>
+    </div>
+  </body>
+</html>

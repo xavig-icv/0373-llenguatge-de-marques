@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-item {
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px #000;
+}
+
+/* Contenidor flexible (flex) */
+.flex {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+/* Flex per defecte amb orientació horitzontal (esquerra a dreta) */
+.flex-row {
+  flex-direction: row;
+}
+
+/* Flex amb orientació horitzontal inversa (dreta a esquerra) */
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Flex amb orientació vertical (de dalt a baix) */
+.flex-column {
+  flex-direction: column;
+}
+
+/* Flex amb orientació vertical invertida (de baix a dalt) */
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}

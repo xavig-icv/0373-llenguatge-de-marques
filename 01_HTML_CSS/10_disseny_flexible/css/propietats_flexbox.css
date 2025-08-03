@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+section {
+  padding: 1rem;
+}
+
+/* Centrat total d'un element en un contenidor o pàgina web (justify-content i align-items) */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: solid 1px #999;
+}
+
+.center-box {
+  padding: 1rem;
+  background: #4caf50;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Menú de navegació que distribueix en l'espai els contenidors interns (space-between)  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
+
+/* Elements que es reparteixen l'espai però es vol destcar un dells (flex i flex-grow) */
+.card-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1;
+  padding: 1rem;
+  background: #2196f3;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card.grow {
+  flex-grow: 2;
+}
+
+/* Layout de dues columnes contingut principal (main) i contingut lateral (aside) amb espai establert (flex: 3 i flex: 1) */
+.two-columns {
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+}
+.two-columns main {
+  flex: 3;
+  background: steelblue;
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+}
+.two-columns aside {
+  flex: 1;
+  background: lightblue;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Galeria d'elements que es distribueixen l'espai i salten de línies (flex-wrap: wrap i flex) */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.gallery .item {
+  flex: 1 0 150px;
+  background: #ff9800;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Footer flexible amb distribució en columnes (flex-direction: column)*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+}

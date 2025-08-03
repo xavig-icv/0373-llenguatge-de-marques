@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Elements amb una amplada mínima per generar 2 línies (flex-basis) */
+.flex-item {
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px #000;
+  text-align: center;
+  flex-basis: 20%;
+}
+
+/* Contenidor flexible que permet múltiples línies flexibles (flex-wrap: wrap) */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Només si hi ha diverses línies (siguin files o columnes) amb flex-wrap: wrap actiu */
+
+/* Línies alineades a la part superior del contenidor (a dalt si és "row" i a l'esquerra si és "column") */
+.align-content-start {
+  align-content: flex-start;
+}
+
+/* Línies alineades a la part inferior del contenidor (a baix si és "row" i a la dreta si és "column") */
+.align-content-end {
+  align-content: flex-end;
+}
+
+/* Línies alineades al centre vertical del contenidor si és "row" i al centre horitzontal si és "column" */
+.align-content-center {
+  align-content: center;
+}
+
+/* Línies amb el màxim d'espai entre elles, però la primera i l’última enganxada als marges (superior i inferior en "row" ó esquerre i dret en "column") */
+.align-content-between {
+  align-content: space-between;
+}
+
+/* Línies distribuïdes amb el mateix espai abans i després de cada línia (espai superior i inferior en "row" ó espai esquerre i dret en "column" ) */
+.align-content-around {
+  align-content: space-around;
+}
+
+/* Línies distribuïdes amb el exactament el mateix espai entre totes elles (espai superior i inferior en "row" ó espai esquerre i dret en "column" ) */
+.align-content-evenly {
+  align-content: space-evenly;
+}
+
+/* Els elements de les línies s'estiren per omplir tot l’espai disponible (espai vertical en "row" i espai horitzontal en "column" */
+.align-content-stretch {
+  align-content: stretch;
+}
+

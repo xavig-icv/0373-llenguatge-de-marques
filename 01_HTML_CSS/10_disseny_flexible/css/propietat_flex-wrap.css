@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Elements amb una amplada mínima per generar 2 línies (flex-basis) */
+.flex-item {
+  height: 100px;
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px #000;
+  text-align: center;
+  flex-basis: 20%;
+}
+
+/* Contenidor flexible */
+.flex {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Els elements es mantenen en una sola línia (poden sobresortir del contenidor o reduir la seva mida) */
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/* Els elements es distribueixen en diverses línies (files en vertical amb "row" i columnes en horitzontal amb "column") */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Els elements es distribueixen en diverses línies en ordre invers (files en vertical amb "row" i columnes en horitzontal amb "column") */
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+

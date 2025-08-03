@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-item {
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px #000;
+  text-align: center;
+}
+
+/* Contenidor flexible amb alçada perquè l'alineació sigui visible */
+.flex {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+/* Elements alineats a la part superior en row (fila) o la part esquerra en column (columna) */
+.align-items-start {
+  align-items: flex-start;
+}
+
+/* Elements alineats a la part inferior en row (fila) o la part dreta en column (columna) */
+.align-items-end {
+  align-items: flex-end;
+}
+
+/* Elements alineats al centre de l'eix Y (en vertical) */
+.align-items-center {
+  align-items: center;
+}
+
+/* Elements alineats a la part superior i els estira els ítems per ocupar tota l'alçada si no tenen una fixada */
+.align-items-stretch {
+  align-items: stretch;
+}
+
+/* Elements alineats a la part superior però segons la línia base del text (tots els textos a la mateixa alçada) */
+.align-items-baseline {
+  align-items: baseline;
+}
+
+.align-items-baseline .flex-item:nth-child(2) {
+  font-size: 2rem;
+}

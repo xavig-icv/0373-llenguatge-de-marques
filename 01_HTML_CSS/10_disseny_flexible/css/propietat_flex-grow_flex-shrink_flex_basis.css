@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+/* Elements amb una amplada mínima per generar 2 línies (flex-basis) */
+.flex-item {
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px #000;
+  text-align: center;
+}
+
+/* Contenidor flexible */
+.flex {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Quantitat proporcional que ha de crèixer un element respecte els altres (flex-grow) */
+.flex-grow-example .grow {
+  flex-grow: 1; /* creix proporcionalment com altres elements que tinguin grow 1 */
+}
+
+/* Indica si un element redueix la seva mida o no, si el valor és 0 no es redueix (flex-shrink) */
+.flex-shrink-example {
+  width: 300px;
+}
+
+.flex-shrink-example .noshrink {
+  flex-shrink: 0; /* no es redueix */
+  width: 100%;
+}
+
+/* Mida inicial d'un element abans de la distribució de l'espai disponible (flex-basis) */
+.flex-basis-example .basis {
+  flex-basis: 50%;
+}
+
+/* Flex, el mètode abreujat de 3 propietats (grow, shrink i basis) */
+
+/* flex: 1 equival a (1 1 0%) - Cada element ocupa tot l’espai disponible (es distribueixen l'espai equitativament) */
+.flex-1 .flex-item {
+  flex: 1;
+}
+
+/* flex: 0 1 auto - Els elements tenen la seva mida natural no poden crèixer però si poden reduir-se */
+.flex-0-1-auto .flex-item {
+  flex: 0 1 auto;
+}
+
+/* flex: 0 0 auto - Els elements tenen la seva mida natural, però no poden crèixer ni decrèixer */
+.flex-0-0-auto .flex-item {
+  flex: 0 0 auto;
+}
+
+/* flex: 1 0 0% - Els elements es distribueixen l'espai disponible però no poden reduir-se */
+.flex-1-0-0 .flex-item {
+  flex: 1 0 30%;
+}
+
+/* flex: 2 (2 1 0%) - Els elements es distribueixen proporcionalment l'espai extra segons el seu valor de creixement (grow) */
+.flex-2 .flex-item {
+  flex: 1 1 0%;
+}
+
+.flex-2 .doble {
+  flex: 2 1 0%;
+}

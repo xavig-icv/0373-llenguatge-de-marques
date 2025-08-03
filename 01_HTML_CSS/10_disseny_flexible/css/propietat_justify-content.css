@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-item {
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px #000;
+}
+
+/* Contenidor flexible (flex) amb direció de fila "row" per defecte */
+.flex {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+/* Els elements es situen a l'inici del contenidor (a l'esquerra si flex-direction és "row" o a dalt si és "column") */
+.justify-start {
+  justify-content: flex-start;
+}
+
+/* Els elements es situen al final del contenidor (a la dreta si flex-direction és "row" o a baix si és "column") */
+.justify-end {
+  justify-content: flex-end;
+}
+
+/* Els elements es situen al centre del contenidor (al centre horitzontal si flex-direction és "row" o al centre vertical si és "column" */
+.justify-center {
+  justify-content: center;
+}
+
+/* Els elements tenen el màxim d'espai entre ells però sense espai als extrems (primer i últim element) en horitzontal si és "row" si en vertical si és "column" */
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Els elements tenen el mateix espai a la seva dreta i la seva esquerra si flex-direction és "row" o a dalt i a baix si és "column". */
+.justify-around {
+  justify-content: space-around;
+}
+
+/* Tots els elements tenen exactament el mateix espai entre ells independentment de la seva posició. (en horitzontal o en vertical) */
+.justify-evenly {
+  justify-content: space-evenly;
+}
