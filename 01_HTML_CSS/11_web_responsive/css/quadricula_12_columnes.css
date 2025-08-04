@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Contenidor flexible que permet el salt de línia dels elements */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Els elements no creixen (grow=0), no es redueixen (shrink=0) i l'amplada és el width que tinguin */
+[class^="col-"] {
+  flex: 0 0 auto;
+  /*Estils per la demostració */
+  padding: 1rem;
+  background: #eee;
+  border: 1px solid #333;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+ }
+
+/* Sistema de 12 columnes de la mateixa mida amb un màxim, col-12, que ocupa el 100% */
+.col-1  { width: 8.33333333%; }
+.col-2  { width: 16.66666667%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.33333333%; }
+.col-5  { width: 41.66666667%; }
+.col-6  { width: 50%; }
+.col-7  { width: 58.33333333%; }
+.col-8  { width: 66.66666667%; }
+.col-9  { width: 75%; }
+.col-10 { width: 83.33333333%; }
+.col-11 { width: 91.66666667%; }
+.col-12 { width: 100%; }
