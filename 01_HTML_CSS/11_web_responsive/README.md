@@ -262,3 +262,31 @@ h2 {
 ```
 
 ![Sistema de Web Responsive amb Media Queries](./img/media_queries_web_responsive.png)
+
+## Sistema per simular els marges entre elements amb padding
+
+```css
+/* Padding dels contenidors externs (simulen els marges entre elements) */
+.pad-0 { padding: 0; }
+.pad-1 { padding: 0.25rem; }
+.pad-2 { padding: 0.5rem; }
+.pad-3 { padding: 1rem; }
+.pad-4 { padding: 1.5rem; }
+.pad-5 { padding: 3rem; }
+```
+
+![Sistema de simulació de marges entre elements amb padding](./img/simulacio_marges_amb_padding.png)
+
+## Web d'exemple Media Queries + Flexbox
+
+```css
+/* Justify Content (distribució horitzontal principal) */
+.justify-start     { justify-content: flex-start; }
+.justify-end       { justify-content: flex-end; }
+.justify-center    { justify-content: center; }
+.justify-between   { justify-content: space-between; }
+.justify-around    { justify-content: space-around; }
+.justify-evenly    { justify-content: space-evenly; }
+```
+
+![Pàgina Web d'exemple Media Queries + Flexbox](./img/web_combinacio_media_queries_flexbox.png)
