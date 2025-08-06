@@ -6,7 +6,9 @@ Als anys 90, les pàgines web es creaven íntegrament amb HTML. Si els desenvolu
 
 Una manera molt comuna per disposar elements en difernts posicions de la pàgina era fent ús de taules HTML. Aquesta pràctica de maquetació avui dia és impensable, ja que imposibilita un `disseny web responsive`,  una web adaptable a diferents dispositius i mides de pantalla.
 
-Davant de la necessitat d'establir una separació entre `l'estructura (HTML)` i `la presentació o estil (CSS)`, el W3C (World Wide Web Consortium) va proposar la creació d'un llenguatge de fulles d'estils per l'HTML. Els desenvolupadors Håkon Wium Lie i Bert Bos van crear una proposta que van anomenar CSS (**Cascading Style Sheets**). 
+Davant de la necessitat d'establir una separació entre `l'estructura (HTML)` i `la presentació o estil (CSS)`, el W3C (World Wide Web Consortium) va proposar la creació d'un llenguatge de fulles d'estils per l'HTML. Els desenvolupadors Håkon Wium Lie i Bert Bos van crear una proposta que van anomenar CSS (**Cascading Style Sheets**).
+
+![Llenguatge CSS](./img/imatge_llenguatge_css.png)
 
 ## El llenguatge CSS i CSS3.
 

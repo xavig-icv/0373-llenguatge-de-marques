@@ -10,6 +10,8 @@ L’**hipertext** és una forma de **interconnectar** la informació dins d’un
 
 Tim Berners‑Lee va aplicar aquest concepte per crear **HTML (HyperText Markup Language)**, que permet incorporar **hiperenllaços** dins d’un document. Aquesta capacitat de connectar informació de manera senzilla i flexible és la base de la navegació per Internet tal com la coneixem.
 
+![Esquema Hiperenllaços](./img/esquema_hiperlinks.png)
+
 A finals de 1990, va desenvolupar el primer navegador i servidor web, executat en un ordinador **NeXT**. Finalment, el **6 d’agost de 1991**, va publicar el primer lloc web de la història, fent el projecte **accessible a tothom**. Així naixia la **World Wide Web**.
 
 ## La World Wide Web 

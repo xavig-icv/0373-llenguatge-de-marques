@@ -22,6 +22,8 @@ Un editor de codi és una aplicació que ens permet escriure i editar el codi fo
 - **Integració amb el navegador** per obrir i comprovar els fitxers HTML.
 - **Extensions**: poder afegir complements per facilitar la tasca dels desenvolupadors.
 
+![Editors de Codi pel desenvolupament web](./img/editors_codi_web.png)
+
 ## El navegador web
 
 El **navegador web** és l’eina que interpreta el codi HTML, CSS i JavaScript per mostrar una pàgina web de manera visual. És el programa que fan servir els usuaris per accedir i navegar pels llocs web a través d’Internet. Quan un usuari visita la nostra pàgina, el navegador s’encarrega de renderitzar (dibuixar) el contingut perquè es pugui veure i interactuar amb ell.
@@ -32,6 +34,8 @@ El **navegador web** és l’eina que interpreta el codi HTML, CSS i JavaScript 
 - **Inspeccionar element** (`F12` o clic dret > *Inspeccionar*): Obre les eines de desenvolupador del navegador, que ens permeten visualitzar i modificar l’HTML i el CSS renderitzat en temps real.
 - **Consola de JavaScript**: Permet veure errors, executar codi JavaScript i veure resultats de consola.
 - **Simulació de dispositius**: Permet simular el renderitzat d'una web en diferents mides de pantalla (mòbil, tablet, ordinador, etc.).
+
+![Navegadors Web per la visualització de pàgina web](./img/navegadors_visualitzacio_webs.png)
 
 > Recomanació Editor: **VSCode** per defecte + **Sublime** per edicions ràpides.
 

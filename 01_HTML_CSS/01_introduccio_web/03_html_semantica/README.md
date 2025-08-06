@@ -14,6 +14,8 @@ Amb HTML5 es van introduir **etiquetes semàntiques** que defineixen la funció 
 - La **indexació** per part dels cercadors o rastrejadors web.
 - L’**accessibilitat** pels usuaris que utilitzen lectors de la pantalla.
 
+![Imatge del llenguatge HTML versió 5](./img/imatge_html5.png)
+
 ## Què són les etiquetes semàntiques?
 
 Una **etiqueta semàntica** és aquella que, per si mateixa, **descriu el significat la informació** que conté. A diferència d’una etiqueta genèrica com `<div>` o `<span>` , les etiquetes semàntiques com `<header>`, `<main>` o `<footer>` defineixen una funció clara de la secció de la pàgina web.

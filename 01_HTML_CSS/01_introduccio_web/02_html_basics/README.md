@@ -19,6 +19,8 @@ Exemples de llenguatges de marques:
   <etiqueta> Contingut de text. </etiqueta>
   ```
 
+  ![Llenguatge de Marques HTML](./img/llenguatge_marques_html.png)
+
 ## Què és HTML?
 
 L’**HTML (HyperText Markup Language)** és el llenguatge principal que s'utilitza per crear documents de pàgines web. Permet per **definir l'estructura, les seccions i els elements** que han d'apareixer a una pàgina, com poden ser els **títols, els paràgrafs, els enllaços, les imatges, les taules, els formularis**, etc.

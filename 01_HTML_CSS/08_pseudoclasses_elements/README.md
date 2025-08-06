@@ -1,5 +1,3 @@
-Les pseudoclasses i pseudoelements permeten seleccionar i donar estil a elements HTML segons el seu estat, posició o parts específiques del contingut. Són essencials per crear pàgines web interactives i accessibles.
-
 # Bloc 08. Pseudoestils: Pseudoclasses i Pseudoelements
 
 Les pseudoclasses i pseudoelements són eines que permeten aplicar estils a elements HTML segons el seu estat, la posició dins del document o quan succeeix un esdeveniment concret sense haver de modificar el codi HTML. S'utiltizen per donar una resposta quan l'usuari interactua amb la pàgina web sense necessitat de disposar de codi de programació web (JavaScript).
