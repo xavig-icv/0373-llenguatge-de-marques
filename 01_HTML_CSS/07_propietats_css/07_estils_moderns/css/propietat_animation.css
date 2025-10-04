@@ -18,53 +18,76 @@
 }
 
 /* Element amb el fons animat amb diferents colors */
-.animacioColorFons {
+.animacio-color-fons {
   background-color: steelblue;
   animation: colorsBg 6s ease infinite;
 }
 @keyframes colorsBg {
-    0% {background: steelblue;}
-    25% {background: slateblue;}
-    50% {background: dodgerblue;}
-    75% {background: slateblue;}
+  0% {
+    background: steelblue;
+  }
+  25% {
+    background: slateblue;
+  }
+  50% {
+    background: dodgerblue;
+  }
+  75% {
+    background: slateblue;
+  }
 }
 
 /* Element animat simulant el batec del cor (Pulse) */
-.animacioPulse {
+.animacio-pulse {
   background: crimson;
   animation: pulse 2s infinite;
 }
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 /* Element animat simulant el gir d'una carta (Flip 3D) */
-.animacioFlip {
+.animacio-flip {
   background: darkslateblue;
   perspective: 1000px;
   animation: flipCard 6s infinite;
 }
 @keyframes flipCard {
-  0%, 100% { transform: rotateY(0deg); }
-  50% { transform: rotateY(180deg); }
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
 }
 
 /* Element animat simulant que sura a l'aigua (Floaty) */
-.animacioFloat {
+.animacio-float {
   background: mediumseagreen;
   animation: floaty 3s ease-in-out infinite;
 }
 @keyframes floaty {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 /* Barra de càrrega de progrés dins de la caixa (Progress Bar) */
-.animacioProgress {
+.animacio-progress {
   position: relative;
 }
-.animacioProgress .progressBar {
+.animacio-progress .progress-bar {
   position: absolute;
   left: 0;
   top: 0;
@@ -75,36 +98,59 @@
 }
 
 @keyframes carregant {
-  0% { width: 0%; }
-  100% { width: 100%; }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /* Element animat que es desplaça dins del contenidor pare */
-.miniBox {
-    position: relative;
-    padding: 10px;
-    box-shadow: 0px 2px 3px #aaa;
-    background: dodgerblue;
-    color: white;
-    width: 10%;
-    height: 5vh;
-    text-align: center;
+.mini-box {
+  position: relative;
+  padding: 10px;
+  box-shadow: 0px 2px 3px #aaa;
+  background: dodgerblue;
+  color: white;
+  width: 10%;
+  height: 5vh;
+  text-align: center;
 }
 
-.movimentAnimation {
-    animation-name: moviment;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
+.moviment-animation {
+  animation-name: moviment;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes moviment {
-  0% {background: lightblue; top: 20%; left:20%;}
-  25% {background: lightcoral; top:20%; left:60%; }
-  50% {background: lightgreen; top:50%; left: 60%;}
-  75% {background: lightcoral; top:50%; left:20%; }
-  100% {background:lightblue; top:20%; left:20%;}
+  0% {
+    background: lightblue;
+    top: 20%;
+    left: 20%;
+  }
+  25% {
+    background: lightcoral;
+    top: 20%;
+    left: 60%;
+  }
+  50% {
+    background: lightgreen;
+    top: 50%;
+    left: 60%;
+  }
+  75% {
+    background: lightcoral;
+    top: 50%;
+    left: 20%;
+  }
+  100% {
+    background: lightblue;
+    top: 20%;
+    left: 20%;
+  }
 }
-
 
 /* Element animat una imatge de 8 fotogrames amb un jugador d'un joc. */
 .card-runner {
@@ -118,31 +164,31 @@
   font-weight: bold;
   border-radius: 12px;
   overflow: hidden;
-  position: relative; 
+  position: relative;
 }
 
 /* Animació de l'sprite (imatge amb els 8 fotogrames) */
 .runner {
-    position: relative;
-    height: 137px;
-    width: 115px;
-    background: url("./../img/runner_animation_sprite.png");
-    animation: sprite 1s steps(8) infinite, move 3s linear infinite;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+  position: relative;
+  height: 137px;
+  width: 115px;
+  background: url("./../img/runner_animation_sprite.png");
+  animation: sprite 1s steps(8) infinite, move 3s linear infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes sprite {
-    100% {
-        background-position: -920px; /* 115px x 8 frames */
-    }
+  100% {
+    background-position: -920px; /* 115px x 8 frames */
+  }
 }
 
 @keyframes move {
-    0% {
-        left: 0%;
-    }
-    100% {
-        left: calc(100% - 115px);
-    }
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: calc(100% - 115px);
+  }
 }

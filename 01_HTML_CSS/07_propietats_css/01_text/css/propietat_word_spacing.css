@@ -4,7 +4,7 @@
 }
 
 /* Paraules molt juntes, sense espais (no s'aconsella aquest ús, només en casos molt concrets). */
-.word--4 {
+.word-04 {
   word-spacing: -4px;
 }
 
