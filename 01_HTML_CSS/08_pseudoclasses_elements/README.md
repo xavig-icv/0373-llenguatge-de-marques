@@ -4,29 +4,29 @@ Les pseudoclasses i pseudoelements són eines que permeten aplicar estils a elem
 
 ## Pseudoclasses més utilitzades
 
-| **Nom**             | **Descripció**                                                                               |
-|---------------------|----------------------------------------------------------------------------------------------|
-| `:hover`            | Aplica uns estils concrets quan el ratolí passa per sobre de l'element.                      |
-| `:active`           | Aplica estils quan l'element està sent clicat (mentre la tecla del ratolí està premuda).     |
-| `:visited`          | Aplica estils a un enllaç que ja ha estat visitat.                                           |
-| `:focus`            | Formularis: Aplica estils quan a l'element es fa un clic complet (camp de text seleccionat). |
-| `:required`         | Formularis: Aplica estils a elements `input` que són obligatoris dins d'un formulari.        |
-| `:checked`          | Formularis: Aplica estils a un element `checkbox` o `radio` que s'ha seleccionat.            |
-| `:disabled`         | Formularis: Aplica estils a elements desactivats (inputs o botons) Normalment de formularis. |
-| `:first-child`      | Aplica estils al primer fill del seu contenidor pare especificat.                            |
-| `:last-child`       | Aplica estils a l'últim fill del seu contenidor pare espeficiat.                             |
-| `:nth-child(n)`     | Aplica estils als elements (`div`,`p`...) que són el fill número (n) del seu contenidor pare (comptabilitzarà tots els fills).    |
-| `:nth-of-type(n)`   | Aplica estils als elements que són el fill número (n) d'un tipus concret (comptabilitzarà només els fills d'aquell tipus).        |
-| `:not(selector)`    | Aplica estils als elements que NO compleixen una condició especificada.                      |
+| **Nom**           | **Descripció**                                                                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `:hover`          | Aplica uns estils concrets quan el ratolí passa per sobre de l'element.                                                        |
+| `:active`         | Aplica estils quan l'element està sent clicat (mentre la tecla del ratolí està premuda).                                       |
+| `:visited`        | Aplica estils a un enllaç que ja ha estat visitat.                                                                             |
+| `:focus`          | Formularis: Aplica estils quan a l'element es fa un clic complet (camp de text seleccionat).                                   |
+| `:required`       | Formularis: Aplica estils a elements `input` que són obligatoris dins d'un formulari.                                          |
+| `:checked`        | Formularis: Aplica estils a un element `checkbox` o `radio` que s'ha seleccionat.                                              |
+| `:disabled`       | Formularis: Aplica estils a elements desactivats (inputs o botons) Normalment de formularis.                                   |
+| `:first-child`    | Aplica estils al primer fill del seu contenidor pare especificat.                                                              |
+| `:last-child`     | Aplica estils a l'últim fill del seu contenidor pare espeficiat.                                                               |
+| `:nth-child(n)`   | Aplica estils als elements (`div`,`p`...) que són el fill número (n) del seu contenidor pare (comptabilitzarà tots els fills). |
+| `:nth-of-type(n)` | Aplica estils als elements que són el fill número (n) d'un tipus concret (comptabilitzarà només els fills d'aquell tipus).     |
+| `:not(selector)`  | Aplica estils als elements que NO compleixen una condició especificada.                                                        |
 
 ## Pseudoelements més utilitzats
 
-| **Nom**            | **Descripció**                                                              |
-|--------------------|-----------------------------------------------------------------------------|
-| `::before`         | Afegeix contingut de text i/o HTML abans de l’element.                      |
-| `::after`          | Afegeix contingut de text i/o HTML després de l’element.                    |
-| `::selection`      | Aplica estils al text que l'usuari ha seleccionat amb el ratolí.            |
-| `::placeholder`    | Formularis: Aplica estils al text del placeholder dels `input` i `textarea`.|
+| **Nom**         | **Descripció**                                                               |
+| --------------- | ---------------------------------------------------------------------------- |
+| `::before`      | Afegeix contingut de text i/o HTML abans de l'element.                       |
+| `::after`       | Afegeix contingut de text i/o HTML després de l'element.                     |
+| `::selection`   | Aplica estils al text que l'usuari ha seleccionat amb el ratolí.             |
+| `::placeholder` | Formularis: Aplica estils al text del placeholder dels `input` i `textarea`. |
 
 ## Pseudoclasses per a enllaços (`:hover`, `:active`, i `:visited`)
 
@@ -100,7 +100,7 @@ input:focus {
 }
 
 /* Element input que ha estat seleccionat, fent referència a un checkbox (checked) */
- input:checked {
+input:checked {
   width: 25px;
   height: 25px;
 }
@@ -118,19 +118,19 @@ input:disabled {
 <form>
   <label>
     Camp obligatori* (required):
-    <input type="text" required placeholder="Camp obligatori">
+    <input type="text" required placeholder="Camp obligatori" />
   </label>
   <label>
     Activa estils al fer clic (focus):
-    <input type="email" placeholder="Fes clic sobre l'input">
+    <input type="email" placeholder="Fes clic sobre l'input" />
   </label>
   <label>
     Activa estils al seleccionar el checkbox (checked):
-    <input type="checkbox">
+    <input type="checkbox" />
   </label>
   <label>
     Element desactivat (disabled):
-    <input type="text" value="Desactivat" disabled>
+    <input type="text" value="Desactivat" disabled />
   </label>
 </form>
 ```
@@ -144,10 +144,11 @@ span {
   display: inline-block;
 }
 
-.container p, .container span {
+.container p,
+.container span {
   padding: 5px;
   border: 1px solid lightgray;
-  margin:  5px;
+  margin: 5px;
 }
 
 /* Element paràgraf que és el primer fill de .container (first-child) */
@@ -202,7 +203,7 @@ span {
   font-weight: bold;
   border: 1px solid lightgray;
   padding: 0.5rem;
-  margin:  5px;
+  margin: 5px;
   border-radius: 0.5rem;
 }
 
@@ -213,7 +214,7 @@ span {
 }
 
 /* Element paràgraf que és fill senar (odd) de .container-nth (nth-child(2n+1)) */
-.container-nth p:nth-child(2n+1) {
+.container-nth p:nth-child(2n + 1) {
   background-color: lightcoral;
   border-color: crimson;
 }
@@ -262,7 +263,7 @@ span {
 
 /* Pseudoelement que afegeix contingut abans del títol del producte. (::before) */
 .oferta::before {
-  content: "OFERTA!";
+  content: 'OFERTA!';
   position: absolute;
   top: -10px;
   left: -10px;
@@ -275,7 +276,7 @@ span {
 
 /* Pseudoelement que afegeix contingut després de la descripció del producte. (::after) */
 .product::after {
-  content: "Enviament gratuït 24/48!";
+  content: 'Enviament gratuït 24/48!';
   padding: 0.3rem;
   background-color: #444;
   color: white;
@@ -292,17 +293,17 @@ span {
 ```html
 <div class="product">
   <h2 class="title">Sobres de Cartes Pokémon</h2>
-  <img src="./img/pseudoelements_imatge_pokemon.png" alt="Sobres de Cartes Pokemon">
+  <img src="./img/pseudoelements_imatge_pokemon.png" alt="Sobres de Cartes Pokemon" />
   <p class="description">Cartes exclusives assegurades en cada pack.</p>
 </div>
 <div class="product oferta">
   <h2 class="title">Ozobot Robot Programable</h2>
-  <img src="./img/pseudoelements_imatge_ozobot.png" alt="Ozobot Robot Programable">
+  <img src="./img/pseudoelements_imatge_ozobot.png" alt="Ozobot Robot Programable" />
   <p class="description">El nou Ozobot es pot programar amb JavaScript.</p>
 </div>
 <div class="product">
   <h2 class="title">Grand Theft Auto 6 per la PS5</h2>
-  <img src="./img/pseudoelements_imatge_gta6.png" alt="Joc GTA6 per la PS5">
+  <img src="./img/pseudoelements_imatge_gta6.png" alt="Joc GTA6 per la PS5" />
   <p class="description">Acció i llibertat total en la nova saga de GTA.</p>
 </div>
 ```

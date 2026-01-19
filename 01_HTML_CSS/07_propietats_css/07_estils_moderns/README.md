@@ -4,19 +4,19 @@ Les propietats que es treballen en aquest bloc us permetran desmarcar-vos dels d
 
 En el disseny web modern, els efectes visuals combinats amb petits moviments dels elements HTML poden millorar l'atenció i l'experiència de l'usuari, fent que la navegació sigui més fluida i entretinguda. Entre aquests efectes, destaquen les ombres, les transparències, les transformacions, les transicions i les animacions d'objectes.
 
-| **Propietat**           | **Descripció**                                                                                                             |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `box-shadow`            | Afegeix ombres a les caixes HTML. Dona profunditat i sensació de flotació o elevació de l'element.                         |
-| `border-radius`         | Arrodoneix les cantonades d’elements com targetes, botons, imatges o contenidors en general.                               |
-| `opacity`               | Controla la transparència d’un element (valors entre 0 i 1) on el 0 és invisible i l'1 és opac.                            |
-| `filter`                | Aplica filtres visuals a un element com blur, escala de grisos, contrast, saturació, etc.                                  |
-| `backdrop-filter`       | Aplica filtres al fons d'un element, creant efectes com el "glassmorphism" (un vidre translúcid).                          |
-| `aspect-ratio`          | Permet mantenir les proporcions (la forma) dels elements com imatges, vídeos o contenidors (1:1 quadrat, 16:9 panoràmic).  |
-| `object-fit`            | Controla com s'ajusta una imatge dins del seu contenidor controlat amb aspect-ratio (`cover`, `contain`, `fill`, etc.).    |
-| `clip-path`             | Retalla elements amb formes (triangles, cercles, etc.), útil decorar i retallar seccions, separadors, imatges, vores, etc. |
-| `transform`             | Modifica un element HTML a partir de transformacions visuals com la rotació, l'escalat, la translació o el cisallament.    |
-| `transition`            | Fa una transició entre l'estat inicial i l'estat final d'un element de forma suau (color, mida, ombres, posició etc.).     |
-| `animation`             | Genera animacions sobre els elements HTML que es poden iniciar automàticament, tenir una durada i repetir-se.              |
+| **Propietat**     | **Descripció**                                                                                                             |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `box-shadow`      | Afegeix ombres a les caixes HTML. Dona profunditat i sensació de flotació o elevació de l'element.                         |
+| `border-radius`   | Arrodoneix les cantonades d'elements com targetes, botons, imatges o contenidors en general.                               |
+| `opacity`         | Controla la transparència d'un element (valors entre 0 i 1) on el 0 és invisible i l'1 és opac.                            |
+| `filter`          | Aplica filtres visuals a un element com blur, escala de grisos, contrast, saturació, etc.                                  |
+| `backdrop-filter` | Aplica filtres al fons d'un element, creant efectes com el "glassmorphism" (un vidre translúcid).                          |
+| `aspect-ratio`    | Permet mantenir les proporcions (la forma) dels elements com imatges, vídeos o contenidors (1:1 quadrat, 16:9 panoràmic).  |
+| `object-fit`      | Controla com s'ajusta una imatge dins del seu contenidor controlat amb aspect-ratio (`cover`, `contain`, `fill`, etc.).    |
+| `clip-path`       | Retalla elements amb formes (triangles, cercles, etc.), útil decorar i retallar seccions, separadors, imatges, vores, etc. |
+| `transform`       | Modifica un element HTML a partir de transformacions visuals com la rotació, l'escalat, la translació o el cisallament.    |
+| `transition`      | Fa una transició entre l'estat inicial i l'estat final d'un element de forma suau (color, mida, ombres, posició etc.).     |
+| `animation`       | Genera animacions sobre els elements HTML que es poden iniciar automàticament, tenir una durada i repetir-se.              |
 
 ## Estil de les caixes (`box-shadow`, `border-radius`)
 
@@ -71,28 +71,28 @@ En el disseny web modern, els efectes visuals combinats amb petits moviments del
 ```html
 <h2>Propietats: Ombres (box-shadow) i cantonades arrodonides (border-radius)</h2>
 <div class="card soft-shadow">
-    <h3>Estil Genèric</h3>
-    <p>Ombra suau i elegant per targetes de perfil o informació.</p>
+  <h3>Estil Genèric</h3>
+  <p>Ombra suau i elegant per targetes de perfil o informació.</p>
 </div>
 <div class="card neon-glow">
-    <h3>Estil Neó</h3>
-    <p>Ideal per destacar ofertes o botons de crida a l'acció.</p>
+  <h3>Estil Neó</h3>
+  <p>Ideal per destacar ofertes o botons de crida a l'acció.</p>
 </div>
 <div class="card raised-depth">
-    <h3>Estil Flotant</h3>
-    <p>Aspecte de targeta "flotant" com al disseny de Google.</p>
+  <h3>Estil Flotant</h3>
+  <p>Aspecte de targeta "flotant" com al disseny de Google.</p>
 </div>
 <div class="card inset-shadow">
-    <h3>Estil Profunditat</h3>
-    <p>Ombra interior per fer un efecte d'enfonsat o premut.</p>
+  <h3>Estil Profunditat</h3>
+  <p>Ombra interior per fer un efecte d'enfonsat o premut.</p>
 </div>
 <div class="card retro-shadow">
-    <h3>Estil Retro</h3>
-    <p>Disseny GumRoad amb ombra desplaçada i un color viu.</p>
+  <h3>Estil Retro</h3>
+  <p>Disseny GumRoad amb ombra desplaçada i un color viu.</p>
 </div>
 <div class="card outlined-glow">
-    <h3>Estil Minimalista</h3>
-    <p>Efecte suau amb vores i una ombra lleugera.</p>
+  <h3>Estil Minimalista</h3>
+  <p>Efecte suau amb vores i una ombra lleugera.</p>
 </div>
 ```
 
@@ -174,15 +174,24 @@ En el disseny web modern, els efectes visuals combinats amb petits moviments del
   <p>Imatge Original</p>
 </div>
 <div class="box image-box opacity-low">
-  <img src="./img/imatge_opacity_filter_backdrop-filter.jpg" alt="Imatge amb una opacitat del 0.5" />
+  <img
+    src="./img/imatge_opacity_filter_backdrop-filter.jpg"
+    alt="Imatge amb una opacitat del 0.5"
+  />
   <p>Opacity 0.5</p>
 </div>
 <div class="box image-box grayscale">
-  <img src="./img/imatge_opacity_filter_backdrop-filter.jpg" alt="Imatge amb el filtre d'escala de grisos" />
+  <img
+    src="./img/imatge_opacity_filter_backdrop-filter.jpg"
+    alt="Imatge amb el filtre d'escala de grisos"
+  />
   <p>filter: Grayscale 80%</p>
 </div>
 <div class="box image-box blur">
-  <img src="./img/imatge_opacity_filter_backdrop-filter.jpg" alt="Imatge amb el filtre blur aplicat" />
+  <img
+    src="./img/imatge_opacity_filter_backdrop-filter.jpg"
+    alt="Imatge amb el filtre blur aplicat"
+  />
   <p>filter: Blur 2px</p>
 </div>
 <div class="box image-box">
@@ -252,37 +261,37 @@ En el disseny web modern, els efectes visuals combinats amb petits moviments del
 <div class="box">
   <p>aspect-ratio: 1/1 + fill</p>
   <div class="img-box">
-    <img src="./img/imatge_aspect_ratio_1-1.png" alt="Relació d'aspecte 1/1 amb fill">
+    <img src="./img/imatge_aspect_ratio_1-1.png" alt="Relació d'aspecte 1/1 amb fill" />
   </div>
 </div>
 <div class="box cover">
   <p>object-fit: cover</p>
   <div class="img-box">
-    <img src="./img/imatge_aspect_ratio_1-1.png" alt="Relació d'aspecte 1/1 amb cover">
+    <img src="./img/imatge_aspect_ratio_1-1.png" alt="Relació d'aspecte 1/1 amb cover" />
   </div>
 </div>
 <div class="box contain">
   <p>object-fit: contain</p>
   <div class="img-box">
-    <img src="./img/imatge_aspect_ratio_1-1.png" alt="Relació d'aspecte 1/1 amb contain">
+    <img src="./img/imatge_aspect_ratio_1-1.png" alt="Relació d'aspecte 1/1 amb contain" />
   </div>
 </div>
 <div class="box">
   <p>aspect-ratio: 16/9</p>
   <div class="img-box rectangular">
-    <img src="./img/imatge_aspect_ratio_16-9.jpg" alt="Relació d'aspecte 16/9">
+    <img src="./img/imatge_aspect_ratio_16-9.jpg" alt="Relació d'aspecte 16/9" />
   </div>
 </div>
 <div class="box cover">
   <p>16/9 + cover</p>
   <div class="img-box rectangular">
-    <img src="./img/imatge_aspect_ratio_16-9.jpg" alt="Relació d'aspecte 16/9 amb cover">
+    <img src="./img/imatge_aspect_ratio_16-9.jpg" alt="Relació d'aspecte 16/9 amb cover" />
   </div>
 </div>
 <div class="box contain">
   <p>16/9 + contain</p>
   <div class="img-box rectangular">
-    <img src="./img/imatge_aspect_ratio_16-9.jpg" alt="Relació d'aspecte 16/9 amb contain">
+    <img src="./img/imatge_aspect_ratio_16-9.jpg" alt="Relació d'aspecte 16/9 amb contain" />
   </div>
 </div>
 ```
@@ -326,11 +335,10 @@ En el disseny web modern, els efectes visuals combinats amb petits moviments del
 /* Retall diagonal superior. Element decoratiu com a separador, targeta de producte, secció decorativa, etc. */
 .card.diagonal-cut {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
 }
 
 /* Contenidor decoratiu. Element decoratiu com a notificació, contenidor de xat, comentari, etc. */
-.card.comment {  
+.card.comment {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 55% 90%, 50% 100%, 45% 90%, 0 90%);
   border-radius: 1rem;
 }
@@ -421,23 +429,23 @@ section div:nth-of-type(6) {
 
 /* Element amb una transformació d'escalat de x1.1 en X i de x1.1 en Y. */
 section div:nth-of-type(7) {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 /* Element amb una transformació d'escalat de x0.7 en X i de x0.7 en Y. */
 section div:nth-of-type(8) {
-  transform: scale(0.7)
+  transform: scale(0.7);
 }
 
 /* Element amb una transformació de cisallament de -30 graus en X i de 0 graus en Y. */
 section div:nth-of-type(9) {
-  transform: skew(-30deg)
+  transform: skew(-30deg);
 }
 ```
 
 ```html
 <section>
-  <h2>Transformacions Rotació, Traslació i Escalat (rotate, translate i scale) </h2>
+  <h2>Transformacions Rotació, Traslació i Escalat (rotate, translate i scale)</h2>
   <div class="box">
     <p>Caixa 1</p>
     <p>Rotació 45º</p>
@@ -455,7 +463,7 @@ section div:nth-of-type(9) {
     <p>Traslació (210%, 20px)</p>
   </div>
   <div class="box">
-    <p>Caixa 5</p>      
+    <p>Caixa 5</p>
     <p>Traslació (0, 50px)</p>
   </div>
   <div class="box">
@@ -557,7 +565,7 @@ section div:nth-of-type(9) {
 ```
 
 ```html
-<h2>Propietat: Transicions per animar elements (transition) </h2>
+<h2>Propietat: Transicions per animar elements (transition)</h2>
 <div class="box rotate">Rotació</div>
 <div class="box translate">Translació</div>
 <div class="box scale">Escalat</div>
@@ -593,10 +601,18 @@ section div:nth-of-type(9) {
   animation: colorsBg 6s ease infinite;
 }
 @keyframes colorsBg {
-    0% {background: steelblue;}
-    25% {background: slateblue;}
-    50% {background: dodgerblue;}
-    75% {background: slateblue;}
+  0% {
+    background: steelblue;
+  }
+  25% {
+    background: slateblue;
+  }
+  50% {
+    background: dodgerblue;
+  }
+  75% {
+    background: slateblue;
+  }
 }
 
 /* Element animat simulant el batec del cor (Pulse) */
@@ -605,8 +621,13 @@ section div:nth-of-type(9) {
   animation: pulse 2s infinite;
 }
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 /* Element animat simulant el gir d'una carta (Flip 3D) */
@@ -616,8 +637,13 @@ section div:nth-of-type(9) {
   animation: flipCard 6s infinite;
 }
 @keyframes flipCard {
-  0%, 100% { transform: rotateY(0deg); }
-  50% { transform: rotateY(180deg); }
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
 }
 
 /* Element animat simulant que sura a l'aigua (Floaty) */
@@ -626,8 +652,13 @@ section div:nth-of-type(9) {
   animation: floaty 3s ease-in-out infinite;
 }
 @keyframes floaty {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 /* Barra de càrrega de progrés dins de la caixa (Progress Bar) */
@@ -645,36 +676,59 @@ section div:nth-of-type(9) {
 }
 
 @keyframes carregant {
-  0% { width: 0%; }
-  100% { width: 100%; }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /* Element animat que es desplaça dins del contenidor pare */
 .miniBox {
-    position: relative;
-    padding: 10px;
-    box-shadow: 0px 2px 3px #aaa;
-    background: dodgerblue;
-    color: white;
-    width: 10%;
-    height: 5vh;
-    text-align: center;
+  position: relative;
+  padding: 10px;
+  box-shadow: 0px 2px 3px #aaa;
+  background: dodgerblue;
+  color: white;
+  width: 10%;
+  height: 5vh;
+  text-align: center;
 }
 
 .movimentAnimation {
-    animation-name: moviment;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
+  animation-name: moviment;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes moviment {
-  0% {background: lightblue; top: 20%; left:20%;}
-  25% {background: lightcoral; top:20%; left:60%; }
-  50% {background: lightgreen; top:50%; left: 60%;}
-  75% {background: lightcoral; top:50%; left:20%; }
-  100% {background:lightblue; top:20%; left:20%;}
+  0% {
+    background: lightblue;
+    top: 20%;
+    left: 20%;
+  }
+  25% {
+    background: lightcoral;
+    top: 20%;
+    left: 60%;
+  }
+  50% {
+    background: lightgreen;
+    top: 50%;
+    left: 60%;
+  }
+  75% {
+    background: lightcoral;
+    top: 50%;
+    left: 20%;
+  }
+  100% {
+    background: lightblue;
+    top: 20%;
+    left: 20%;
+  }
 }
-
 
 /* Element animat una imatge de 8 fotogrames amb un jugador d'un joc. */
 .card-runner {
@@ -688,44 +742,47 @@ section div:nth-of-type(9) {
   font-weight: bold;
   border-radius: 12px;
   overflow: hidden;
-  position: relative; 
+  position: relative;
 }
 
 /* Animació de l'sprite (imatge amb els 8 fotogrames) */
 .runner {
-    position: relative;
-    height: 137px;
-    width: 115px;
-    background: url("./../img/runner_animation_sprite.png");
-    animation: sprite 1s steps(8) infinite, move 3s linear infinite;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+  position: relative;
+  height: 137px;
+  width: 115px;
+  background: url('./../img/runner_animation_sprite.png');
+  animation: sprite 1s steps(8) infinite, move 3s linear infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes sprite {
-    100% {
-        background-position: -920px; /* 115px x 8 frames */
-    }
+  100% {
+    background-position: -920px; /* 115px x 8 frames */
+  }
 }
 
 @keyframes move {
-    0% {
-        left: 0%;
-    }
-    100% {
-        left: calc(100% - 115px);
-    }
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: calc(100% - 115px);
+  }
 }
 ```
 
 ```html
-<h2>Propietat: Animar automàticament elements (animation i @keyframes) </h2>
+<h2>Propietat: Animar automàticament elements (animation i @keyframes)</h2>
 <div class="card animacioColorFons">Fons de colors</div>
 <div class="card animacioPulse">Batec (Pulse)</div>
 <div class="card animacioFlip">Flip 3D</div>
 <div class="card animacioFloat">Flotant</div>
 <div class="card animacioProgress"><div class="progressBar">Barra de Progrés</div></div>
-<div class="card animacioBlur"><div class="miniBox movimentAnimation"></div>Element Animat</div>
+<div class="card animacioBlur">
+  <div class="miniBox movimentAnimation"></div>
+  Element Animat
+</div>
 <div class="card-runner"><div class="runner"></div></div>
 ```
 

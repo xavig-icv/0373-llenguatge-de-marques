@@ -1,16 +1,16 @@
 # Bloc 04. Propietats de Fons (Backgrounds)
 
-Les propietats relacionades amb els fons d'elements permeten modificar l’aspecte visual de l'espai que hi ha darrera del contingut (el fons) d’un element HTML. Podem definir colors, imatges, la seva posició, la mida i efectes addicionals per aconseguir dissenys atractius i professionals.ç
+Les propietats relacionades amb els fons d'elements permeten modificar l'aspecte visual de l'espai que hi ha darrera del contingut (el fons) d'un element HTML. Podem definir colors, imatges, la seva posició, la mida i efectes addicionals per aconseguir dissenys atractius i professionals.ç
 
-| **Nom**                | **Propietat**           | **Descripció**                                                                                           |
-| ---------------------- | ----------------------- | -------------------------------------------------------------------------------------------------------- |
-| Color de fons          | `background-color`      | Estableix el color de fons d’un element aplicant un format (nom, hexadecimal, rgb, rgba, hsl, hsla)      |
-| Imatge de fons         | `background-image`      | Defineix una o diverses imatges que es mostren al fons de l’element. S'utilitza per fer gradients.       |
-| Posició de la imatge   | `background-position`   | Posiciona la imatge dins l'element indicant l'eix horitzontal i el vertical. (top left, center, 50% 50%).|
-| Repetició de la imatge | `background-repeat`     | Estableix si la imatge no es repeteix, es repeteix horitzontalment, verticalment o en ambdues direccions.|
-| Mida de la imatge      | `background-size`       | Estableix la mida de la imatge indicant l'amplada i l'alçada (px, %, cover, contain).                    |
-| Fons fix o mòbil       | `background-attachment` | Permet indicar si la imatge de fons queda fixa a la pantalla o es mou amb el contingut al fer scroll.    |
-| Mètode Abreujat        | `background`            | Propietat abreujada que permet definir múltiples propietats, s'utilitza molt per fer gradients senzills. |
+| **Nom**                | **Propietat**           | **Descripció**                                                                                            |
+| ---------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------- |
+| Color de fons          | `background-color`      | Estableix el color de fons d'un element aplicant un format (nom, hexadecimal, rgb, rgba, hsl, hsla)       |
+| Imatge de fons         | `background-image`      | Defineix una o diverses imatges que es mostren al fons de l'element. S'utilitza per fer gradients.        |
+| Posició de la imatge   | `background-position`   | Posiciona la imatge dins l'element indicant l'eix horitzontal i el vertical. (top left, center, 50% 50%). |
+| Repetició de la imatge | `background-repeat`     | Estableix si la imatge no es repeteix, es repeteix horitzontalment, verticalment o en ambdues direccions. |
+| Mida de la imatge      | `background-size`       | Estableix la mida de la imatge indicant l'amplada i l'alçada (px, %, cover, contain).                     |
+| Fons fix o mòbil       | `background-attachment` | Permet indicar si la imatge de fons queda fixa a la pantalla o es mou amb el contingut al fer scroll.     |
+| Mètode Abreujat        | `background`            | Propietat abreujada que permet definir múltiples propietats, s'utilitza molt per fer gradients senzills.  |
 
 ## Color de fons (`background-color`)
 
@@ -80,14 +80,35 @@ Les propietats relacionades amb els fons d'elements permeten modificar l’aspec
 
 ```html
 <h2>Propietat: color de fons (background-color)</h2>
-<div class="bg-info">Informació: S'utilitza com a missatge informatiu genèric (notificacions, missatges d'ajuda, etc).</div>
-<div class="bg-success">Èxit: Missatge per confirmar que una acció s'ha realitzat correctament (missatge enviat o compra realitzada).</div>
-<div class="bg-warning">Advertència: S'utilitza per informar a l'usuari d'una acció que ha de realitzar previament abans de continuar un procés. (acceptar les condicions d'ús o estàs enviant un correu sense fitxers adjunts).</div>
-<div class="bg-danger">Error: L'acció no s'ha pogut realitzar. Element amb un gran impacte visual que s'ha d'utilitzar amb coherència.</div>
-<div class="bg-primary">Primari: Element per clicar que realitza una Acció principal o destacada (botons, capçaleres, etc).</div>
-<div class="bg-secondary">Secundari: Acció complementària o alternativa a la principal (botons o textos secundaris).</div>
-<div class="bg-light">Light: Fons neutre per mantenir l'atenció al contingut, permet un disseny web lleuger i suau.</div>
-<div class="bg-dark">Dark: Seccions fosques, peus de pàgina o elements a destacar dins del layout de la pàgina.</div>
+<div class="bg-info">
+  Informació: S'utilitza com a missatge informatiu genèric (notificacions, missatges d'ajuda, etc).
+</div>
+<div class="bg-success">
+  Èxit: Missatge per confirmar que una acció s'ha realitzat correctament (missatge enviat o compra
+  realitzada).
+</div>
+<div class="bg-warning">
+  Advertència: S'utilitza per informar a l'usuari d'una acció que ha de realitzar previament abans
+  de continuar un procés. (acceptar les condicions d'ús o estàs enviant un correu sense fitxers
+  adjunts).
+</div>
+<div class="bg-danger">
+  Error: L'acció no s'ha pogut realitzar. Element amb un gran impacte visual que s'ha d'utilitzar
+  amb coherència.
+</div>
+<div class="bg-primary">
+  Primari: Element per clicar que realitza una Acció principal o destacada (botons, capçaleres,
+  etc).
+</div>
+<div class="bg-secondary">
+  Secundari: Acció complementària o alternativa a la principal (botons o textos secundaris).
+</div>
+<div class="bg-light">
+  Light: Fons neutre per mantenir l'atenció al contingut, permet un disseny web lleuger i suau.
+</div>
+<div class="bg-dark">
+  Dark: Seccions fosques, peus de pàgina o elements a destacar dins del layout de la pàgina.
+</div>
 ```
 
 ![Propietat Color de fons](./img/propietat_background_color.png)
@@ -119,7 +140,7 @@ Les propietats relacionades amb els fons d'elements permeten modificar l’aspec
 
 /* Fons amb gradient (degradat). Poden tenir un estil linial o circular (linear o radial). */
 .bg-gradient {
-  background-image: linear-gradient(90deg, #2A7B9B, #57C785 50%, #EDDD53 100%);
+  background-image: linear-gradient(90deg, #2a7b9b, #57c785 50%, #eddd53 100%);
   color: white;
   padding: 3rem;
   border: 2px solid #999;
@@ -128,7 +149,8 @@ Les propietats relacionades amb els fons d'elements permeten modificar l’aspec
 
 /* Fons amb imatge i gradient (simulat) superposats per millorar el contrast i que el text sigui més llegible. */
 .bg-gradient-overlay {
-  background-image: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./../img/imatge_gradient_background_image.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./../img/imatge_gradient_background_image.jpg');
   background-size: cover;
   background-position: center center;
   color: white;
@@ -140,16 +162,20 @@ Les propietats relacionades amb els fons d'elements permeten modificar l’aspec
 ```html
 <h2>Propietat: imatge de fons (background-image)</h2>
 <div class="bg-pattern">
-  Fons amb un patró que es repeteix. Es fa servir molt com a fons d'un element o de tota la pàgina web. Aquestes imatges són textures que milloren l'estètica sense saturar el contingut.
+  Fons amb un patró que es repeteix. Es fa servir molt com a fons d'un element o de tota la pàgina
+  web. Aquestes imatges són textures que milloren l'estètica sense saturar el contingut.
 </div>
 <div class="bg-banner">
-  Fons amb una imatge gran centrada. És ideal per a capçaleres de pàgina o seccions destacades (promoció d'un producte, un servei, un esdeveniment, etc).
+  Fons amb una imatge gran centrada. És ideal per a capçaleres de pàgina o seccions destacades
+  (promoció d'un producte, un servei, un esdeveniment, etc).
 </div>
 <div class="bg-gradient">
-  Fons amb un gradient (linial o radial). És poden fer degradats de molt tipus i colors. S'utilitza molt en layouts actuals, ja que algunes combinacions de colors són modernes i agradables.
+  Fons amb un gradient (linial o radial). És poden fer degradats de molt tipus i colors. S'utilitza
+  molt en layouts actuals, ja que algunes combinacions de colors són modernes i agradables.
 </div>
 <div class="bg-gradient-overlay">
-  Fons amb una imatge amb degradat. Es combina una imatge de fons amb un gradient superposat. A banda de l'atractiu, s'utilitza per fer més llegible el text sobre una imatge.
+  Fons amb una imatge amb degradat. Es combina una imatge de fons amb un gradient superposat. A
+  banda de l'atractiu, s'utilitza per fer més llegible el text sobre una imatge.
 </div>
 ```
 
@@ -190,20 +216,24 @@ Les propietats relacionades amb els fons d'elements permeten modificar l’aspec
 ```html
 <h2>Propietat: posició de la imatge (background-position)</h2>
 <p><strong>center center</strong>: La imatge està centrada horitzontalment i verticalment.</p>
-<p><strong>45% 100%</strong>: Posició personalitzada. 45% horitzontal i 100% vertical del contenidor.</p>
+<p>
+  <strong>45% 100%</strong>: Posició personalitzada. 45% horitzontal i 100% vertical del contenidor.
+</p>
 <div class="bg-center">
-<!-- background-position: center center; -->  
+  <!-- background-position: center center; -->
 </div>
 <div class="bg-percentage">
-<!-- background-position: 45% 100% -->
+  <!-- background-position: 45% 100% -->
 </div>
 <p><strong>top left</strong>: La imatge està situada a la part superior esquerra del contenidor.</p>
-<p><strong>bottom right</strong>: La imatge està situada a la part inferior dreta del contenidor.</p>
+<p>
+  <strong>bottom right</strong>: La imatge està situada a la part inferior dreta del contenidor.
+</p>
 <div class="bg-top-left">
-<!-- background-position: top left; -->  
+  <!-- background-position: top left; -->
 </div>
 <div class="bg-bottom-right">
-<!-- background-position: bottom right; -->
+  <!-- background-position: bottom right; -->
 </div>
 ```
 
@@ -249,8 +279,14 @@ Les propietats relacionades amb els fons d'elements permeten modificar l’aspec
 <div class="bg-repeat-x">La imatge es repeteix en horitzontal. (repeat-x)</div>
 <div class="bg-repeat-y">La imatge es repeteix en vertical. (repeat-y)</div>
 <div class="bg-no-repeat">La imatge no es repeteix i es centra al contenidor. (no-repeat)</div>
-<div class="bg-repeat-space">La imatge es repeteix amb el mateix espai entre totes les imatges. Un espai horitzontal i un altre espai vertical. (space)</div>
-<div class="bg-repeat-round">Les dimensions de la imatge s’adapten perquè encaixin repeticions senceres de la imatge i cap quedi tallada. (round)</div>
+<div class="bg-repeat-space">
+  La imatge es repeteix amb el mateix espai entre totes les imatges. Un espai horitzontal i un altre
+  espai vertical. (space)
+</div>
+<div class="bg-repeat-round">
+  Les dimensions de la imatge s'adapten perquè encaixin repeticions senceres de la imatge i cap
+  quedi tallada. (round)
+</div>
 ```
 
 ![Propietat Repetició imatge de fons](./img/propietat_background_repeat.png)
@@ -259,32 +295,38 @@ Les propietats relacionades amb els fons d'elements permeten modificar l’aspec
 
 ```css
 .bg-size-auto {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),   url('./../img/imatge_background_size.png');
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./../img/imatge_background_size.png');
   background-size: auto;
 }
 
 .bg-size-cover {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),   url('./../img/imatge_background_size.png');
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./../img/imatge_background_size.png');
   background-size: cover;
 }
 
 .bg-size-contain {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),   url('./../img/imatge_background_size.png');
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./../img/imatge_background_size.png');
   background-size: contain;
 }
 
 .bg-size-fixed {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),   url('./../img/imatge_background_size.png');
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./../img/imatge_background_size.png');
   background-size: 125px 80px;
 }
 
 .bg-size-full-width {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),   url('./../img/imatge_background_size.png');
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./../img/imatge_background_size.png');
   background-size: 100% auto;
 }
 
 .bg-size-full {
-  background-image: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),   url('./../img/imatge_background_size.png');
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./../img/imatge_background_size.png');
   background-size: 100% 100%;
 }
 ```
@@ -295,19 +337,23 @@ Les propietats relacionades amb els fons d'elements permeten modificar l’aspec
   Mida original de la imatge (auto). Es manté la resolució i la mida real de la imatge de fons.
 </div>
 <div class="bg-size-cover">
-  La imatge cobreix tot l'element (cover). Redimensiona la imatge per adaptar-se a l'amplada de l'element.
+  La imatge cobreix tot l'element (cover). Redimensiona la imatge per adaptar-se a l'amplada de
+  l'element.
 </div>
 <div class="bg-size-contain">
   La imatge s'adapta perquè tota ella càpiga dins de l'element sense ser retallada (contain).
 </div>
 <div class="bg-size-fixed">
-  Mida fixa amb valors absoluts (125px i 80px). Mantindrà les mateixes dimensions en diferents mides de pantalla.
+  Mida fixa amb valors absoluts (125px i 80px). Mantindrà les mateixes dimensions en diferents mides
+  de pantalla.
 </div>
 <div class="bg-size-full-width">
-  Mida amb valors relatius. Amplada del 100% i alçada automàtica (100% i auto). S'adapta a diferents mides de pantalla.
+  Mida amb valors relatius. Amplada del 100% i alçada automàtica (100% i auto). S'adapta a diferents
+  mides de pantalla.
 </div>
 <div class="bg-size-full">
-  Mida amb valors relatius. Amplada del 100% i alçada del 100%. Permet omplir tot el contenidor amb la imatge de fons. (deforma la imatge)
+  Mida amb valors relatius. Amplada del 100% i alçada del 100%. Permet omplir tot el contenidor amb
+  la imatge de fons. (deforma la imatge)
 </div>
 ```
 
@@ -358,11 +404,16 @@ Les propietats relacionades amb els fons d'elements permeten modificar l’aspec
 </div>
 <div class="bg-fixed">
   <p>La imatge es queda fixada a la pantalla mentre es fa scroll. (fixed)</p>
-  <p>S'utilitza en seccions per generar un efecte denominat "parallax" o destacar la imatge de fons.</p>
+  <p>
+    S'utilitza en seccions per generar un efecte denominat "parallax" o destacar la imatge de fons.
+  </p>
 </div>
 <div class="bg-local">
-  <p>La imatge es mou només quan hi ha scroll intern dins de l’element. (local)</p>
-  <p>S'utilitza en seccions que disposen de molt contingut i no es vol fer scroll de la pantalla general.</p>
+  <p>La imatge es mou només quan hi ha scroll intern dins de l'element. (local)</p>
+  <p>
+    S'utilitza en seccions que disposen de molt contingut i no es vol fer scroll de la pantalla
+    general.
+  </p>
   <div class="container-buit"></div>
 </div>
 ```
@@ -376,11 +427,10 @@ Les propietats relacionades amb els fons d'elements permeten modificar l’aspec
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 p {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 1rem;
   margin-top: 0.2rem;
   border-radius: 12px;
@@ -406,7 +456,10 @@ div {
 ```html
 <h2>Propietat abreujada: background</h2>
 <div class="background">
-  <p>Mètode abreujat, propietat "background" que permet combinar diverses propietats en una sola línia.</p>
+  <p>
+    Mètode abreujat, propietat "background" que permet combinar diverses propietats en una sola
+    línia.
+  </p>
   <p>Color o Imatge de fons (background-color o background-image)</p>
   <p>Posició de la imatge de fons - background-position (top, center, left, right)</p>
   <p>Mida de la imatge de fons - background-size (cover, contain, 100%)</p>

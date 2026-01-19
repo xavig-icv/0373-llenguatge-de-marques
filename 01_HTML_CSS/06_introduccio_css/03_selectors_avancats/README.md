@@ -6,13 +6,13 @@ Aquests selectors es fan servir principalment per aplicar estils sense haver de 
 
 ## Tipus de selectors avançats
 
-| Selector               | Exemple          | Descripció                                                                                        |
-|------------------------|------------------|---------------------------------------------------------------------------------------------------|
-| **Descendent**         | `div p`          | Selecciona totes les etiquetes `p` que estiguin dins de `div` (a qualsevol nivell).               |
-| **Fill directe**       | `ul > li`        | Selecciona només els fills directes (els `li` dins de `ul`, només el primer nivell).              |
-| **Germans immediats**  | `h2 + p`         | Selecciona només la primera etiqueta germana `p` que estigui després d'un `h2` (al mateix nivell).|
-| **Germans generals**   | `h2 ~ p`         | Selecciona a totes les etiquetes germanes `p`que estan a continuació d'un `h2` (al mateix nivell).|
-| **Atribut**            | `a[href]`        | Selecciona tots els elements amb un atribut específic (els `a` amb un atribut `href`).            |
+| Selector              | Exemple   | Descripció                                                                                         |
+| --------------------- | --------- | -------------------------------------------------------------------------------------------------- |
+| **Descendent**        | `div p`   | Selecciona totes les etiquetes `p` que estiguin dins de `div` (a qualsevol nivell).                |
+| **Fill directe**      | `ul > li` | Selecciona només els fills directes (els `li` dins de `ul`, només el primer nivell).               |
+| **Germans immediats** | `h2 + p`  | Selecciona només la primera etiqueta germana `p` que estigui després d'un `h2` (al mateix nivell). |
+| **Germans generals**  | `h2 ~ p`  | Selecciona a totes les etiquetes germanes `p`que estan a continuació d'un `h2` (al mateix nivell). |
+| **Atribut**           | `a[href]` | Selecciona tots els elements amb un atribut específic (els `a` amb un atribut `href`).             |
 
 ## Selector Descendent (`div p`)
 
@@ -96,20 +96,20 @@ h4 ~ p {
 
 ```css
 /* Atribut que comença per la paraula missatge */
-div[class^="missatge"] {
+div[class^='missatge'] {
   margin-top: 5px;
   padding: 5px;
   background-color: #ccc;
 }
 
 /* Atribut que conté la paraula alerta */
-div[class~="alerta"] {
-  background:darkgoldenrod;
+div[class~='alerta'] {
+  background: darkgoldenrod;
   color: white;
 }
 
 /* Atribut que conté la paraula error */
-div[class~="error"] {
+div[class~='error'] {
   background: darkred;
   color: white;
 }
@@ -157,15 +157,15 @@ Exemples dels Selectors Avançats CSS
       <section>
         <h2>Selector Descendent</h2>
         <p>Selecciona TOTES les etiquetes internes (a qualsevol nivell).</p>
-        <p>Totes les <strong>SECTIONS</strong> dintre del MAIN (borders negres i fons gris).</p>      
+        <p>Totes les <strong>SECTIONS</strong> dintre del MAIN (borders negres i fons gris).</p>
       </section>
       <section id="fillDirecte">
         <h2>Selector Fill (&gt;)</h2>
         <p>Selecciona únicament les etiquetes filles directes.</p>
         <p>Aquest paràgraf és FILL DIRECTE. (Primer Nivell)</p>
         <div>
-            <h3>El DIV és fill directe.</h3>
-            <p>Aquest paràgraf NO es un fill directe. (Segon Nivell)</p>
+          <h3>El DIV és fill directe.</h3>
+          <p>Aquest paràgraf NO es un fill directe. (Segon Nivell)</p>
         </div>
       </section>
       <section id="germaImmediat">
@@ -180,12 +180,12 @@ Exemples dels Selectors Avançats CSS
         <span>Aquest SPAN és germà general de H2 -- Fons de Color Negre</span>
       </section>
       <section id="atributs">
-          <h2>Selector Atribut ([atribut])</h2>
-          <p>Selecciona les etiquetes que tenen un atribut concret.</p>
-          <a href="#">Atribut href</a>
-          <a href="#" class="jugador">Atribut class</a>
-          <a href="https://github.com/xavig-icv/">href amb Valor</a>
-          <a href="#" class="jugadorEspecial">class amb Valor</a>
+        <h2>Selector Atribut ([atribut])</h2>
+        <p>Selecciona les etiquetes que tenen un atribut concret.</p>
+        <a href="#">Atribut href</a>
+        <a href="#" class="jugador">Atribut class</a>
+        <a href="https://github.com/xavig-icv/">href amb Valor</a>
+        <a href="#" class="jugadorEspecial">class amb Valor</a>
       </section>
     </main>
     <footer>
@@ -222,11 +222,10 @@ section h2 {
   color: darkgreen;
 }
 
-
 /* Selector FILL Directe (>) - Selecciona les etiquetes filles directes. */
 #fillDirecte > p {
-    color: navy;
-    padding: 3px;
+  color: navy;
+  padding: 3px;
 }
 
 #fillDirecte > div {
@@ -238,18 +237,18 @@ section h2 {
 
 /* Selector GERMÀ Immediat (+) - Selecciona la primera etiqueta germana. */
 h2 + p {
-    font-family: monospace;
-    font-size: 14px;
-    font-weight: bolder;
-    line-height: 1.4;
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: 1.4;
 }
 
 /* Selector GERMÀ General (~) - Selecciona les etiquetes germanes posteriors. */
 #germaGeneral h2 ~ span {
-    color: white;
-    background-color: #333;
-    padding: 3px;
-    line-height: 1.6;
+  color: white;
+  background-color: #333;
+  padding: 3px;
+  line-height: 1.6;
 }
 
 /* Selector ATRIBUT [nom_atribut] - Seleccions les etiquetes amb atributs els especificats. */
@@ -259,20 +258,21 @@ a {
   line-height: 1.8;
 }
 #atributs a[href] {
-    border: solid 2px darkgoldenrod;
+  border: solid 2px darkgoldenrod;
 }
 
 #atributs a[class] {
-    border: solid 2px darkblue;
+  border: solid 2px darkblue;
 }
 
-#atributs a[href="https://github.com/xavig-icv/"] {
-    background: goldenrod;
-    color: white;
+#atributs a[href="https://github.com/xavig-icv/"]
+{
+  background: goldenrod;
+  color: white;
 }
 
-#atributs a[class="jugadorEspecial"] {
-    background: dodgerblue;
-    color: #fff;
+#atributs a[class='jugadorEspecial'] {
+  background: dodgerblue;
+  color: #fff;
 }
 ```

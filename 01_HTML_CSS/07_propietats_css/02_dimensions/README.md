@@ -1,16 +1,15 @@
 # Bloc 02. Propietats de Dimensions
 
-Les següents propietats permeten establir i limitar l’alçada i l’amplada dels elements HTML (fent ús de valors absoluts o relatius). Això permet controlar l'espai que ocupa cada element dins del disseny (layout) de la pàgina web.
+Les següents propietats permeten establir i limitar l'alçada i l'amplada dels elements HTML (fent ús de valors absoluts o relatius). Això permet controlar l'espai que ocupa cada element dins del disseny (layout) de la pàgina web.
 
-| **Nom**        | **Propietat** | **Descripció**                                                                                      |
-| -------------- | ------------- | --------------------------------------------------------------------------------------------------- |
-| Amplada        | `width`       | Estableix l’amplada exacta d’un element utilitzant una unitat de mesura (px, %, vw, etc).           |
-| Alçada         | `height`      | Estableix l'alçada exacta d’un element utilitzant una unitat de mesura (px, %, vh, etc).            |
-| Amplada mínima | `min-width`   | Indica l’amplada mínima que pot tenir un element. (estableix un mínim d'amplada en webs responsive).|
-| Amplada màxima | `max-width`   | Limita l’amplada màxima d'un element (estableix un màxim d'amplada en webs responsive).             |
-| Alçada mínima  | `min-height`  | Indica l'alçada mínima que pot tenir un element. (estableix un mínim d'alçada en webs responsive).  |
-| Alçada màxima  | `max-height`  | Limita l'alçada màxima d'un element (estableix un màxim d'alçada en webs responsive).               |
-
+| **Nom**        | **Propietat** | **Descripció**                                                                                       |
+| -------------- | ------------- | ---------------------------------------------------------------------------------------------------- |
+| Amplada        | `width`       | Estableix l'amplada exacta d'un element utilitzant una unitat de mesura (px, %, vw, etc).            |
+| Alçada         | `height`      | Estableix l'alçada exacta d'un element utilitzant una unitat de mesura (px, %, vh, etc).             |
+| Amplada mínima | `min-width`   | Indica l'amplada mínima que pot tenir un element. (estableix un mínim d'amplada en webs responsive). |
+| Amplada màxima | `max-width`   | Limita l'amplada màxima d'un element (estableix un màxim d'amplada en webs responsive).              |
+| Alçada mínima  | `min-height`  | Indica l'alçada mínima que pot tenir un element. (estableix un mínim d'alçada en webs responsive).   |
+| Alçada màxima  | `max-height`  | Limita l'alçada màxima d'un element (estableix un màxim d'alçada en webs responsive).                |
 
 ## Amplada d'un element (`width`)
 
@@ -36,14 +35,14 @@ Les següents propietats permeten establir i limitar l’alçada i l’amplada d
   border: solid 2px crimson;
 }
 
-/* Element block (div), l’amplada és el 100% del contenidor pare */
+/* Element block (div), l'amplada és el 100% del contenidor pare */
 .width-auto-block {
   width: auto;
   background-color: lightsalmon;
-  border: solid 2px chocolate
+  border: solid 2px chocolate;
 }
 
-/* Element inline-block (div transformat), l’amplada s’adapta al seu contingut */
+/* Element inline-block (div transformat), l'amplada s'adapta al seu contingut */
 .width-auto-inline-block {
   display: inline-block;
   width: auto;
@@ -56,13 +55,18 @@ Les següents propietats permeten establir i limitar l’alçada i l’amplada d
 <h2>Propietat: amplada d'un element (width)</h2>
 <div class="width-px">Amplada fixa de 400px. Unitat absoluta. (px)</div>
 <div class="width-percent">Amplada del 50% del contenidor pare. Unitat relativa. (%)</div>
-<div class="width-vw">Amplada del 50% de la pantalla (finestra del navegador). Unitat relativa. (vw)</div>
-<div class="width-auto-block">Amplada automàtica segons la tipologia (element block = 100% element pare).</div>
-<div class="width-auto-inline-block">Amplada automàtica segons la tipologia (element inline-block = mida del contingut).</div>
+<div class="width-vw">
+  Amplada del 50% de la pantalla (finestra del navegador). Unitat relativa. (vw)
+</div>
+<div class="width-auto-block">
+  Amplada automàtica segons la tipologia (element block = 100% element pare).
+</div>
+<div class="width-auto-inline-block">
+  Amplada automàtica segons la tipologia (element inline-block = mida del contingut).
+</div>
 ```
 
 ![Propietat Amplada d'un element](./img/propietat_width.png)
-
 
 ## Alçada d'un element (`height`)
 
@@ -88,7 +92,7 @@ Les següents propietats permeten establir i limitar l’alçada i l’amplada d
   border: solid 2px crimson;
 }
 
-/* Elements block i inline-block, l’alçada s’adapta al contingut automàticament */
+/* Elements block i inline-block, l'alçada s'adapta al contingut automàticament */
 .height-auto-block {
   height: auto;
   background-color: lightgray;
@@ -97,11 +101,17 @@ Les següents propietats permeten establir i limitar l’alçada i l’amplada d
 ```
 
 ```html
-<h2>Propietat: alçada d’un element (height)</h2>
+<h2>Propietat: alçada d'un element (height)</h2>
 <div class="height-px">Alçada fixa de 80px. Unitat absoluta. (px)</div>
-<div class="height-percent">Alçada del 90% del contenidor pare. Només si el pare disposa d'un height establert.</div>
-<div class="height-vh">Alçada del 50% de la pantalla (finestra del navegador). Unitat relativa (vh)</div>
-<div class="height-auto-block">Alçada automàtica segons el contingut (element block i inline-block = línies de contingut).</div>
+<div class="height-percent">
+  Alçada del 90% del contenidor pare. Només si el pare disposa d'un height establert.
+</div>
+<div class="height-vh">
+  Alçada del 50% de la pantalla (finestra del navegador). Unitat relativa (vh)
+</div>
+<div class="height-auto-block">
+  Alçada automàtica segons el contingut (element block i inline-block = línies de contingut).
+</div>
 ```
 
 ![Propietat Alçada d'un element](./img/propietat_height.png)

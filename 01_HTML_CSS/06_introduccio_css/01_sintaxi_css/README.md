@@ -6,7 +6,7 @@ Com ja sabem, CSS (Cascading Style Sheets) és un llenguatge que permet aplicar 
 
 Una regla CSS està formada per:
 
-- **`Selector`**: Indica a quin element o conjunt d'elements HTML s’aplicaran els estils especificats.
+- **`Selector`**: Indica a quin element o conjunt d'elements HTML s'aplicaran els estils especificats.
 - **`Propietat`**: Indica quina característica de l'element HTML es vol modificar (el color de fons, la mida, etc).
 - **`Valor`**: Defineix com ha de ser la propietat (el valor del color de fons, el valor de la mida, etc).
 
@@ -34,7 +34,7 @@ p {
 }
 ```
 
-> 📝 Nota: Els documents amb codi CSS han de tenir una extensió `.css` perquè siguin identificats i interpretats correctament pel navegador. 
+> 📝 Nota: Els documents amb codi CSS han de tenir una extensió `.css` perquè siguin identificats i interpretats correctament pel navegador.
 
 ## Enllaçar documents HTML i CSS
 
@@ -44,7 +44,7 @@ Per associar (enllaçar) un document d'estils `.css` amb un document de contingu
 
 ```html
 <head>
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index.css" />
 </head>
 ```
 

@@ -1,17 +1,17 @@
 # Bloc 03. Propietats de Marges i Vores
 
-Les següents propietats permeten separar, delimitar i distribuir els elements dins una pàgina web. Per tant, s'encarreguen d'establir la distància entre elements (margin) ó marge extern, l’espai intern d’un element (padding) ó marge intern i les vores que envolten un element (border).
+Les següents propietats permeten separar, delimitar i distribuir els elements dins una pàgina web. Per tant, s'encarreguen d'establir la distància entre elements (margin) ó marge extern, l'espai intern d'un element (padding) ó marge intern i les vores que envolten un element (border).
 
-| **Nom**            | **Propietat**  | **Descripció**                                                                                                           |
-| ------------------ | -------------- | -------------------------------------------------------------------------------------------------------------------------|
-| Màrge extern       | `margin`       | Estableix la separació entre un element i la resta que l'envolten utilitzant una unitat de mesura (px, em, rem, %, etc). |
-| Espai intern       | `padding`      | Estableix la separació (l'espai) entre el contingut d'un element i les seves vores utilitzant (px, em, rem, %, etc).     |
-| Vores              | `border`       | Estableix una vora al voltant d'un element. Es pot configurar l'amplada, l'estil i color de les vores.                   |
-| Mida de caixa      | `box-sizing`   | Estableix si el padding i el border s'inclouen dins els valor establers pel width i height d'un element.                 |
-| Estil de la vora   | `border-style` | Estableix el tipus de línia de la vora (solid, dashed, dotted, double, none, etc).                                       |
-| Gruix de la vora   | `border-width` | Estableix el gruix de la vora. Es pot aplicar un valor únic o diferent per cada costat (px, em, rem, %, etc).            |
-| Color de la vora   | `border-color` | Estableix el color de la vora (nom de color, hexadecimal, RGB, RGBA, HSL, HSLA, etc).                                    |
-| Arrodonir la vora  | `border-radius`| Arrodoneix les cantonades de la vora. Cada cantonada pot tenir un valor independent (px, em, rem, %, etc).               |
+| **Nom**           | **Propietat**   | **Descripció**                                                                                                           |
+| ----------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Màrge extern      | `margin`        | Estableix la separació entre un element i la resta que l'envolten utilitzant una unitat de mesura (px, em, rem, %, etc). |
+| Espai intern      | `padding`       | Estableix la separació (l'espai) entre el contingut d'un element i les seves vores utilitzant (px, em, rem, %, etc).     |
+| Vores             | `border`        | Estableix una vora al voltant d'un element. Es pot configurar l'amplada, l'estil i color de les vores.                   |
+| Mida de caixa     | `box-sizing`    | Estableix si el padding i el border s'inclouen dins els valor establers pel width i height d'un element.                 |
+| Estil de la vora  | `border-style`  | Estableix el tipus de línia de la vora (solid, dashed, dotted, double, none, etc).                                       |
+| Gruix de la vora  | `border-width`  | Estableix el gruix de la vora. Es pot aplicar un valor únic o diferent per cada costat (px, em, rem, %, etc).            |
+| Color de la vora  | `border-color`  | Estableix el color de la vora (nom de color, hexadecimal, RGB, RGBA, HSL, HSLA, etc).                                    |
+| Arrodonir la vora | `border-radius` | Arrodoneix les cantonades de la vora. Cada cantonada pot tenir un valor independent (px, em, rem, %, etc).               |
 
 ## El Model de Caixa (Box Model)
 
@@ -20,7 +20,7 @@ Tots els elements HTML d'una pàgina web són interpretats pel navegador com a "
 - `Contingut` (**Content**): Fa referència a tot el que hi ha inclós dins el contenidor (el text, les imatges, etc.).
 - `Marge intern` (**Padding**): El marge intern fa referència a la separació (espai) entre el contingut i la vora de la caixa.
 - `Vora` (**Border**): La vora és la "línia" que divideix un element d'un altre (línia divisòria de la caixa).
-- `Marge extern` (**Margin**): El marge extern fa referència a l'espai entre la vora de la caixa i les vores d'altres elements de la web.   
+- `Marge extern` (**Margin**): El marge extern fa referència a l'espai entre la vora de la caixa i les vores d'altres elements de la web.
 
 ![Model de Caixa](./img/box_model.png)
 
@@ -75,12 +75,20 @@ Tots els elements HTML d'una pàgina web són interpretats pel navegador com a "
 
 ```html
 <h2>Propietat: marge extern (margin)</h2>
-<div class="margin-all">margin: 1rem; (tots els costats iguals i coherents amb la mida de la font).</div>
+<div class="margin-all">
+  margin: 1rem; (tots els costats iguals i coherents amb la mida de la font).
+</div>
 <div class="margin-shorthand">margin: 8px 16px 32px 48px; (top, right, bottom, left)</div>
 <div class="margin-left-right">margin: 0 30px; (marge només de l'eix horitzontal)</div>
 <div class="margin-top-bottom">margin: 30px 0; (marge només de l'eix vertical)</div>
-<div class="margin-center">margin: 0 auto; (element centrat horitzontalment al contenidor i que disposa d'un width concret, el 60% del pare).</div>
-<div class="margin-percent">margin-left i margin-right del 5% del contenidor pare. (molt útil per dissenys en webs responsive).</div>
+<div class="margin-center">
+  margin: 0 auto; (element centrat horitzontalment al contenidor i que disposa d'un width concret,
+  el 60% del pare).
+</div>
+<div class="margin-percent">
+  margin-left i margin-right del 5% del contenidor pare. (molt útil per dissenys en webs
+  responsive).
+</div>
 ```
 
 ![Propietat Marge extern](./img/propietat_margin.png)
@@ -130,7 +138,9 @@ Tots els elements HTML d'una pàgina web són interpretats pel navegador com a "
 <div class="padding-shorthand">padding: 8px 16px 32px 48px; (top, right, bottom, left).</div>
 <div class="padding-top-bottom">padding: 30px 0; (espai intern només a l'eix vertical).</div>
 <div class="padding-left-right">padding: 0 30px; (espai intern només a l'eix horitzontal).</div>
-<div class="padding-percent">padding: 5% 10%; (espai intern flexible segons l'amplada i alçada del contenidor pare).</div>
+<div class="padding-percent">
+  padding: 5% 10%; (espai intern flexible segons l'amplada i alçada del contenidor pare).
+</div>
 ```
 
 ![Propietat Espai intern](./img/propietat_padding.png)
@@ -166,7 +176,7 @@ Tots els elements HTML d'una pàgina web són interpretats pel navegador com a "
 
 /* Element amb una vora superior i inferior (per donar èmfasi a títols, etc.) */
 /* Una vora només inferior és fa servir en menús, títols, etc. */
-.border-top-bottom{
+.border-top-bottom {
   border-radius: 1rem;
   border-top: solid 12px darksalmon;
   border-bottom: solid 12px darksalmon;
@@ -189,8 +199,12 @@ Tots els elements HTML d'una pàgina web són interpretats pel navegador com a "
 <div class="border-dashed">border: dashed 3px darkgreen; (Vora discontínua línies) - (dashed).</div>
 <div class="border-dotted">border: dotted 3px darkred; (Vora discontínua punts) - (dotted).</div>
 <div class="border-double">border: double 5px goldenrod; (Vora doble) - (double).</div>
-<div class="border-top-bottom">border-top i border-bottom (Només les vores superior i inferior).</div>
-<div class="border-properties">border-width, border-style i border-color (Exemple amb les propietats separades de border).</div>
+<div class="border-top-bottom">
+  border-top i border-bottom (Només les vores superior i inferior).
+</div>
+<div class="border-properties">
+  border-width, border-style i border-color (Exemple amb les propietats separades de border).
+</div>
 ```
 
 ![Propietat Vora d'un element](./img/propietat_border.png)

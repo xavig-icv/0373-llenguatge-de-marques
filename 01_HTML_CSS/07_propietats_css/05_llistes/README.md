@@ -1,13 +1,13 @@
 # Bloc 05. Propietats de les Llistes
 
-Les llistes són estructures semàntiques que permeten organitzar la informació per mostrar informació mitjançant números, punts o altres símbols. Amb propietats de CSS es pot controlar l’estil d'aquests símbols, la seva posició i la distància respecte del contingut.
+Les llistes són estructures semàntiques que permeten organitzar la informació per mostrar informació mitjançant números, punts o altres símbols. Amb propietats de CSS es pot controlar l'estil d'aquests símbols, la seva posició i la distància respecte del contingut.
 
-| **Nom**               | **Propietat**         | **Descripció**                                                                                      |
-| --------------------- | --------------------- | --------------------------------------------------------------------------------------------------- |
+| **Nom**               | **Propietat**         | **Descripció**                                                                                               |
+| --------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------ |
 | Tipus de marcador     | `list-style-type`     | Defineix el tipus de númeració o símbol utilitzat en cada "list item" (disc, circle, square, decimal, etc.). |
-| Posició del marcador  | `list-style-position` | Estableix si el marcador es mostra dins o fora del contenidor (inside o outside).                   |
-| Imatge com a marcador | `list-style-image`    | Substitueix el marcador de la llista per una imatge que carreguem.                                  |
-| Mètode abreujat       | `list-style`          | Propietat abreujada que permet definir múltiples propietats en una sola línia (type, position i imatge).|
+| Posició del marcador  | `list-style-position` | Estableix si el marcador es mostra dins o fora del contenidor (inside o outside).                            |
+| Imatge com a marcador | `list-style-image`    | Substitueix el marcador de la llista per una imatge que carreguem.                                           |
+| Mètode abreujat       | `list-style`          | Propietat abreujada que permet definir múltiples propietats en una sola línia (type, position i imatge).     |
 
 ```css
 /* Llista no ordenada amb el marcador per defecte (disc). */
@@ -59,30 +59,29 @@ Les llistes són estructures semàntiques que permeten organitzar la informació
 ```html
 <h2>Propietat: estil de les llistes (list-style)</h2>
 <ul class="ul-default">
-    <li>Llista per defecte (disc)</li>
-    <li>El disc està ple.</li>
+  <li>Llista per defecte (disc)</li>
+  <li>El disc està ple.</li>
 </ul>
 <ul class="ul-circle">
-    <li>Forma circular buida (circle)</li>
-    <li>Aspecte més lleuger.</li>
+  <li>Forma circular buida (circle)</li>
+  <li>Aspecte més lleuger.</li>
 </ul>
 <ol class="ol-decimal-zero">
-    <li>Pas 1 d'un tutorial, recepte, etc (list-style-type)</li>
-    <li>Hi ha moltes opcions (decimal, decimal-leading-zero, upper-roman, lower-alpha, etc).</li>
+  <li>Pas 1 d'un tutorial, recepte, etc (list-style-type)</li>
+  <li>Hi ha moltes opcions (decimal, decimal-leading-zero, upper-roman, lower-alpha, etc).</li>
 </ol>
 <ul class="ul-inside">
-    <li>Els punts apareixen dins del text (list-style-position)</li>
-    <li>Si no es fa servir un padding el marcador quedarà fora.</li>
+  <li>Els punts apareixen dins del text (list-style-position)</li>
+  <li>Si no es fa servir un padding el marcador quedarà fora.</li>
 </ul>
 <ul class="ul-image">
-    <li>Carregar una imatge com a marcador (limitació per mida fixa en px de la imatge)</li>
-    <li>Ideal per a llistes temàtiques que no requereixin un disseny avançat.</li>
+  <li>Carregar una imatge com a marcador (limitació per mida fixa en px de la imatge)</li>
+  <li>Ideal per a llistes temàtiques que no requereixin un disseny avançat.</li>
 </ul>
 <ul class="ul-shorthand">
-    <li>Mètode abreujat (square i inside).</li>
-    <li>Escrit en una única línia de CSS.</li>
+  <li>Mètode abreujat (square i inside).</li>
+  <li>Escrit en una única línia de CSS.</li>
 </ul>
 ```
 
 ![Propietats de les llistes](./img/list_style.png)
-

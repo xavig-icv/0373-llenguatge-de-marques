@@ -1,30 +1,28 @@
-# Bloc 09. Disposició d’elements
+# Bloc 09. Disposició d'elements
 
-El disseny de pàgines web combina l’aplicació d’estils visuals (com el color, la mida o la tipografia) amb la disposició dels elements dins del document. És a dir, on es situen i com es comporten uns elements respecte els altres.
+El disseny de pàgines web combina l'aplicació d'estils visuals (com el color, la mida o la tipografia) amb la disposició dels elements dins del document. És a dir, on es situen i com es comporten uns elements respecte els altres.
 
-Per defecte, els elements HTML es mostren de dalt a baix i d’esquerra a dreta, seguint l’ordre del codi HTML. Però aquest comportament es pot modificar utilitzant diferents propietats, que permeten controlar l’estructura i l’organització visual de la pàgina.
+Per defecte, els elements HTML es mostren de dalt a baix i d'esquerra a dreta, seguint l'ordre del codi HTML. Però aquest comportament es pot modificar utilitzant diferents propietats, que permeten controlar l'estructura i l'organització visual de la pàgina.
 
-
-| Propietat                    | Descripció                                                                                       |
-|------------------------------|--------------------------------------------------------------------------------------------------|
-| **display**                  | Indica quin és el tipus de caixa (block, inline, inline-block, none, flex, grid, etc.)           |
-| **position**                 | Permet posicionar elements respecte al seu pare, respecte a la pantalla i també fixar-los.       |
-| **top, right, bottom, left** | Permet modificar la posició d'un element a partir d'una posició establerta amb position.         |
-| **z-index**                  | Controla la profunditat dels elements. Permet establir un ordre dels elements superposats.       |
-| **float**                    | Flota els elements a l'esquerra o a la dreta i permet que altres es posicionin al seu costat.    |
-| **clear**                    | Evita que un element es posicioni al costat d'un element flotant (el fa saltar de línia).        |
-
+| Propietat                    | Descripció                                                                                    |
+| ---------------------------- | --------------------------------------------------------------------------------------------- |
+| **display**                  | Indica quin és el tipus de caixa (block, inline, inline-block, none, flex, grid, etc.)        |
+| **position**                 | Permet posicionar elements respecte al seu pare, respecte a la pantalla i també fixar-los.    |
+| **top, right, bottom, left** | Permet modificar la posició d'un element a partir d'una posició establerta amb position.      |
+| **z-index**                  | Controla la profunditat dels elements. Permet establir un ordre dels elements superposats.    |
+| **float**                    | Flota els elements a l'esquerra o a la dreta i permet que altres es posicionin al seu costat. |
+| **clear**                    | Evita que un element es posicioni al costat d'un element flotant (el fa saltar de línia).     |
 
 ### Tipus d'elements (`display`)
 
-- `block`: l'element ocupa tota l’amplada disponible del contenidor pare. Permet modificar la seva amplada i alçada i es situa en una nova línia. Ex: `<div>`, `<p>`, `<h1>`.
-- `inline`: l'element ocupa només l'amplada o l’espai del contingut. No permet modificar l'amplada i l'alçada i es situa al costat d'altres elements si disposa d'espai. Ex: `<span>`, `<a>`.
+- `block`: l'element ocupa tota l'amplada disponible del contenidor pare. Permet modificar la seva amplada i alçada i es situa en una nova línia. Ex: `<div>`, `<p>`, `<h1>`.
+- `inline`: l'element ocupa només l'amplada o l'espai del contingut. No permet modificar l'amplada i l'alçada i es situa al costat d'altres elements si disposa d'espai. Ex: `<span>`, `<a>`.
 - `inline-block`: És un element que es comporta com un element de tipus inline (es mostra en línia), però es pot modificar l'alçada i l'amplada com un element de tipus block. Ex: `<img>`
-- `none`: l’element no es mostra (queda ocult) i tampoc ocupa espai en el disseny (layout).
+- `none`: l'element no es mostra (queda ocult) i tampoc ocupa espai en el disseny (layout).
 - `flex`: l'element es converteix en un contenidor flexible que permet als seus elements fills adaptar-se segons l'espai disponible (pantalles de mòbils, tauletes, ordinadors, etc.).
 - `grid`: l'element es converteix en un contenidor de graella que permet disposar els seus fills en files i columnes i controlar la seva posició dins el layout. També permet adaptar-se a diferents mides de pantalla.
 
-La propietat display estableix la manera en com es representa un element HTML dins d'una pàgina web. És una de les propietats CSS més importants, ja que controla si l’element es mostra com un element de tipus block, inline, inline-block o none (si volem que quedi ocult). També s'utilitza per crear layouts avançats com són els dissenys en graella i els dissenys flexibles (grid i flexbox).
+La propietat display estableix la manera en com es representa un element HTML dins d'una pàgina web. És una de les propietats CSS més importants, ja que controla si l'element es mostra com un element de tipus block, inline, inline-block o none (si volem que quedi ocult). També s'utilitza per crear layouts avançats com són els dissenys en graella i els dissenys flexibles (grid i flexbox).
 
 ```css
 /* Element que ocupa tota l'amplada disponible i s'inicia en una nova línia. (block) */
@@ -60,7 +58,9 @@ La propietat display estableix la manera en com es representa un element HTML di
 <div class="display-block">DIV: Ocupa l'amplada del pare i comença en nova línia. (block)</div>
 <span class="display-inline">SPAN 1 (inline)</span>
 <span class="display-inline">SPAN 2 (inline)</span>
-<div class="display-inline-block">DIV: Amplada definida i es posiciona en línia. (inline-block)</div>
+<div class="display-inline-block">
+  DIV: Amplada definida i es posiciona en línia. (inline-block)
+</div>
 <!-- L'elements amb display: none; no es mostrarà -->
 <div class="display-none">Aquest no es mostrarà.</div>
 ```
@@ -68,12 +68,15 @@ La propietat display estableix la manera en com es representa un element HTML di
 ![Propietat visualització d'elements](./img/propietat_display.png)
 
 ### Contenidors genèrics (`div`)
+
 Els `<div>` per defecte tenen la visualització inicialitzada a `display: block`. Si necessitem situar diversos DIV de costat (en línia), volem que ocupin menys amplada o l'amplada del seu contingut podem canviar la propietat a `inline-block`, `inline` o fer-los desaparèixer amb `none`.
 
 ### Contenidors genèrics (`span`)
+
 Els `<span>` per defecte tenen la visualització inicialitzada a `display: inline`. Si volem que es comportin com un contenidor (DIV) per poder-li assignar una amplada i una alçada es poden transformar a `inline-block`. Molt comú en botons de menús o altres span amb contingut que volem fer més gran.
 
 ### Imatges (`img`)
+
 Les `<img>` són elements `inline-block` per defecte. Es situaran en línia si disposen d'espai i es pot modificar la seva amplada i alçada.
 
 ### Elements Block
@@ -93,21 +96,20 @@ Les `<img>` són elements `inline-block` per defecte. Es situaran en línia si d
 
 ### Elements Inline
 
-| **Elements inline més comuns**        |
-| ------------------------------------- |
-| `<span>`                              |
-| `<a>`                                 |
-| `<strong>` i `<em>`                   |
-| `<label>`, `<select>` i `<textarea>`  |
+| **Elements inline més comuns**       |
+| ------------------------------------ |
+| `<span>`                             |
+| `<a>`                                |
+| `<strong>` i `<em>`                  |
+| `<label>`, `<select>` i `<textarea>` |
 
 ### Elements Inline-Block més comuns
 
-| **Elements inline-block més comuns**  |
-| ------------------------------------- |
-| `<img>`                               |
-| `<input>`, `<button>`                 |
-| `<select>`, `<textarea>`              |
-
+| **Elements inline-block més comuns** |
+| ------------------------------------ |
+| `<img>`                              |
+| `<input>`, `<button>`                |
+| `<select>`, `<textarea>`             |
 
 ### Exemple de Layout amb diferents elements (`inline`, `inline-block` i `block`) modificats
 
@@ -123,7 +125,7 @@ Les `<img>` són elements `inline-block` per defecte. Es situaran en línia si d
 
 > Les propietats `top`, `left`, `right`, `bottom` permeten modificar el posicionament quan estan definides com a `absolute` o `fixed`.
 
-> L'ús de `z-index` es interessant per donar prioritat a elements que queden superposats amb propietats com `absolute` o `fixed`. Per defecte el seu valor és 0. Si volem donar prioritat (posar al davant) uns elements respecte a altres es poden asignar valors de z-index creixents com 1,2,3,4,5,etc. Si volem enviar un element al fons (treure-li prioitat) podem donar valors negatius com -1. 
+> L'ús de `z-index` es interessant per donar prioritat a elements que queden superposats amb propietats com `absolute` o `fixed`. Per defecte el seu valor és 0. Si volem donar prioritat (posar al davant) uns elements respecte a altres es poden asignar valors de z-index creixents com 1,2,3,4,5,etc. Si volem enviar un element al fons (treure-li prioitat) podem donar valors negatius com -1.
 
 ```css
 /* Element sempre visible i fixat a la mateixa posició tot i fer scroll (fixed) */
@@ -189,15 +191,23 @@ Les `<img>` són elements `inline-block` per defecte. Es situaran en línia si d
 ```html
 <h2>Propietat: Posicionament d'elements (position)</h2>
 <h3>Sticky (es fixa al fer scroll)</h3>
-<div class="sticky-header">Sóc una capçalera sticky! Em quedaré fixada quan arribis a la meva posició. (z-index: 2)</div>
+<div class="sticky-header">
+  Sóc una capçalera sticky! Em quedaré fixada quan arribis a la meva posició. (z-index: 2)
+</div>
 <h3>Fixed (fix a pantalla)</h3>
-<p class="fixed-box">Element sempre visible molt utilitzat com a banner de cookies, xat, etc. (z-index: 1)</p>
+<p class="fixed-box">
+  Element sempre visible molt utilitzat com a banner de cookies, xat, etc. (z-index: 1)
+</p>
 <h3>Relative (amb desplaçament)</h3>
-<div class="relative-box">Element que es desplaça amb (top i left) de la seva posició original.</div>
-<h3>Absolute (dins d’un contenidor relative)</h3>
+<div class="relative-box">
+  Element que es desplaça amb (top i left) de la seva posició original.
+</div>
+<h3>Absolute (dins d'un contenidor relative)</h3>
 <div class="container">
   Contenidor amb position: relative
-  <div class="absolute-box">Element absolute situat equitativament a baix i al centre amb (left, bottom, right).</div>
+  <div class="absolute-box">
+    Element absolute situat equitativament a baix i al centre amb (left, bottom, right).
+  </div>
 </div>
 <p class="sticky-comprovacio"></p>
 ```
@@ -206,8 +216,8 @@ Les `<img>` són elements `inline-block` per defecte. Es situaran en línia si d
 
 ### Maquetació Tradicional (`float` i `clear`)
 
-- `float`: permet que un element "floti" a un costat (dreta o esquerra) del seu contenidor i que els altres elements s’adaptin al seu voltant. (S'utilitza per disposar elements de tipus block en la mateixa línia quan no ocupen el 100% del seu contenidor pare).
-- `clear`: evita que un element es posicioni al costat d’elements flotants i el fa saltar a la següent línia. (S'utilitza per organitzar elements flotants en diferents files per importància, temàtiques, etc.)
+- `float`: permet que un element "floti" a un costat (dreta o esquerra) del seu contenidor i que els altres elements s'adaptin al seu voltant. (S'utilitza per disposar elements de tipus block en la mateixa línia quan no ocupen el 100% del seu contenidor pare).
+- `clear`: evita que un element es posicioni al costat d'elements flotants i el fa saltar a la següent línia. (S'utilitza per organitzar elements flotants en diferents files per importància, temàtiques, etc.)
 
 > Cal destacar que `float` i `clear` són propietats que s'utilitzaven per crear layouts abans d'aparèixer Grid i Flexbox, que ofereixen opcions per una maquetació més eficients.
 
@@ -248,7 +258,9 @@ Les `<img>` són elements `inline-block` per defecte. Es situaran en línia si d
 <div class="container">
   <div class="box box-1">Caixa 1 (float: left)</div>
   <div class="box box-2">Caixa 2 (float: left)</div>
-  <div class="box box-3">Caixa 3 (float: left i clear: both). Salta de línia tot i disposar d'espai per flotar.</div>
+  <div class="box box-3">
+    Caixa 3 (float: left i clear: both). Salta de línia tot i disposar d'espai per flotar.
+  </div>
 </div>
 ```
 

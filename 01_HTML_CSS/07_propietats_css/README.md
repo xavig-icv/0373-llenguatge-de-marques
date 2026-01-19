@@ -2,15 +2,15 @@
 
 Un cop interioritzada la sintaxi i els diferents selectors bàsics i avançats, és moment d'entendre **què podem modificar dels elements HTML**.
 
-Les propietats de CSS permeten modificar l’aspecte visual (l'estil) dels elements HTML: **els colors, la mida, el fons, els marges, les vores, el tipus de visualització**, etc. Conèixer les propietats bàsiques i aplicar-les correctament és essencial per poder dissenyar pàgines web atractives però també funcionals.
+Les propietats de CSS permeten modificar l'aspecte visual (l'estil) dels elements HTML: **els colors, la mida, el fons, els marges, les vores, el tipus de visualització**, etc. Conèixer les propietats bàsiques i aplicar-les correctament és essencial per poder dissenyar pàgines web atractives però també funcionals.
 
 ## Les propietats més utilitzades
 
 | Tipologia                  | Descripció                                                                                  |
-|----------------------------|---------------------------------------------------------------------------------------------|
+| -------------------------- | ------------------------------------------------------------------------------------------- |
 | **01. Text**               | Propietats per modificar la tipografia, els colors, la mida, etc. d'elements de text.       |
-| **02. Dimensions**         | Propietats per definir l’amplada `width` i l’alçada `height` dels elements HTML.            |
-| **03. Marges i Vores**     | Permet modificar l’espai entre elements `margin` i l’espai interior d'un element `padding`. |
+| **02. Dimensions**         | Propietats per definir l'amplada `width` i l'alçada `height` dels elements HTML.            |
+| **03. Marges i Vores**     | Permet modificar l'espai entre elements `margin` i l'espai interior d'un element `padding`. |
 |                            | Afegeix vores als elements HTML i permet modificar el gruix, el color, el format, etc.      |
 | **04. Backgrounds (Fons)** | Permet definir el fons d'elements HTML (posar un color, una imatge, un gradient, etc.)      |
 | **05. Llistes**            | Dona format visual a llistes ordenades i no ordenades (símbols, numeració, posició).        |

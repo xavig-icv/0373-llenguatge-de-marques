@@ -4,13 +4,13 @@ Els **selectors** permeten "seleccionar" un o diversos elements HTML i aplicar-h
 
 ## Tipus de selectors bàsics
 
-| Selector               | Exemple       | Descripció                                                                            |
-| ---------------------- | --------------| ------------------------------------------------------------------------------------- |
-| **Universal**          | `*`           | Selecciona i aplica els estils especificats a TOTS els elements de la pàgina.         |
-| **Etiqueta**           | `h1`          | Selecciona i aplica els estils a tots els elements amb l'etiqueta HTML especificada.  |
-| **Múltiple**           | `h1, p, li`   | Selecciona i aplica els mateixos estils a un grup d'etiquetes HTML especifidades.     |
-| **Identificador**      | `#logo`       | Selecciona i aplica els estils a un únic element HTML amb l'atribut `id` indicat.     |
-| **Classe**             | `.jugador`    | Selecciona i aplica els estils a tots els elements amb l'atribut `class` indicat.     |
+| Selector          | Exemple     | Descripció                                                                           |
+| ----------------- | ----------- | ------------------------------------------------------------------------------------ |
+| **Universal**     | `*`         | Selecciona i aplica els estils especificats a TOTS els elements de la pàgina.        |
+| **Etiqueta**      | `h1`        | Selecciona i aplica els estils a tots els elements amb l'etiqueta HTML especificada. |
+| **Múltiple**      | `h1, p, li` | Selecciona i aplica els mateixos estils a un grup d'etiquetes HTML especifidades.    |
+| **Identificador** | `#logo`     | Selecciona i aplica els estils a un únic element HTML amb l'atribut `id` indicat.    |
+| **Classe**        | `.jugador`  | Selecciona i aplica els estils a tots els elements amb l'atribut `class` indicat.    |
 
 ## Selector Universal (`*`)
 
@@ -43,7 +43,9 @@ h1 {
 ## Selector Múltiple (`h2, p, li`)
 
 ```css
-h2, p, li {
+h2,
+p,
+li {
   border: solid 1px navy;
   color: darkred;
 }
@@ -154,17 +156,16 @@ h2, p, li {
 
 /* Selector Universal: Aplica estils a tots els elements HTML */
 * {
-  margin: 0;        /* Elimina marges per defecte */
-  padding: 0;       /* Elimina separacions internes per defecte */
+  margin: 0; /* Elimina marges per defecte */
+  padding: 0; /* Elimina separacions internes per defecte */
 }
 
 /* Selector Etiqueta: Aplica estils a l'element HTML indicat <div>, <li> i <a> */
 div {
-    border: solid 2px #999;
-    background-color: #eee;
-    padding: 5px;           /* Espai intern entre el text i la vora */
-    margin: 5px;            /* Espai extern entre els enllaços */
-
+  border: solid 2px #999;
+  background-color: #eee;
+  padding: 5px; /* Espai intern entre el text i la vora */
+  margin: 5px; /* Espai extern entre els enllaços */
 }
 
 li {
@@ -174,28 +175,31 @@ li {
 a {
   background: #666;
   border: solid 2px #555;
-  text-decoration: none;  /* Elimina el subratllat dels enllaços */
-  color: white;           /* Defineix el color del text */
+  text-decoration: none; /* Elimina el subratllat dels enllaços */
+  color: white; /* Defineix el color del text */
   margin: 5px;
   padding: 5px;
 }
 
 /* Selector Múltiple: Aplica el mateix estil als elements indicats */
-h1, h2, p {
-    margin: 5px;
+h1,
+h2,
+p {
+  margin: 5px;
 }
 
-h3, h4 {
+h3,
+h4 {
   color: darkgreen;
 }
 
 /* Selector ID (#) – Aplica estils a una única etiqueta amb el "id" especificat */
 /* Només pot haver un ID amb per pàgina, no es pot repetir el nom. */
 #menu {
-    background-color: #999;
-    border: solid 2px #666;
-    padding: 10px;
-    margin: 5px;
+  background-color: #999;
+  border: solid 2px #666;
+  padding: 10px;
+  margin: 5px;
 }
 
 #contenidorUnic {

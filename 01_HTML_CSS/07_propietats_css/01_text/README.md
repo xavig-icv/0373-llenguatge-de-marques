@@ -4,20 +4,20 @@ Les següents propietats permeten modificar la tipografia, la mida, el color i a
 
 ## Propietats del text
 
-| Nom                    | Propietat            | Descripció                                                                                           |
-|------------------------|----------------------|------------------------------------------------------------------------------------------------------|
-| Color del text         | `color`              | Canvia el color del text aplicant un format (nom, hexadecimal, rgb, rgba, hsl, hsla).                |
-| Mida del text          | `font-size`          | Defineix la mida de la lletra utilitzant una unitat de mesura (px, em, rem, %, etc).                 |
-| Tipus de lletra        | `font-family`        | Canvia la tipografia de lletra (la font principal a utilitzar), es poden indicar fonts alternatives. |
-| Gruix de la lletra     | `font-weight`        | Modifica el gruix del text amb valors de text (normal, bold, bolder) o numèrics (de 100 a 900).      |
-| Estil de la lletra     | `font-style`         | Posa el text en cursiva (italic) o normal. Només afecta a l'estil visual, no substitueix a `<em>`.   |
-| Alineació del text     | `text-align`         | Alinea el text horitzontalment a esquerra, dreta, centre o justificat (left, right, center, justify).|
-| Decoració del text     | `text-decoration`    | Afegeix o elimina efectes visuals com el subratllat (underline, none, dashed, dotted, etc).          |
-| Ombra del text         | `text-shadow`        | Permet afegir ombres de colors al text per afavorir la lectura o només com estil visual.             |
-| Transformació del text | `text-transform`     | Converteix el text a majúscules, minúscules, etc. (uppercase, lowercase, capitalize, etc).           |
-| Interliniat            | `line-height`        | Modifica l'espai (marge) vertical entre línies d’un paràgraf. Pren valors (1.2, 1.4, 1.6, 1.8, etc). |
-| Espai entre caràcters  | `letter-spacing`     | Modifica l'espai (horitzontal) entre caràcters. Millora la llegibilitat en algunes fonts.            |
-| Espai entre paraules   | `word-spacing`       | Defineix la quantiat de separació entre paraules. Apropa o allunya les paraules segons s'indiqui.    |
+| Nom                    | Propietat         | Descripció                                                                                            |
+| ---------------------- | ----------------- | ----------------------------------------------------------------------------------------------------- |
+| Color del text         | `color`           | Canvia el color del text aplicant un format (nom, hexadecimal, rgb, rgba, hsl, hsla).                 |
+| Mida del text          | `font-size`       | Defineix la mida de la lletra utilitzant una unitat de mesura (px, em, rem, %, etc).                  |
+| Tipus de lletra        | `font-family`     | Canvia la tipografia de lletra (la font principal a utilitzar), es poden indicar fonts alternatives.  |
+| Gruix de la lletra     | `font-weight`     | Modifica el gruix del text amb valors de text (normal, bold, bolder) o numèrics (de 100 a 900).       |
+| Estil de la lletra     | `font-style`      | Posa el text en cursiva (italic) o normal. Només afecta a l'estil visual, no substitueix a `<em>`.    |
+| Alineació del text     | `text-align`      | Alinea el text horitzontalment a esquerra, dreta, centre o justificat (left, right, center, justify). |
+| Decoració del text     | `text-decoration` | Afegeix o elimina efectes visuals com el subratllat (underline, none, dashed, dotted, etc).           |
+| Ombra del text         | `text-shadow`     | Permet afegir ombres de colors al text per afavorir la lectura o només com estil visual.              |
+| Transformació del text | `text-transform`  | Converteix el text a majúscules, minúscules, etc. (uppercase, lowercase, capitalize, etc).            |
+| Interliniat            | `line-height`     | Modifica l'espai (marge) vertical entre línies d'un paràgraf. Pren valors (1.2, 1.4, 1.6, 1.8, etc).  |
+| Espai entre caràcters  | `letter-spacing`  | Modifica l'espai (horitzontal) entre caràcters. Millora la llegibilitat en algunes fonts.             |
+| Espai entre paraules   | `word-spacing`    | Defineix la quantiat de separació entre paraules. Apropa o allunya les paraules segons s'indiqui.     |
 
 ## Color del text (`color`)
 
@@ -73,7 +73,7 @@ Les següents propietats permeten modificar la tipografia, la mida, el color i a
   font-size: 18px; /* Mida en píxels (px) de cada lletra, per defecte acostuma a ser 16px. */
 }
 
-/* EM (em): Unitat relativa a la mida de lletra de l’element pare (un nivell superior). */
+/* EM (em): Unitat relativa a la mida de lletra de l'element pare (un nivell superior). */
 .font-em {
   font-size: 1.5em; /* Si el text del pare és de 16px, la mida serà de 16 x 1.5 = 24px */
 }
@@ -83,7 +83,7 @@ Les següents propietats permeten modificar la tipografia, la mida, el color i a
   font-size: 2rem; /* 2 × 16px = 32px, és el format més recomanat per disseny web */
 }
 
-/* Viewport Width (vw): Relatiu a l’amplada de la finestra del navegador. */
+/* Viewport Width (vw): Relatiu a l'amplada de la finestra del navegador. */
 /* S'utilitza per textos molt grans en landing pages i efectes visuals.*/
 .font-vw {
   font-size: 3.5vw; /* 3.5vw = 3.5% de la mida de la pantalla. Valor diferent segons la mida de la pantalla. */
@@ -130,7 +130,7 @@ Les següents propietats permeten modificar la tipografia, la mida, el color i a
 }
 
 .font-cursive {
-  font-family: "Comic Sans MS", cursive;
+  font-family: 'Comic Sans MS', cursive;
 }
 ```
 
@@ -151,7 +151,7 @@ Les següents propietats permeten modificar la tipografia, la mida, el color i a
 
 ```css
 html {
-    font-family: system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 /* Lletra amb un gruix normal (per defecte), pot ser "normal" o 400. */
@@ -246,10 +246,17 @@ html {
 ```html
 <h2>Propietat: alineació del text (text-align)</h2>
 <p class="align-left">Text alineat a l'esquerra (valor per defecte).</p>
-<p class="align-center">Text alineat al centre. S'utilitza per títols, missatges d'usuari (notificacions).</p>
-<p class="align-right">Text alineat a la dreta. S'utilitza amb un layout concret que pot ser més estètic.</p>
+<p class="align-center">
+  Text alineat al centre. S'utilitza per títols, missatges d'usuari (notificacions).
+</p>
+<p class="align-right">
+  Text alineat a la dreta. S'utilitza amb un layout concret que pot ser més estètic.
+</p>
 <p class="align-justify">
-Text justificat. El navegador, de forma automàtica, com un processador de text, ajusta cada línia perquè comencin i acabin  exactament als marges del contenidor. És útil per millorar l'estètica en textos llargs, però pot generar espais blancs de diferents mides. No s'aconsella utilitzar en el desenvolupament web, és preferible alinear el text a l'esquerra o al centre.
+  Text justificat. El navegador, de forma automàtica, com un processador de text, ajusta cada línia
+  perquè comencin i acabin exactament als marges del contenidor. És útil per millorar l'estètica en
+  textos llargs, però pot generar espais blancs de diferents mides. No s'aconsella utilitzar en el
+  desenvolupament web, és preferible alinear el text a l'esquerra o al centre.
 </p>
 ```
 
@@ -302,14 +309,22 @@ Text justificat. El navegador, de forma automàtica, com un processador de text,
 
 ```html
 <h2>Propietat: decoració del text (text-decoration)</h2>
-<p class="decoration-none">Text sense decoració (none). Permet treure el subratllat als enllaços.</p>
+<p class="decoration-none">
+  Text sense decoració (none). Permet treure el subratllat als enllaços.
+</p>
 <p class="decoration-underline">Text amb subratllat (underline).</p>
 <p class="decoration-line-through">Text amb una línia al mig (line-through).</p>
 <p class="decoration-overline">Text amb línia a sobre (overline).</p>
 <p class="underline-wavy-blue">Mètode abreujat: Subratllat ondulat i blau. (underline i wavy)</p>
-<p class="underline-dotted-red">Mètode abreujat: Subratllat de punts i vermell. (underline i dotted)</p>
-<p class="line-through-double-green">Mètode abreujat: Ratllat doble i verd. (line-through i double)</p>
-<p class="overline-dashed-purple">Mètode abreujat: Línia superior lila i discontínua. (overline i dashed)</p>
+<p class="underline-dotted-red">
+  Mètode abreujat: Subratllat de punts i vermell. (underline i dotted)
+</p>
+<p class="line-through-double-green">
+  Mètode abreujat: Ratllat doble i verd. (line-through i double)
+</p>
+<p class="overline-dashed-purple">
+  Mètode abreujat: Línia superior lila i discontínua. (overline i dashed)
+</p>
 ```
 
 ![Propietat Decoració del text](./img/propietat_text_decoration.png)
@@ -335,15 +350,12 @@ Text justificat. El navegador, de forma automàtica, com un processador de text,
 /* L'ombra negra sobre text blanc (efecte visual). */
 .shadow-white {
   color: white;
-   text-shadow: 0px 0px 4px black;
+  text-shadow: 0px 0px 4px black;
 }
 
 /* Diverses ombres en un mateix text (efecte visual). */
 .shadow-multiple {
-  text-shadow:
-    0px 1px 0px #aaa,
-    0px 2px 0px #bbb,
-    0px 3px 0px #ccc;
+  text-shadow: 0px 1px 0px #aaa, 0px 2px 0px #bbb, 0px 3px 0px #ccc;
 }
 ```
 
@@ -387,7 +399,9 @@ Text justificat. El navegador, de forma automàtica, com un processador de text,
 <h2>Propietat: transformació del text (text-transform)</h2>
 <p class="transform-uppercase">El text es mostrarà TOT EN MAJÚSCULES. (uppercase)</p>
 <p class="transform-lowercase">El text es mostrarà tot en MINÚSCULES. (lowercase)</p>
-<p class="transform-capitalize">El text mostrarà cada lletra d'inici de Paraula En Majúscula. (capitalize)</p>
+<p class="transform-capitalize">
+  El text mostrarà cada lletra d'inici de Paraula En Majúscula. (capitalize)
+</p>
 <p class="transform-none">El text es MOSTRA sense cap Transformació. (none)</p>
 ```
 
@@ -420,19 +434,19 @@ Text justificat. El navegador, de forma automàtica, com un processador de text,
 ```html
 <h2>Propietat: interlineat (line-height)</h2>
 <p class="line-1">
-  El text disposa d'un interlineat molt petit (1).<br>
+  El text disposa d'un interlineat molt petit (1).<br />
   No s'aconsella aquesta distància entre línies de text.
 </p>
 <p class="line-normal">
-  El text disposa de l'interlineat per defecte (normal ó 1.2).<br>
+  El text disposa de l'interlineat per defecte (normal ó 1.2).<br />
   És agradable a la vista i s'utilitza en textos curts.
 </p>
 <p class="line-1-6">
-  El text disposa d'un interlineat adequat per la lectura (1.6).<br>
+  El text disposa d'un interlineat adequat per la lectura (1.6).<br />
   S'utilitza a la majoria de pàgines web i sobretot en textos llargs.
 </p>
 <p class="line-2">
-  El text disposa d'un interlineat amb molt d'espai. (2)<br>
+  El text disposa d'un interlineat amb molt d'espai. (2)<br />
   Pot ser útil per destacar algun paràgraf en concret del text.
 </p>
 ```
@@ -466,8 +480,12 @@ Text justificat. El navegador, de forma automàtica, com un processador de text,
 ```html
 <h2>Propietat: espai entre caràcters (letter-spacing)</h2>
 <p class="spacing-normal">Text amb l'espai per defecte entre caràcters. (normal ó 0px)</p>
-<p class="spacing--1">Text amb els caràcters més junts. S'utilitza en alguns botons o amb poc espai. (-1px)</p>
-<p class="spacing-1">Text amb més espai entre caràcters. S'utilitza per visibilitat o decoració. (1px)</p>
+<p class="spacing--1">
+  Text amb els caràcters més junts. S'utilitza en alguns botons o amb poc espai. (-1px)
+</p>
+<p class="spacing-1">
+  Text amb més espai entre caràcters. S'utilitza per visibilitat o decoració. (1px)
+</p>
 <p class="spacing-3">TEXT VISTÓS AMB CARÀCTERS MOLT SEPARATS. (3px)</p>
 ```
 

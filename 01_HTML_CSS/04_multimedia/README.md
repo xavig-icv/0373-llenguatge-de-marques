@@ -9,9 +9,9 @@ En aquest bloc treballarem les etiquetes HTML més comunes per representar **con
 | `<img>`        | Permet inserir una **imatge** dins de la pàgina web.                                  |
 | `<figure>`     | Agrupar contingut multimèdia (imatges, vídeos, etc) amb context semàntic.             |
 | `<figcaption>` | Permet establir un **títol o descripció** a un element `<figure>`.                    |
-| `<audio>`      | Incrustar **fitxers d’àudio** per reproduir amb controls (play, pausa, volum, etc.)   |
+| `<audio>`      | Incrustar **fitxers d'àudio** per reproduir amb controls (play, pausa, volum, etc.)   |
 | `<video>`      | Incrustar **fitxers de vídeo** per reproduir amb controls (play, pausa, volum, etc.)  |
-| `<source>`     | Indica la ruta d’un fitxer d’àudio o vídeo i oferir diferents formats de reproducció. |
+| `<source>`     | Indica la ruta d'un fitxer d'àudio o vídeo i oferir diferents formats de reproducció. |
 | `<iframe>`     | Incrustar **contingut extern** dins la pàgina (YouTube, Google Maps, Spotify, etc).   |
 
 ### Imatge (`<img>`)
@@ -32,7 +32,11 @@ En aquest bloc treballarem les etiquetes HTML més comunes per representar **con
 
 ```html
 <figure>
-  <img src="./img/zelda-breath-of-the-wild.png" alt="Videojoc Zelda Breath of The Wild" width="400" />
+  <img
+    src="./img/zelda-breath-of-the-wild.png"
+    alt="Videojoc Zelda Breath of The Wild"
+    width="400"
+  />
   <figcaption>Portada del Videojoc Zelda Breath of The Wild</figcaption>
 </figure>
 ```
@@ -109,14 +113,14 @@ En aquest bloc treballarem les etiquetes HTML més comunes per representar **con
 
 `src`: URL del contingut es vol incrustar (un vídeo de YouTube o un mapa de Google Maps).
 
-`width` i `height`: Amplada i alçada de l’iframe (en píxels).
+`width` i `height`: Amplada i alçada de l'iframe (en píxels).
 
 `title`: Text descriptiu per a l'accessibilitat.
 
-`frameborder`: Controla el contorn de l’iframe (amb `0` s'indica que no tindrà border).
+`frameborder`: Controla el contorn de l'iframe (amb `0` s'indica que no tindrà border).
 
 `allow`: Permet habilitar funcions especials com l'autoplay o la pantalla completa.
 
-`allowfullscreen`: Permet que l’iframe es pugui veure en pantalla completa.
+`allowfullscreen`: Permet que l'iframe es pugui veure en pantalla completa.
 
 ![Iframe Grand Theft Auto 6](./img/iframe-grand-theft-auto-6.png)

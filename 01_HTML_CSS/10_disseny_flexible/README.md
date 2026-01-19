@@ -3,6 +3,7 @@
 El disseny flexible és l'eina que ens permet crear contenidors flexibles perquè els elements del seu interior puguin alinear-se i distribuir-se l'espai disponible automàticament. És a dir, el contenidor flexible podrà modificar l'amplada i l'alçada dels elements del seu interior perquè aquests puguin repartir-se l'espai si la pàgina web es visualitza en pantalles de diferents mides. Aquest és el primer pas per la creació de layouts (interfícies web) més modernes i adaptables a diferents dispositius.
 
 El model Flexbox (display: flex) s'utilitza molt per:
+
 - Centrar elements horitzontalment i verticalment en qualsevol mida de pantalla.
 - Repartir l'espai entre columnes o files de manera automàtica i equitativa.
 - Crear dissenys adaptables sense fer servir el mètode tradicional (float) o posicionaments (position).
@@ -17,18 +18,18 @@ El model Flexbox (display: flex) s'utilitza molt per:
 | `align-items`     | Distribueix els elements flexibles a partir de l'espai disponible en l'eix Y (flex-start, flex-end, center, stretch, baseline, etc.)                                      |
 | `align-content`   | Si hi ha espai sobrant i diverses files d'elements, distribueix els elements en l'eix Y (flex-start, center, space-between, space-around, space-evenly, etc.)             |
 | `flex-wrap`       | Indica si els elements s'han d'ajustar en una fila o columna o si han d'ocupar diverses files o columnes segons l'espai que necessitin (nowrap, wrap, wrap-reverse, etc.) |
-| `gap`             | Estableix l’espai entre els elements fills sense la necessitat d'utilitzar marges i permet mantenir la separació entre files i columnes (px, %, rem, em, etc.).           |
+| `gap`             | Estableix l'espai entre els elements fills sense la necessitat d'utilitzar marges i permet mantenir la separació entre files i columnes (px, %, rem, em, etc.).           |
 
 ## Propietats dels contenidors flexibles (fills)
 
-| **Propietat**     | **Descripció**                                                                                                                                                            |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `flex-grow`       | Indica quant ha de créixer de més un element flexible respecte els altres si hi ha espai disponible. Valors enters positius, 0 és el valor per defecte (0,1,2,3,4,5,etc.) |
-| `flex-shrink`     | Indica quant ha de decréixer un element flexible respecte els altres si NO hi ha espai disponible. Valors enters positius, 0 no és reudeix i 1 és el valor per defecte (1,2,3,4,5,etc.)     |
-| `flex-basis`      | Estableix la mida mínima (inicial) d'un element flexible abans que es distribueixi l'espai disponible. S'utilitzen les magnituds (px, %, rem, auto, etc.)                 |
-| `flex`            | Propietat abreujada (grow, shrink i basis). Fent ús de flex: 1 equival a (flex-grow: 1, flex-shrink: 1 i flex-basis: 0%) perquè tots els elements ocupin el mateix espai. |
-| `align-self`      | Alinea un element fill concret dins del contenidor diferent a la "d'align items" (stretch, flex-start, flex-end, center, baseline, etc.).                                 |
-| `order`           | Estableix l'ordre dels elements flexibles. Podem establir un ordre concret utilitzant valors enters positius, on 0 és el valor per defecte (0,1,2,3,4,5,etc.)             |
+| **Propietat** | **Descripció**                                                                                                                                                                          |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `flex-grow`   | Indica quant ha de créixer de més un element flexible respecte els altres si hi ha espai disponible. Valors enters positius, 0 és el valor per defecte (0,1,2,3,4,5,etc.)               |
+| `flex-shrink` | Indica quant ha de decréixer un element flexible respecte els altres si NO hi ha espai disponible. Valors enters positius, 0 no és reudeix i 1 és el valor per defecte (1,2,3,4,5,etc.) |
+| `flex-basis`  | Estableix la mida mínima (inicial) d'un element flexible abans que es distribueixi l'espai disponible. S'utilitzen les magnituds (px, %, rem, auto, etc.)                               |
+| `flex`        | Propietat abreujada (grow, shrink i basis). Fent ús de flex: 1 equival a (flex-grow: 1, flex-shrink: 1 i flex-basis: 0%) perquè tots els elements ocupin el mateix espai.               |
+| `align-self`  | Alinea un element fill concret dins del contenidor diferent a la "d'align items" (stretch, flex-start, flex-end, center, baseline, etc.).                                               |
+| `order`       | Estableix l'ordre dels elements flexibles. Podem establir un ordre concret utilitzant valors enters positius, on 0 és el valor per defecte (0,1,2,3,4,5,etc.)                           |
 
 ## Direcció dels elements (`flex-direction`)
 
@@ -79,27 +80,27 @@ El model Flexbox (display: flex) s'utilitza molt per:
 <h2>Propietat: direcció dels elements flexibles (flex-direction)</h2>
 <h3>Row (fila horitzontal per defecte)</h3>
 <div class="flex flex-row">
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
 </div>
 <h3>Row Reverse (fila horitzontal invertida)</h3>
 <div class="flex flex-row-reverse">
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
 </div>
 <h3>Column (columna vertical)</h3>
 <div class="flex flex-column">
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
 </div>
 <h3>Column Reverse (columna vertical invertida)</h3>
 <div class="flex flex-column-reverse">
-    <div class="flex-item">1</div>
-    <div class="flex-item">2</div>
-    <div class="flex-item">3</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
 </div>
 ```
 
@@ -344,7 +345,7 @@ El model Flexbox (display: flex) s'utilitza molt per:
   align-content: center;
 }
 
-/* Línies amb el màxim d'espai entre elles, però la primera i l’última enganxada als marges (superior i inferior en "row" ó esquerre i dret en "column") */
+/* Línies amb el màxim d'espai entre elles, però la primera i l'última enganxada als marges (superior i inferior en "row" ó esquerre i dret en "column") */
 .align-content-between {
   align-content: space-between;
 }
@@ -359,7 +360,7 @@ El model Flexbox (display: flex) s'utilitza molt per:
   align-content: space-evenly;
 }
 
-/* Els elements de les línies s'estiren per omplir tot l’espai disponible (espai vertical en "row" i espai horitzontal en "column" */
+/* Els elements de les línies s'estiren per omplir tot l'espai disponible (espai vertical en "row" i espai horitzontal en "column" */
 .align-content-stretch {
   align-content: stretch;
 }
@@ -367,54 +368,91 @@ El model Flexbox (display: flex) s'utilitza molt per:
 
 ```html
 <h2>Propietat: Distribució vertical de les línies d'elements (align-content)</h2>
-<h3>flex-start (les línies es situen a la part superior de la fila o a l'esquerra de la columna)</h3>
+<h3>
+  flex-start (les línies es situen a la part superior de la fila o a l'esquerra de la columna)
+</h3>
 <div class="flex align-content-start">
-  <div class="flex-item">1</div><div class="flex-item">2</div>
-  <div class="flex-item">3</div><div class="flex-item">4</div>
-  <div class="flex-item">5</div><div class="flex-item">6</div>
-  <div class="flex-item">7</div><div class="flex-item">8</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+  <div class="flex-item">4</div>
+  <div class="flex-item">5</div>
+  <div class="flex-item">6</div>
+  <div class="flex-item">7</div>
+  <div class="flex-item">8</div>
 </div>
 <h3>flex-end (les línies es situen a la part inferior de la fila o a la dreta de la columna)</h3>
 <div class="flex align-content-end">
-  <div class="flex-item">1</div><div class="flex-item">2</div>
-  <div class="flex-item">3</div><div class="flex-item">4</div>
-  <div class="flex-item">5</div><div class="flex-item">6</div>
-  <div class="flex-item">7</div><div class="flex-item">8</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+  <div class="flex-item">4</div>
+  <div class="flex-item">5</div>
+  <div class="flex-item">6</div>
+  <div class="flex-item">7</div>
+  <div class="flex-item">8</div>
 </div>
 <h3>center (les línies es situen al centre verticalment en fila i horitzontalment en columna)</h3>
 <div class="flex align-content-center">
-  <div class="flex-item">1</div><div class="flex-item">2</div>
-  <div class="flex-item">3</div><div class="flex-item">4</div>
-  <div class="flex-item">5</div><div class="flex-item">6</div>
-  <div class="flex-item">7</div><div class="flex-item">8</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+  <div class="flex-item">4</div>
+  <div class="flex-item">5</div>
+  <div class="flex-item">6</div>
+  <div class="flex-item">7</div>
+  <div class="flex-item">8</div>
 </div>
-<h3>space-between (la màxima separació entre les línies, la primera i l'última enganxada als marges)</h3>
+<h3>
+  space-between (la màxima separació entre les línies, la primera i l'última enganxada als marges)
+</h3>
 <div class="flex align-content-between">
-  <div class="flex-item">1</div><div class="flex-item">2</div>
-  <div class="flex-item">3</div><div class="flex-item">4</div>
-  <div class="flex-item">5</div><div class="flex-item">6</div>
-  <div class="flex-item">7</div><div class="flex-item">8</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+  <div class="flex-item">4</div>
+  <div class="flex-item">5</div>
+  <div class="flex-item">6</div>
+  <div class="flex-item">7</div>
+  <div class="flex-item">8</div>
 </div>
-<h3>space-around (el mateix espai a dalt i a baix de cada línia o a l'esquerra i dreta en columna)</h3>
+<h3>
+  space-around (el mateix espai a dalt i a baix de cada línia o a l'esquerra i dreta en columna)
+</h3>
 <div class="flex align-content-around">
-  <div class="flex-item">1</div><div class="flex-item">2</div>
-  <div class="flex-item">3</div><div class="flex-item">4</div>
-  <div class="flex-item">5</div><div class="flex-item">6</div>
-  <div class="flex-item">7</div><div class="flex-item">8</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+  <div class="flex-item">4</div>
+  <div class="flex-item">5</div>
+  <div class="flex-item">6</div>
+  <div class="flex-item">7</div>
+  <div class="flex-item">8</div>
 </div>
 <h3>space-evenly (el mateix espai entre totes les línies i els marges en fila o en columna)</h3>
 <div class="flex align-content-evenly">
-  <div class="flex-item">1</div><div class="flex-item">2</div>
-  <div class="flex-item">3</div><div class="flex-item">4</div>
-  <div class="flex-item">5</div><div class="flex-item">6</div>
-  <div class="flex-item">7</div><div class="flex-item">8</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+  <div class="flex-item">4</div>
+  <div class="flex-item">5</div>
+  <div class="flex-item">6</div>
+  <div class="flex-item">7</div>
+  <div class="flex-item">8</div>
 </div>
-<h3>stretch (valor per defecte, les línies ocupen tota l’alçada disponible en fila i amplada en columna)</h3>
+<h3>
+  stretch (valor per defecte, les línies ocupen tota l'alçada disponible en fila i amplada en
+  columna)
+</h3>
 <div class="flex align-content-stretch">
-  <div class="flex-item">1</div><div class="flex-item">2</div>
-  <div class="flex-item">3</div><div class="flex-item">4</div>
-  <div class="flex-item">5</div><div class="flex-item">6</div>
-  <div class="flex-item">7</div><div class="flex-item">8</div>
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+  <div class="flex-item">4</div>
+  <div class="flex-item">5</div>
+  <div class="flex-item">6</div>
+  <div class="flex-item">7</div>
+  <div class="flex-item">8</div>
 </div>
 ```
 
@@ -487,7 +525,9 @@ El model Flexbox (display: flex) s'utilitza molt per:
   <div class="flex-item">5</div>
   <div class="flex-item">6</div>
 </div>
-<h3>flex-wrap: wrap-reverse (els elements salten de línia quan no disposen d'espai en ordre invers)</h3>
+<h3>
+  flex-wrap: wrap-reverse (els elements salten de línia quan no disposen d'espai en ordre invers)
+</h3>
 <div class="flex flex-wrap-reverse">
   <div class="flex-item">1</div>
   <div class="flex-item">2</div>
@@ -549,7 +589,7 @@ El model Flexbox (display: flex) s'utilitza molt per:
 
 /* Flex, el mètode abreujat de 3 propietats (grow, shrink i basis) */
 
-/* flex: 1 equival a (1 1 0%) - Cada element ocupa tot l’espai disponible (es distribueixen l'espai equitativament) */
+/* flex: 1 equival a (1 1 0%) - Cada element ocupa tot l'espai disponible (es distribueixen l'espai equitativament) */
 .flex-1 .flex-item {
   flex: 1;
 }
@@ -600,7 +640,9 @@ El model Flexbox (display: flex) s'utilitza molt per:
   <div class="flex-item">3</div>
 </div>
 <h2>Propietat abreujada: flex (grow, shrink i basis en una sola línia)</h2>
-<h3>flex: 1 (equivalent a 1 1 0%) - Cada element ocupa tot l’espai disponible (repartiment equitatiu)</h3>
+<h3>
+  flex: 1 (equivalent a 1 1 0%) - Cada element ocupa tot l'espai disponible (repartiment equitatiu)
+</h3>
 <div class="flex flex-1">
   <div class="flex-item">1</div>
   <div class="flex-item">2</div>
@@ -618,7 +660,9 @@ El model Flexbox (display: flex) s'utilitza molt per:
   <div class="flex-item">Text molt més llarg de mida fixa</div>
   <div class="flex-item">3</div>
 </div>
-<h3>flex: 1 0 30% - Elements ocupen l'espai disponible però no poden reduir-se per sota de flex-basis</h3>
+<h3>
+  flex: 1 0 30% - Elements ocupen l'espai disponible però no poden reduir-se per sota de flex-basis
+</h3>
 <div class="flex flex-1-0-0">
   <div class="flex-item">1</div>
   <div class="flex-item">2</div>
@@ -798,12 +842,9 @@ section {
       <a href="#">Link Footer 2</a>
       <a href="#">Link Footer 3</a>
     </div>
-    <div class="copyright">
-        &copy; 2025 Xavi Garcia
-    </div>
+    <div class="copyright">&copy; 2025 Xavi Garcia</div>
   </footer>
 </section>
 ```
 
 ![Propietats combinades del model Flexbox](./img/propietats_flexbox_combinades.png)
-
