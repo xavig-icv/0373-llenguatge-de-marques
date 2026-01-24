@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcions amb JavaScript</title>
+    <meta name="description" content="Exemples de com crear funcions amb JavaScript.">
+    <script type="module" src="./js/1-funcions.js"></script>
+  </head>
+  <body>
+    <h1>Funcions amb JavaScript</h1>
+    <p>Observa el fitxer de JavaScript i el resultat de la consola.</p>
+    <p>// Exemple d'ús de funcions</p>
+    <pre>
+      const VIDES_MAX = 10;
+      let vides = 0;
+
+      function mostrarBarraVida(vides, videsMaximes) {
+        let barraVida = '';
+        for (let i = 0; i &lt; videsMaximes; i++) {
+          if (i &lt; vides) {
+            barraVida += '❤️';
+          } else {
+            barraVida += '🖤';
+          }
+        }
+
+        // Vides: ❤️🖤 X/X
+      }
+
+      mostrarBarraVida(8, 10); // ❤️❤️❤️❤️❤️❤️❤️❤️🖤🖤 8/10
+      mostrarBarraVida(5, 10); // ❤️❤️❤️❤️❤️🖤🖤🖤🖤🖤 5/10
+      mostrarBarraVida(2, 10); // ❤️❤️🖤🖤🖤🖤🖤🖤🖤🖤 2/10
+    </pre>
+  </body>
+</html>

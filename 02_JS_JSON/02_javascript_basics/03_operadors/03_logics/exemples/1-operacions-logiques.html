@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operacions lògiques amb JavaScript</title>
+    <meta name="description"
+      content="Exemples de com realitzar operacions lògiques amb JavaScript.">
+    <script type="module" src="./js/1-operacions-logiques.js"></script>
+  </head>
+  <body>
+    <h1>Operacions Lògiques JavaScript</h1>
+    <p>Observa el fitxer de JavaScript i el resultat de la consola.</p>
+    <p>// Operador AND (&&)</p>
+    <p>let vida = 80;</p>
+    <p>let municio = 10;</p>
+    <p>// El jugador pot atacar si disposa de prou (vida I munició)</p>
+    <p>let potAtacar = vida &gt; 0 && municio &gt; 0;</p>
+    <hr>
+    <p>// Operador OR (||)</p>
+    <p>let nivell = 7;</p>
+    <p>let teTiquet = true;</p>
+    <p>// Pot entrar si és (nivell 10 o major O disposa d'un tiquet)</p>
+    <p>let potEntrar = nivell &gt;= 10 || teTiquet;</p>
+    <hr>
+    <p>// Operador NOT (!)</p>
+    <p>let enemicsActius = false;</p>
+    <p>let zonaSegura = !enemicsActius;</p>
+    <p>console.log(`Zona segura? ${zonaSegura}`); // true</p>
+  </body>
+</html>

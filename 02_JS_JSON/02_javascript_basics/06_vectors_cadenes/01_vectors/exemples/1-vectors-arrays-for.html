@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructures de dades Vectors (Arrays) amb JavaScript</title>
+    <meta name="description"
+      content="Exemples d'estructures de dades Vectors (Arrays) gestió amb FOR JavaScript.">
+    <script type="module" src="./js/1-vectors-arrays-for.js"></script>
+  </head>
+  <body>
+    <h1>Estructures de dades Vectors (Arrays) gestió amb FOR JavaScript</h1>
+    <p>Observa el fitxer de JavaScript i el resultat de la consola.</p>
+    <p>// Exemple d'ús de Vectors amb FOR</p>
+    <pre>
+      const NUM_ENEMICS = 5;
+      let posicionsX = [];
+      let posicionsY = [];
+
+      //Generant enemics en posicions aleatòries...
+
+      for (let i = 0; i &lt; NUM_ENEMICS; i++) {
+        let x = Math.floor(Math.random() * 100);
+        let y = Math.floor(Math.random() * 100);
+
+        posicionsX.push(x);
+        posicionsY.push(y);
+
+        // Enemic (Posició X, Posició Y)
+      }
+    </pre>
+  </body>
+</html>

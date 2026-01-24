@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructures de dades Vectors (Arrays) amb FOREACH JavaScript</title>
+    <meta name="description"
+      content="Exemples d'estructures de dades Vectors (Arrays) amb FOREACH JavaScript.">
+    <script type="module" src="./js/2-vectors-arrays-foreach.js"></script>
+  </head>
+  <body>
+    <h1>Estructures de dades Vectors (Arrays) amb FOREACH JavaScript</h1>
+    <p>Observa el fitxer de JavaScript i el resultat de la consola.</p>
+    <p>// Exemple d'ús de Vectors amb FOREACH</p>
+    <pre>
+      const enemics = [
+        { nom: 'Goblin', vida: 50 },
+        { nom: 'Orc', vida: 100 },
+        { nom: 'Troll', vida: 150 },
+      ];
+
+      let atacJugador = 40;
+
+      //Atacant tots els enemics!
+
+      enemics.forEach(enemic =&gt; {
+        enemic.vida -= atacJugador;
+        // Enemic X - Vida restant: X
+      });
+    </pre>
+  </body>
+</html>

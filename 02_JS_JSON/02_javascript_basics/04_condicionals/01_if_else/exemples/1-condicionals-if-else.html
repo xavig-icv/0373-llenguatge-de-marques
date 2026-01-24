@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructures de control condicional IF/ELSE amb JavaScript</title>
+    <meta name="description"
+      content="Exemples de com crear estructures de control condicional IF/ELSE amb JavaScript.">
+    <script type="module" src="./js/1-condicionals-if-else.js"></script>
+  </head>
+  <body>
+    <h1>Estructures de control condicional IF/ELSE JavaScript</h1>
+    <p>Observa el fitxer de JavaScript i el resultat de la consola.</p>
+    <p>// Estructura IF (condicional simple)</p>
+    <p>let vida = 0;</p>
+    <p>// Si la vida és més petit o igual a 0 s'executa el bloc de codi</p>
+    <p>if (vida &lt;= 0) { console.log('GAME OVER :('); } </p>
+    <hr>
+    <p>// Estructura IF/ELSE (condicional de dos opcions)</p>
+    <p>let monedes = 30;</p>
+    <p>let preuEspasa = 50;</p>
+    <p>// Si el número de monedes és més gran o igual al preuEspasa (executa bloc IF)</p>
+    <p>// Si el número de monedes és mes petit al preuEspasa (executa bloc ELSE)</p>
+    <pre>
+      if (monedes &gt;= preuEspasa) {
+        // Espasa comprada
+        monedes = monedes - preuEspasa;
+      } else {
+        // No hi ha prou monedes
+      }
+    </pre>
+    <hr>
+    <p>// Estructura IF/ELSE IF/ELSE (condicional de múltiples opcions)</p>
+    <pre>
+      let puntuacio = 690;
+      // Quin bloc s'executarà?
+      if (puntuacio &gt;= 1000) {
+        // Rang: LLEGENDA
+      } else if (puntuacio &gt;= 750) {
+        // Rang: OR
+      } else if (puntuacio &gt;= 500) {
+        // Rang: PLATA
+      } else if (puntuacio &gt;= 250) {
+        // Rang: BRONZE
+      } else {
+        // Rang: PRINCIPIANT
+      }
+    </pre>
+  </body>
+</html>

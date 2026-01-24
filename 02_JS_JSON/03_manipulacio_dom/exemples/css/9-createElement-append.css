@@ -1,0 +1,16 @@
+#pantalla {
+  width: 50%;
+  padding: 1rem;
+  box-shadow: 0 0 1px black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.enemic {
+  width: 100px;
+  height: 100px;
+  background-image: url('./../img/enemic-mario.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 0 3px red;
+}

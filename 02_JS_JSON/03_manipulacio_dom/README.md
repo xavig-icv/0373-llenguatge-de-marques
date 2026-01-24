@@ -114,8 +114,10 @@ console.log(atacsJugador1);
 ```javascript
 // Inicialment la Vida = 100 però es modifica el valor i es mostra vida = 75.
 const vida = document.querySelector('#jugador1 #vida');
-console.log(vida);
+console.log(vida.textContent);
 vida.textContent = 'Vida: 75';
+
+// Exercici: Modifica el nom de Kratos per el d'un altre personatge
 ```
 
 ![DOM textContent - Modificar contingut de text](./img/4-dom-textContent-modifica-contingut-text.png)
@@ -140,8 +142,295 @@ inventari.innerHTML = `
   </ul>
 `;
 console.log(inventari.innerHTML);
+
+// Exercici: modifica la llista anterior per afegir un element nou a l'inventari
 ```
 
 ![DOM innerHTML - Modificar HTML (etiquetes i text)](./img/5-dom-innerHTML-modificar-etiquetes-text.png)
 
-**Ves amb Compte:** `innerHTML` pot ser perillós si inserim al DOM directament informació rebuda d'un input d'un usuari. (Ens exposem a patir atacs de XSS). Per a inserir text simple sempre utilitza `textContent`.
+**Ves amb Compte:** `innerHTML` pot ser perillós si inserim al DOM directament informació rebuda de l'input d'un usuari. (Ens exposem a rebre atacs de XSS). Per a inserir text simple sempre utilitza `textContent`.
+
+### `Template Literals` - Actualitzar stats del jugador
+
+```html
+<div id="stats-jugador">
+  <h2 id="nom">Nom del jugador</h2>
+  <p id="vida">Vida: 100</p>
+  <p id="puntuacio">Puntuació: 0</p>
+  <p id="nivell">Nivell: 1</p>
+</div>
+```
+
+```javascript
+// Actualitzar nom
+const nomJugador = document.querySelector('#nom');
+nomJugador.textContent = 'Cloud Strife';
+
+// Actualitzar vida
+const vidaJugador = document.querySelector('#vida');
+let vidaActual = 75;
+vidaJugador.textContent = `Vida: ${vidaActual}`;
+
+// Actualitzar puntuació
+const puntuacioJugador = document.querySelector('#puntuacio');
+let punts = 1250;
+puntuacioJugador.textContent = `Puntuació: ${punts}`;
+
+// Actualitzar nivell
+const nivellJugador = document.querySelector('#nivell');
+let nivell = 5;
+nivellJugador.textContent = `Nivell: ${nivell}`;
+
+//Exercici: Modifica els valors de les variables i verifica que canvia l'HTML
+```
+
+![DOM Template Literal amb textContent - Modificar contingut dels elements](./img/6-dom-template-literal-textContent-modificar-contingut-elements.png)
+
+## 3. Modificar estils CSS d'elements del DOM
+
+Per realitzar canvis simples o puntuals d'estils directament des de JavaScript i que no disposen d'una referència al fitxer de CSS podem fer servir les següents propietats:
+
+### 3.1 Propietat `style` amb `setProperty` i `removeProperty`
+
+```html
+<div class="jugador">
+  <p>PLAYER COLLIDER</p>
+  <img src="./mario-normal.webp" alt="mario player" />
+</div>
+<div class="jugador power">
+  <p>PLAYER POWERUP</p>
+  <img src="./mario-power.webp" alt="mario powerup" />
+</div>
+<div class="jugador dany">
+  <p>PLAYER FERIT</p>
+  <img src="./mario-dany.webp" alt="mario ferit" />
+</div>
+<div class="jugador atac">
+  <p>PLAYER ATAC</p>
+  <img src="./mario-atac.webp" alt="mario atac" />
+</div>
+```
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.jugador {
+  margin: 2rem 0;
+  width: 120px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.jugador img {
+  width: 100%;
+}
+```
+
+```javascript
+// Selecciona el primer mario i canviar la vora
+const jugador = document.querySelector('.jugador');
+jugador.style.setProperty('border', 'solid 2px red');
+
+// Selecciona el segon mario, canviar color de fons, la mida i color de lletra, arrodonir les vores i redimensionar l'element
+const jugadorPower = document.querySelector('.jugador.power');
+jugadorPower.style.setProperty('background-color', 'goldenrod');
+jugadorPower.style.setProperty('color', 'white');
+jugadorPower.style.setProperty('font-size', '1.5rem');
+jugadorPower.style.setProperty('transform', 'scale(1.4)');
+jugadorPower.style.setProperty('border-radius', '1rem');
+
+// Exercici: Selecciona el tercer mario, canviar color de fons, vores, opacitat, mida i color de lletra i redimensionar l'element
+
+// Exercici: Selecciona el quart mario, canviar color de fons, vores, color de lletra i mida de lletra
+```
+
+![DOM Style Set Property - Modificar estils CSS](./img/7-dom-style-setProperty-modificar-estils-css.png)
+
+## 4. Modificar classes CSS d'elements del DOM
+
+Tot i que podem afegir o eliminar estils CSS amb style.setProperty o style.removeProperty. L'opció recomanada és utilitzar **classes CSS** predefinides i afegir-les o treure-les mitjançant JavaScript.
+
+### 4.1 `classList.add()` i `classList.remove()` - Afegir i eliminar classes
+
+```html
+<div id="jugador">
+  <h2 id="punts-vida">Punts de Vida - 0 HP</h2>
+  <div class="barra">
+    <div class="vida"></div>
+  </div>
+</div>
+```
+
+```css
+#jugador {
+  width: 100%;
+}
+
+.barra {
+  margin-top: 1rem;
+  width: 100%;
+  height: 2rem;
+  background-color: #666;
+  border-radius: 0.5rem;
+}
+
+.vida {
+  height: 100%;
+  width: 0%;
+  border-radius: 0.5rem;
+}
+
+.normal {
+  background-color: limegreen;
+}
+
+.alerta {
+  background-color: orange;
+}
+
+.critic {
+  background-color: crimson;
+}
+```
+
+```javascript
+// Seleccionar l'element de Punts de Vida i la Barra de Vida
+const puntsVida = document.querySelector('#punts-vida');
+const barraVida = document.querySelector('.vida');
+
+// Assigna un valor de 0-100 als punts de vida
+let hp = 0;
+
+// Eliminar les possibles classes assignades previament
+barraVida.classList.remove('normal', 'alerta', 'critic');
+
+// Descomenta la línia de codi segons el % de vida.
+
+//barraVida.classList.add('normal'); //Modifica hp per un valor entre 50-100
+
+//barraVida.classList.add('alerta'); //Modifica hp per un valor entre 21-49
+
+//barraVida.classList.add('critic'); //Modifica hp per un valor entre 0-20
+
+// Modificar el contingut de text dels Punts de Vida i el CSS (%) de la barra de vida
+puntsVida.textContent = `Punts de Vida - ${hp} HP`;
+barraVida.style.setProperty('width', `${hp}%`);
+```
+
+![DOM Class List Add i Remove - Afegir i eliminar classes CSS](./img/8-dom-classList-add-remove-afegir-eliminar-classes-css.png)
+
+## 5. Modificar atributs d'elements del DOM
+
+Els atributs dels elements HTML com (src, href, alt, title, etc.) es poden modificar amb JavaScript.
+
+### 5.1 `setAttribute()` i `removeAttribute()` - Afegir i eliminar atributs
+
+```html
+<div class="jugador">
+  <h3>MARIO NORMAL</h3>
+  <img src="./img/mario-normal.webp" alt="mario player" />
+  <button id="atacar" disabled>Atacar</button>
+</div>
+```
+
+```css
+.jugador {
+  padding: 1rem;
+  width: 160px;
+  text-align: center;
+  box-shadow: 0 0 1px black;
+  font-size: 1.5rem;
+}
+
+.jugador img {
+  width: 100%;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+```
+
+```javascript
+// Seleccionar el l'element H3 i modificar el contingut de text
+const jugadorNom = document.querySelector('.jugador h3');
+jugadorNom.textContent = 'MARIO POWERUP';
+
+// Seleccionar l'element IMG i modificar l'atribut SRC.
+const jugadorImg = document.querySelector('.jugador img');
+jugadorImg.setAttribute('src', './img/mario-power.webp');
+
+// Seleccionar l'element BUTTON i eliminar l'atribut DISABLED.
+const jugadorAtac = document.querySelector('.jugador button');
+jugadorAtac.removeAttribute('disabled');
+```
+
+![DOM Set Attribute i Remove Attribute - Afegir i eliminar atributs a elements](./img/9-dom-setAttribute-modificar-atributs-elements.png)
+
+## 6. Crear nous elements, afegir-los al DOM i eliminar-los
+
+Podem crear elements HTML des de JavaScript i afegir-los a la pàgina. També podem eliminar elements ja existents.
+
+### 6.1 `createElement()`, `elementPare.append()` i `element.remove()`;
+
+```html
+<div id="pantalla">
+  <div class="enemic"></div>
+</div>
+```
+
+```css
+#pantalla {
+  width: 50%;
+  padding: 1rem;
+  box-shadow: 0 0 1px black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.enemic {
+  width: 100px;
+  height: 100px;
+  background-image: url('./../img/enemic-mario.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 0 3px red;
+}
+```
+
+```javascript
+// Seleccionem la pantalla (element pare) on afegirem el nou element que crearem
+const pantalla = document.querySelector('#pantalla');
+
+// Crear un Segon enemic amb JS
+// Crear un nou element HTML, aplica estils CSS i afegir-lo al DOM
+const enemic2 = document.createElement('div');
+enemic2.classList.add('enemic');
+pantalla.append(enemic2);
+
+// Crear un Tercer enemic amb JS
+// Crear un nou element HTML, aplica estils CSS i afegir-lo al DOM
+const enemic3 = document.createElement('div');
+enemic3.classList.add('enemic');
+pantalla.append(enemic3);
+
+//Eliminar el Primer enemic amb JS
+enemic2.remove();
+```
+
+![DOM Create Element, Append i Remove - Crear, Afegir elements al DOM i eliminar-los](./img/10-dom-createElement-append-crear-afegir-elements-dom.png)

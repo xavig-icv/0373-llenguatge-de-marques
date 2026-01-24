@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.jugador {
+  margin: 2rem 0;
+  width: 120px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.jugador img {
+  width: 100%;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructures de control iteratiu WHILE amb JavaScript</title>
+    <meta name="description"
+      content="Exemples de com crear estructures de control iteratiu WHILE amb JavaScript.">
+    <script type="module" src="./js/1-iteratius-while.js"></script>
+  </head>
+  <body>
+    <h1>Estructures de control iteratiu WHILE JavaScript</h1>
+    <p>Observa el fitxer de JavaScript i el resultat de la consola.</p>
+    <p>// Exemple d'ús de WHILE</p>
+    <pre>
+      let monedes = 0;
+      const MONEDES_OBJECTIU = 100;
+      const MONEDES_PER_ENEMIC = 15;
+      let enemicsDerrotats = 0;
+
+      // Derrotant enemics i Recollint monedes...;
+
+      while (monedes &lt; MONEDES_OBJECTIU) {
+        enemicsDerrotats++;
+        monedes += MONEDES_PER_ENEMIC;
+        // Enemic Derrotat!
+      }
+
+      // Objectiu assolit!
+      // Enemics derrotats: 7
+      // Monedes totals: 105
+    </pre>
+  </body>
+</html>
