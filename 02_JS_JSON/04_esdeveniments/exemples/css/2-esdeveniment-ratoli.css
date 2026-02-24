@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#pantalla {
+  background-color: dodgerblue;
+  width: 100vw;
+  height: 100vh;
+}
+
+#posicio {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+}
+
+#cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: darkred;
+  transition: all 1s;
+}
