@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+  <llibre isbn="978-84-376-0494-7">
+    <titol>Don Quixot de la Manxa</titol>
+    <autor>Miguel de Cervantes</autor>
+    <any>1605</any>
+    <preu>12.50</preu>
+  </llibre>
+  <llibre isbn="978-84-339-7482-3">
+    <titol>Tirant lo Blanc</titol>
+    <autor>Joanot Martorell</autor>
+    <any>1490</any>
+    <preu>14.00</preu>
+  </llibre>
+  <llibre isbn="978-84-204-5359-5">
+    <titol>La plaça del Diamant</titol>
+    <autor>Mercè Rodoreda</autor>
+    <any>1962</any>
+    <preu>9.95</preu>
+  </llibre>
+</biblioteca>

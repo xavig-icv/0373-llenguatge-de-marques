@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="cataleg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="joc" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titol" type="xs:string" />
+              <xs:element name="genere">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="RPG" />
+                    <xs:enumeration value="Aventura" />
+                    <xs:enumeration value="Esports" />
+                    <xs:enumeration value="Estratègia" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="any" type="xs:positiveInteger" />
+              <xs:element name="preu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:decimal">
+                    <xs:minInclusive value="0" />
+                    <xs:maxInclusive value="999.99" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="disponible" type="xs:boolean" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:positiveInteger" use="required" />
+            <xs:attribute name="plataforma" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
