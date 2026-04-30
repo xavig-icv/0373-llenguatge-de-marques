@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://exemple.cat/schema/producte.json",
+  "title": "Producte",
+  "description": "Esquema d'un producte de la botiga TechGear",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Identificador únic del producte"
+    },
+    "nom": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100,
+      "description": "Nom del producte"
+    },
+    "preu": {
+      "type": "number",
+      "minimum": 0.01,
+      "maximum": 9999.99,
+      "description": "Preu en euros (IVA inclòs)"
+    },
+    "disponible": {
+      "type": "boolean",
+      "description": "Indica si el producte té estoc"
+    },
+    "estoc": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Unitats disponibles"
+    },
+    "etiquetes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Etiquetes per categoritzar el producte"
+    },
+    "valoracio": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 5,
+      "description": "Valoració mitjana dels usuaris (0-5)"
+    }
+  },
+  "required": ["id", "nom", "preu", "disponible"],
+  "additionalProperties": false
+}

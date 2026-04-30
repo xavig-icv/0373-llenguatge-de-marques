@@ -1,0 +1,39 @@
+{
+  "curs": "DAW1",
+  "modul": "Llenguatges de Marques",
+  "any": 2024,
+  "alumnes": [
+    {
+      "id": 1,
+      "nom": "Maria Puig",
+      "edat": 19,
+      "nota": 8.5,
+      "aprovat": true,
+      "moduls": ["HTML", "CSS", "JavaScript", "XML"]
+    },
+    {
+      "id": 2,
+      "nom": "Joan Mas",
+      "edat": 22,
+      "nota": 5.0,
+      "aprovat": true,
+      "moduls": ["HTML", "CSS"]
+    },
+    {
+      "id": 3,
+      "nom": "Laia Ferrer",
+      "edat": 18,
+      "nota": 3.5,
+      "aprovat": false,
+      "moduls": []
+    },
+    {
+      "id": 4,
+      "nom": "Pau Roca",
+      "edat": 25,
+      "nota": 9.2,
+      "aprovat": true,
+      "moduls": ["HTML", "CSS", "JavaScript", "XML", "JSON"]
+    }
+  ]
+}

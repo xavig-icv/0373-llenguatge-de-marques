@@ -1,0 +1,9 @@
+{
+  "$schema": "./schema_producte.json",
+  "id": -1,
+  "nom": "X",
+  "preu": -10,
+  "disponible": "si",
+  "valoracio": 7.5,
+  "campNoPermès": "aquest camp no hauria d'existir"
+}

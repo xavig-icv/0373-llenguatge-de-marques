@@ -40,7 +40,7 @@ XSD ofereix tipus de dades simples predefinits (Simple Types) que podem utilitza
 
 Aquests tipus tenen un format estricte que s'ha de respectar per passar la validació.
 
-| Tipus XSD            | Equivalent                                      | Exemple               |
+| Tipus XSD            | Descripció                                      | Exemple               |
 | -------------------- | ----------------------------------------------- | --------------------- |
 | `xs:string`          | Text genèric                                    | `"Pep Guardiola"`     |
 | `xs:integer`         | Enter (positius o negatius )                    | `42`, `-10`           |

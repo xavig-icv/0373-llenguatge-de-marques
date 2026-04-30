@@ -1,0 +1,10 @@
+{
+  "$schema": "./schema_producte.json",
+  "id": 1,
+  "nom": "Teclat mecànic RGB",
+  "preu": 89.99,
+  "disponible": true,
+  "estoc": 42,
+  "etiquetes": ["perifèric", "gaming", "mecànic"],
+  "valoracio": 4.7
+}

@@ -1,0 +1,36 @@
+{
+  "cataleg": {
+    "nom": "Botiga TechGear",
+    "versio": "1.0",
+    "actualitzat": "2024-03-15",
+    "productes": [
+      {
+        "id": 1,
+        "nom": "Teclat mecànic",
+        "preu": 89.99,
+        "disponible": true,
+        "estoc": 42,
+        "etiquetes": ["perifèric", "gaming", "mecànic"],
+        "valoracio": 4.7
+      },
+      {
+        "id": 2,
+        "nom": "Ratolí sense fils",
+        "preu": 34.99,
+        "disponible": false,
+        "estoc": 0,
+        "etiquetes": ["perifèric", "sense fils"],
+        "valoracio": 4.2
+      },
+      {
+        "id": 3,
+        "nom": "Monitor 4K 27\"",
+        "preu": 399.00,
+        "disponible": true,
+        "estoc": 8,
+        "etiquetes": ["monitor", "4K", "HDR"],
+        "valoracio": 4.9
+      }
+    ]
+  }
+}
